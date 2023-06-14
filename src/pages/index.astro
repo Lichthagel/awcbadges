@@ -1,14 +1,18 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const allBadges = await getCollection("challenge");
+
+const allCategories = await getCollection("category");
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+	<h1>Astro</h1>
+	<div>
+		{JSON.stringify(allBadges, undefined, 2)}
+	</div>
+	<div>
+		{JSON.stringify(allCategories, undefined, 2)}
+	</div>
+</BaseLayout>

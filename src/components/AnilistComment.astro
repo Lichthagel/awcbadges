@@ -1,0 +1,48 @@
+---
+interface Props {
+  commentId: number;
+}
+
+import { z } from "astro:content";
+
+const { commentId } = Astro.props;
+
+const response = await fetch("https://graphql.anilist.co/", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    Accept: "application/json",
+  },
+  body: JSON.stringify({
+    query: /* GraphQL */ `
+      query ($id: Int) {
+        ThreadComment(id: $id) {
+          comment(asHtml: true)
+          childComments
+        }
+      }
+    `,
+    variables: {
+      id: commentId,
+    },
+  }),
+});
+
+const comment = z
+  .object({
+    data: z.object({
+      ThreadComment: z
+        .array(
+          z.object({
+            comment: z.string(),
+            childComments: z.array(z.object({})).nullable(),
+          })
+        )
+        .nonempty(),
+    }),
+  })
+  .transform((data) => data.data.ThreadComment[0])
+  .parse(await response.json());
+---
+
+<div set:html={comment.comment} />
