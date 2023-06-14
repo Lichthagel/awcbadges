@@ -4,6 +4,7 @@ interface Props {
 }
 
 import { z } from "astro:content";
+import marked from "../marked";
 
 const { commentId } = Astro.props;
 
@@ -17,7 +18,7 @@ const response = await fetch("https://graphql.anilist.co/", {
     query: /* GraphQL */ `
       query ($id: Int) {
         ThreadComment(id: $id) {
-          comment(asHtml: true)
+          comment
           childComments
         }
       }
@@ -43,6 +44,8 @@ const comment = z
   })
   .transform((data) => data.data.ThreadComment[0])
   .parse(await response.json());
+
+const content = marked.parse(comment.comment);
 ---
 
-<div set:html={comment.comment} />
+<div set:html={content} />
