@@ -2,6 +2,11 @@
 import { getCollection, z } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import AnilistComment from "../components/AnilistComment.astro";
+import type { ChallengeEntry } from "../models";
+
+interface Props {
+  challenge: ChallengeEntry;
+}
 
 export async function getStaticPaths() {
   const challenges = await getCollection("challenge");
