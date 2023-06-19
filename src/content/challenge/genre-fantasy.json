@@ -1,0 +1,26 @@
+{
+  "name": "Fantasy Genre Challenge",
+  "url": "https://anilist.co/forum/thread/5290/comment/675380",
+  "badge": [
+    {
+      "name": "Easy Mode",
+      "image": "https://i.postimg.cc/YCLLTtz1/Genre-Fantasy-Easy.png",
+      "started": "2021-02-20",
+      "completed": "2021-09-26",
+      "status": "completed"
+    },
+    {
+      "name": "Normal Mode",
+      "image": "https://i.postimg.cc/5tcQVDsD/Genre-Fantasy-Normal.png",
+      "started": "2021-02-20",
+      "completed": "2022-10-16",
+      "status": "completed"
+    },
+    {
+      "name": "Hard Mode",
+      "image": "https://i.postimg.cc/YS1Gq8V0/Genre-Fantasy-Hard.png",
+      "started": "2021-02-20",
+      "status": "in-progress"
+    }
+  ]
+}
