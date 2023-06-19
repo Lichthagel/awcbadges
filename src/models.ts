@@ -27,11 +27,11 @@ export const zChallenge = z
       .string()
       .url()
       .regex(
-        /https:\/\/anilist\.co\/forum\/thread\/([0-9]+)\/comment\/([0-9]+)/,
+        /https:\/\/anilist\.co\/forum\/thread\/([0-9]+)\/comment\/([0-9]+)/
       )
       .transform((url) => {
         const match = url.match(
-          /https:\/\/anilist\.co\/forum\/thread\/([0-9]+)\/comment\/([0-9]+)/,
+          /https:\/\/anilist\.co\/forum\/thread\/([0-9]+)\/comment\/([0-9]+)/
         );
 
         if (!match) {

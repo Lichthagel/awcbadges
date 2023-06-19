@@ -29,7 +29,7 @@ const { challenge } = Astro.props;
   {
     Array.isArray(challenge.data.badge) && (
       <>
-        <h1 class="text-5xl my-4">{challenge.data.name}</h1>
+        <h1 class="my-4 text-5xl">{challenge.data.name}</h1>
 
         <div class="flex flex-row justify-around text-center">
           {challenge.data.badge.map((badge) => (
@@ -63,7 +63,7 @@ const { challenge } = Astro.props;
   }
 
   <a href={challenge.data.url.full} target="_blank">
-    <h2 class="text-4xl my-4 transition-all duration-250 hover:casual">
+    <h2 class="duration-250 hover:casual my-4 text-4xl transition-all">
       Challenge Post
     </h2>
   </a>
@@ -72,7 +72,7 @@ const { challenge } = Astro.props;
 
   <a
     href={challenge.data.url.full}
-    class="uppercase font-bold rounded text-sm p-2 bg-ctp-lavender text-ctp-base mx-auto inline-block"
+    class="mx-auto inline-block rounded bg-ctp-lavender p-2 text-sm font-bold uppercase text-ctp-base"
     target="_blank"
   >
     View on Anilist</a

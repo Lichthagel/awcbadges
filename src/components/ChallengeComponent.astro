@@ -14,7 +14,7 @@ const badge = challenge.data.focusBadge;
 
 <a href={`/${challenge.id}`}>
   <div
-    class="group inline-block relative mx-1 mb-7 align-bottom transition hover:-translate-y-2"
+    class="group relative mx-1 mb-7 inline-block align-bottom transition hover:-translate-y-2"
   >
     <img
       src={badge.image ?? "https://awc.moe/static/images/badge-placeholder.png"}
@@ -30,7 +30,7 @@ const badge = challenge.data.focusBadge;
 
     {
       badge.status === "in-progress" && (
-        <div class="uppercase absolute -bottom-3 left-1/2 -ml-14 w-28 font-bold rounded text-xs py-2 bg-ctp-lavender text-ctp-base text-center">
+        <div class="absolute -bottom-3 left-1/2 -ml-14 w-28 rounded bg-ctp-lavender py-2 text-center text-xs font-bold uppercase text-ctp-base">
           in progress
         </div>
       )
@@ -38,7 +38,7 @@ const badge = challenge.data.focusBadge;
 
     {
       badge.status === "submitted" && (
-        <div class="uppercase absolute -bottom-3 left-1/2 -ml-14 w-28 font-bold rounded text-xs py-2 bg-ctp-mauve text-ctp-base text-center">
+        <div class="absolute -bottom-3 left-1/2 -ml-14 w-28 rounded bg-ctp-mauve py-2 text-center text-xs font-bold uppercase text-ctp-base">
           submitted
         </div>
       )

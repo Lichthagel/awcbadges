@@ -10,7 +10,7 @@ const category = Astro.props.category;
 ---
 
 <div>
-  <h2 class="text-3xl my-5 lowercase">{category.data.name}</h2>
+  <h2 class="my-5 text-3xl lowercase">{category.data.name}</h2>
   {
     category.data.challenges.map((challenge) => (
       <ChallengeComponent challenge={challenge} />
