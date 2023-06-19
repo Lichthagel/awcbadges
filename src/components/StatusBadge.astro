@@ -1,0 +1,13 @@
+---
+interface Props {
+  status: "in-progress" | "submitted" | "completed";
+}
+
+const { status } = Astro.props;
+---
+
+<div
+  class="uppercase w-28 font-bold rounded text-sm py-2 bg-ctp-green text-ctp-base mx-auto"
+>
+  {status}
+</div>

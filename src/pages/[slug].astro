@@ -3,6 +3,7 @@ import { getCollection, z } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import AnilistComment from "../components/AnilistComment.astro";
 import type { ChallengeEntry } from "../models";
+import StatusBadge from "../components/StatusBadge.astro";
 
 interface Props {
   challenge: ChallengeEntry;
@@ -25,7 +26,55 @@ const { challenge } = Astro.props;
 ---
 
 <BaseLayout>
-  {JSON.stringify(challenge)}
+  {
+    Array.isArray(challenge.data.badge) && (
+      <>
+        <h1 class="text-5xl my-4">{challenge.data.name}</h1>
+
+        <div class="flex flex-row justify-around text-center">
+          {challenge.data.badge.map((badge) => (
+            <div class="space-y-2">
+              <img src={badge.image} alt={challenge.data.name} class="h-60" />
+
+              <div class="text-lg font-bold">{badge.name}</div>
+
+              <StatusBadge status={badge.status} />
+
+              <div>
+                <span>Started: </span>
+                {badge.started.toLocaleDateString()}
+              </div>
+
+              <div>
+                <span>Completed: </span>
+                {badge.completed?.toLocaleDateString() ?? "Not completed"}
+              </div>
+            </div>
+          ))}
+        </div>
+      </>
+    )
+  }
+
+  {
+    !Array.isArray(challenge.data.badge) && (
+      <img src={challenge.data.badge.image} alt={challenge.data.name} />
+    )
+  }
+
+  <a href={challenge.data.url.full} target="_blank">
+    <h2 class="text-4xl my-4 transition-all duration-250 hover:casual">
+      Challenge Post
+    </h2>
+  </a>
 
   <AnilistComment commentId={challenge.data.url.comment} />
+
+  <a
+    href={challenge.data.url.full}
+    class="uppercase font-bold rounded text-sm p-2 bg-ctp-lavender text-ctp-base mx-auto inline-block"
+    target="_blank"
+  >
+    View on Anilist</a
+  >
 </BaseLayout>
