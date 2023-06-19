@@ -1,5 +1,12 @@
 import { reference, z } from "astro:content";
 
+const zBadge = z.object({
+  image: z.string().url().optional(),
+  started: z.coerce.date(),
+  completed: z.coerce.date().optional(),
+  status: z.enum(["in-progress", "submitted", "completed"]),
+});
+
 export const zChallenge = z.object({
   name: z.string(),
   url: z
@@ -18,28 +25,10 @@ export const zChallenge = z.object({
       return {
         thread: parseInt(match[1]),
         comment: parseInt(match[2]),
+        full: url,
       };
     }),
-  badge: z
-    .object({
-      image: z.string().url().optional(),
-      started: z.string(),
-      completed: z.string().optional(),
-      status: z.enum(["in-progress", "submitted", "completed"]),
-    })
-    .or(
-      z
-        .array(
-          z.object({
-            name: z.string(),
-            image: z.string().url().optional(),
-            started: z.string(),
-            completed: z.string().optional(),
-            status: z.enum(["in-progress", "submitted", "completed"]),
-          }),
-        )
-        .nonempty(),
-    ),
+  badge: zBadge.or(z.array(zBadge.extend({ name: z.string() })).nonempty()),
 });
 
 export type Challenge = z.infer<typeof zChallenge>;
