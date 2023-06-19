@@ -1,7 +1,6 @@
 ---
 import type { ChallengeEntry } from "../models";
 import { getEntry } from "astro:content";
-import clsx from "clsx";
 
 type Props = {
   challenge: Omit<ChallengeEntry, "data">;
@@ -24,12 +23,12 @@ const badge = challenge.data.focusBadge;
       src={badge.image ?? "https://awc.moe/static/images/badge-placeholder.png"}
       alt={badge.name ?? challenge.data.name}
       loading="lazy"
-      class={clsx(
+      class:list={[
         "transition group-hover:saturate-100 group-hover:opacity-100 h-48",
         {
           "saturate-0 opacity-50": badge.status !== "completed",
-        }
-      )}
+        },
+      ]}
     />
 
     {
