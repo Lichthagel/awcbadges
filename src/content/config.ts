@@ -1,4 +1,4 @@
-import { defineCollection, reference, z } from "astro:content";
+import { defineCollection } from "astro:content";
 import { zCategory, zChallenge } from "../models";
 
 const challengeCollection = defineCollection({

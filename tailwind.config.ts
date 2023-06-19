@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 // const defaultTheme = require("tailwindcss/defaultTheme");
 import type { Config } from "tailwindcss";
 import defaultTheme from "tailwindcss/defaultTheme";

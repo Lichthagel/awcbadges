@@ -3,11 +3,15 @@ import type { ChallengeEntry } from "../models";
 import { getEntry } from "astro:content";
 import clsx from "clsx";
 
-interface Props {
+type Props = {
   challenge: Omit<ChallengeEntry, "data">;
-}
+};
 
-const challenge = (await getEntry(Astro.props.challenge))!;
+const challenge = await getEntry(Astro.props.challenge);
+
+if (!challenge) {
+  throw new Error("Challenge not found");
+}
 
 const badge = challenge.data.focusBadge;
 ---

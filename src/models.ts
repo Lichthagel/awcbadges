@@ -13,7 +13,7 @@ const getBadge = (badge: Badge | Badge[]): Badge & { name?: string } => {
   if (Array.isArray(badge)) {
     const result = badge.filter((b) => b.status === "completed").at(-1);
 
-    // rome-ignore lint/style/noNonNullAssertion: <explanation>
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     return result ?? badge.at(-1)!;
   } else {
     return badge;

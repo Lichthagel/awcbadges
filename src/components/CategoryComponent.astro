@@ -2,9 +2,9 @@
 import type { CategoryEntry } from "../models";
 import ChallengeComponent from "./ChallengeComponent.astro";
 
-interface Props {
+type Props = {
   category: CategoryEntry;
-}
+};
 
 const category = Astro.props.category;
 ---
