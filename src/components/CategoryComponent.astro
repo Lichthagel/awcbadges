@@ -1,0 +1,19 @@
+---
+import type { CategoryEntry } from "../models";
+import ChallengeComponent from "./ChallengeComponent.astro";
+
+interface Props {
+  category: CategoryEntry;
+}
+
+const category = Astro.props.category;
+---
+
+<div>
+  <h2 class="text-3xl my-5 lowercase">{category.data.name}</h2>
+  {
+    category.data.challenges.map((challenge) => (
+      <ChallengeComponent challenge={challenge} />
+    ))
+  }
+</div>

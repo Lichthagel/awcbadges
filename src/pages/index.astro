@@ -1,18 +1,25 @@
 ---
+import BadgeCategory from "../components/CategoryComponent.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 
-const allBadges = await getCollection("challenge");
-
 const allCategories = await getCollection("category");
+
+const animeCategories = allCategories.filter((category) => {
+	return category.data.type === "anime";
+});
+
+const mangaCategories = allCategories.filter((category) => {
+	return category.data.type === "manga";
+});
 ---
 
 <BaseLayout>
-	<h1>Astro</h1>
-	<div>
-		{JSON.stringify(allBadges, undefined, 2)}
-	</div>
-	<div>
-		{JSON.stringify(allCategories, undefined, 2)}
+	<div class="text-center">
+		<h1 class="text-6xl my-10 uppercase font-bold">Anime</h1>
+		{animeCategories.map((category) => <BadgeCategory category={category} />)}
+
+		<h1 class="text-6xl my-10 uppercase font-bold">Manga</h1>
+		{mangaCategories.map((category) => <BadgeCategory category={category} />)}
 	</div>
 </BaseLayout>
