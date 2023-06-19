@@ -11,7 +11,7 @@ dependencies:
   '@catppuccin/tailwindcss':
     specifier: ^0.1.1
     version: 0.1.1
-  '@fontsource-variable/recursive':
+  '@fontsource-variable/readex-pro':
     specifier: ^5.0.3
     version: 5.0.3
   '@types/marked':
@@ -600,8 +600,8 @@ packages:
     dev: false
     optional: true
 
-  /@fontsource-variable/recursive@5.0.3:
-    resolution: {integrity: sha512-mp3KpByR3mLnM/+SNMqS3L6UlYLpGyZDYGHM5j6NBiAIiXvqwGJ6Orj7aEqUhlYBtMJGSms6SxlTXPLaMdFJIA==}
+  /@fontsource-variable/readex-pro@5.0.3:
+    resolution: {integrity: sha512-lC7WaWxyCVD+ZbZmHTVq1SHV2GTXVjMocNnf0QvIhYZ6npH7eb9RkZnWtwnWYZkI8N9s8u2qW8MIs9UmBApLKw==}
     dev: false
 
   /@jridgewell/gen-mapping@0.3.3:

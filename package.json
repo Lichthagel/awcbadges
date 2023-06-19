@@ -12,7 +12,7 @@
   "dependencies": {
     "@astrojs/tailwind": "^4.0.0",
     "@catppuccin/tailwindcss": "^0.1.1",
-    "@fontsource-variable/recursive": "^5.0.3",
+    "@fontsource-variable/readex-pro": "^5.0.3",
     "@types/marked": "^5.0.0",
     "astro": "^2.6.5",
     "astro-rome": "^0.1.18",

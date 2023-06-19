@@ -9,14 +9,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: [
-          `"Recursive Variable", "Recursive", ${defaultTheme.fontFamily.sans.join(
-            ", ",
-          )}`,
-          {
-            fontVariationSettings: '"CRSV" 1, "CASL" 0',
-          },
-        ],
+        sans: ["Readex Pro Variable", ...defaultTheme.fontFamily.sans],
       },
     },
   },
