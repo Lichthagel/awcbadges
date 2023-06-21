@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import AnilistComment from "../components/AnilistComment.astro";
 import type { ChallengeEntry } from "../models";
 import StatusBadge from "../components/StatusBadge.astro";
 
@@ -68,7 +67,7 @@ const { challenge } = Astro.props;
     </h2>
   </a>
 
-  <AnilistComment commentId={challenge.data.url.comment} />
+  <!-- <AnilistComment commentId={challenge.data.url.comment} /> -->
 
   <a
     href={challenge.data.url.full}
