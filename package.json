@@ -11,11 +11,11 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^4.0.0",
-    "@catppuccin/tailwindcss": "^0.1.1",
+    "@catppuccin/tailwindcss": "^0.1.6",
     "@fontsource-variable/readex-pro": "^5.0.3",
     "@types/marked": "^5.0.0",
     "@typescript-eslint/parser": "^5.60.0",
-    "astro": "^2.6.6",
+    "astro": "^2.7.0",
     "eslint": "^8.43.0",
     "eslint-config-lichthagel": "link:..\\eslint-config-lichthagel",
     "eslint-plugin-astro": "^0.27.1",
