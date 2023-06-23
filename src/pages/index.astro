@@ -1,5 +1,5 @@
 ---
-import BadgeCategory from "../components/CategoryComponent.astro";
+import CategoryComponent from "../components/CategoryComponent.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 
@@ -17,9 +17,9 @@ const mangaCategories = allCategories.filter(
 <BaseLayout>
   <div class="text-center">
     <h1 class="my-10 text-6xl font-bold uppercase">Anime</h1>
-    {animeCategories.map((category) => <BadgeCategory category={category} />)}
+    {animeCategories.map((category) => <CategoryComponent category={category} />)}
 
     <h1 class="my-10 text-6xl font-bold uppercase">Manga</h1>
-    {mangaCategories.map((category) => <BadgeCategory category={category} />)}
+    {mangaCategories.map((category) => <CategoryComponent category={category} />)}
   </div>
 </BaseLayout>

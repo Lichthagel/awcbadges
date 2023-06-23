@@ -1,6 +1,7 @@
 ---
 import type { ChallengeEntry } from "../models";
 import { getEntry } from "astro:content";
+import BadgeComponent from "./BadgeComponent.astro";
 
 type Props = {
   challenge: Omit<ChallengeEntry, "data">;
@@ -11,40 +12,30 @@ const challenge = await getEntry(Astro.props.challenge);
 if (!challenge) {
   throw new Error("Challenge not found");
 }
-
-const badge = challenge.data.focusBadge;
 ---
 
 <a href={`/${challenge.id}`}>
-  <div
-    class="group relative mx-1 mb-7 inline-block align-bottom transition hover:-translate-y-2"
-  >
-    <img
-      src={badge.image ?? "https://awc.moe/static/images/badge-placeholder.png"}
-      alt={badge.name ?? challenge.data.name}
-      loading="lazy"
-      class:list={[
-        "transition group-hover:saturate-100 group-hover:opacity-100 h-48",
-        {
-          "saturate-0 opacity-50": badge.status !== "completed",
-        },
-      ]}
-    />
+  {
+    Array.isArray(challenge.data.badge) ? (
+      <div class="m-1 inline-block rounded bg-ctp-mantle p-2 shadow">
+        {challenge.data.badge.map((badge) => (
+          <BadgeComponent
+            badge={badge}
+            name={badge.name}
+            size={badge.focus ? "large" : "small"}
+          />
+        ))}
 
-    {
-      badge.status === "in-progress" && (
-        <div class="absolute -bottom-3 left-1/2 -ml-14 w-28 rounded bg-ctp-lavender py-2 text-center text-xs font-bold uppercase text-ctp-base">
-          in progress
-        </div>
-      )
-    }
-
-    {
-      badge.status === "submitted" && (
-        <div class="absolute -bottom-3 left-1/2 -ml-14 w-28 rounded bg-ctp-mauve py-2 text-center text-xs font-bold uppercase text-ctp-base">
-          submitted
-        </div>
-      )
-    }
-  </div>
+        <h4 class="ml-auto mr-1 w-max font-light uppercase">
+          {challenge.data.name}
+        </h4>
+      </div>
+    ) : (
+      <BadgeComponent
+        badge={challenge.data.badge}
+        name={challenge.data.name}
+        size="large"
+      />
+    )
+  }
 </a>

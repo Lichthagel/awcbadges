@@ -9,47 +9,59 @@ const zBadge = z.object({
 
 export type Badge = z.infer<typeof zBadge>;
 
-const getBadge = (badge: Badge | Badge[]): Badge & { name?: string } => {
-  if (Array.isArray(badge)) {
-    const result = badge.filter((b) => b.status === "completed").at(-1);
-
-    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    return result ?? badge.at(-1)!;
-  } else {
-    return badge;
-  }
-};
-
-export const zChallenge = z
-  .object({
-    name: z.string(),
-    url: z
-      .string()
-      .url()
-      .regex(
+const zChallengeBase = z.object({
+  name: z.string(),
+  url: z
+    .string()
+    .url()
+    .regex(/https:\/\/anilist\.co\/forum\/thread\/([0-9]+)\/comment\/([0-9]+)/)
+    .transform((url) => {
+      const match = url.match(
         /https:\/\/anilist\.co\/forum\/thread\/([0-9]+)\/comment\/([0-9]+)/
-      )
-      .transform((url) => {
-        const match = url.match(
-          /https:\/\/anilist\.co\/forum\/thread\/([0-9]+)\/comment\/([0-9]+)/
-        );
+      );
 
-        if (!match) {
-          throw new Error("Invalid URL");
+      if (!match) {
+        throw new Error("Invalid URL");
+      }
+
+      return {
+        thread: parseInt(match[1]),
+        comment: parseInt(match[2]),
+        full: url,
+      };
+    }),
+});
+
+const zChallengeSingle = zChallengeBase.extend({
+  badge: zBadge.transform((badge) => ({
+    ...badge,
+    focus: true,
+  })),
+  all: z.undefined(),
+});
+
+const zChallengeMulti = zChallengeBase.extend({
+  badge: z
+    .array(zBadge.extend({ name: z.string() }))
+    .nonempty()
+    .transform((badges) => {
+      let idx = 0;
+
+      badges.forEach((badge, index) => {
+        if (badge.status === "completed") {
+          idx = index;
         }
+      });
 
-        return {
-          thread: parseInt(match[1]),
-          comment: parseInt(match[2]),
-          full: url,
-        };
-      }),
-    badge: zBadge.or(z.array(zBadge.extend({ name: z.string() })).nonempty()),
-  })
-  .transform((challenge) => ({
-    ...challenge,
-    focusBadge: getBadge(challenge.badge),
-  }));
+      return badges.map((badge, index) => ({
+        ...badge,
+        focus: index === idx,
+      }));
+    }),
+  all: z.boolean().default(true),
+});
+
+export const zChallenge = z.union([zChallengeSingle, zChallengeMulti]);
 
 export type Challenge = z.infer<typeof zChallenge>;
 
