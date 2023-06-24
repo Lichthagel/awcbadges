@@ -39,8 +39,10 @@ const recentlyStarted = badges
 >
   <div class="container mx-auto flex h-screen flex-col justify-evenly py-5">
     <div>
-      <h2 class="mx-auto my-5 w-max text-3xl lowercase">recently completed</h2>
-      <div class="overflow-x-scroll whitespace-nowrap lg:whitespace-normal">
+      <h2 class="mx-auto my-3 w-max text-3xl lowercase">recently completed</h2>
+      <div
+        class="overflow-x-scroll whitespace-nowrap pt-4 lg:whitespace-normal"
+      >
         {
           recentlyCompleted.map((badge) => (
             <div class="my-1 inline-block rounded py-1">
@@ -56,8 +58,10 @@ const recentlyStarted = badges
     </div>
 
     <div>
-      <h2 class="mx-auto my-5 w-max text-3xl lowercase">recently started</h2>
-      <div class="overflow-x-scroll whitespace-nowrap lg:whitespace-normal">
+      <h2 class="mx-auto my-3 w-max text-3xl lowercase">recently started</h2>
+      <div
+        class="overflow-x-scroll whitespace-nowrap pt-4 lg:whitespace-normal"
+      >
         {
           recentlyStarted.map((badge) => (
             <div class="my-1 inline-block rounded py-1">
