@@ -5,13 +5,13 @@ import { getCollection } from "astro:content";
 
 const allCategories = await getCollection("category");
 
-const animeCategories = allCategories.filter(
-  (category) => category.data.type === "anime"
-);
+const animeCategories = allCategories
+  .filter((category) => category.data.type === "anime")
+  .sort((a, b) => a.data.sortKey - b.data.sortKey);
 
-const mangaCategories = allCategories.filter(
-  (category) => category.data.type === "manga"
-);
+const mangaCategories = allCategories
+  .filter((category) => category.data.type === "manga")
+  .sort((a, b) => a.data.sortKey - b.data.sortKey);
 ---
 
 <BaseLayout>

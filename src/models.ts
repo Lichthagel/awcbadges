@@ -83,6 +83,7 @@ export type ChallengeEntry = z.infer<typeof zChallengeEntry>;
 export const zCategory = z.object({
   name: z.string(),
   type: z.enum(["anime", "manga"]),
+  sortKey: z.number().default(0),
   challenges: z.array(reference("challenge")).nonempty(),
 });
 
