@@ -49,7 +49,7 @@ const show = (() => {
           </h4>
         </div>
       ) : (
-        <div class="m-1 inline-block rounded p-1">
+        <div class="my-1 inline-block rounded py-1">
           <BadgeComponent
             badge={
               Array.isArray(challenge.data.badge)
@@ -61,7 +61,7 @@ const show = (() => {
             size="large"
           />
 
-          <h4 class="w-full font-light uppercase">{challenge.data.name}</h4>
+          <h4 class="font-light uppercase">{challenge.data.name}</h4>
         </div>
       )}
     </a>
