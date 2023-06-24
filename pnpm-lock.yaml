@@ -30,8 +30,8 @@ dependencies:
     specifier: link:..\eslint-config-lichthagel
     version: link:../eslint-config-lichthagel
   eslint-plugin-astro:
-    specifier: ^0.27.1
-    version: 0.27.1(eslint@8.43.0)
+    specifier: ^0.27.2
+    version: 0.27.2(eslint@8.43.0)
   marked:
     specifier: ^5.1.0
     version: 5.1.0
@@ -1547,8 +1547,8 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /eslint-plugin-astro@0.27.1(eslint@8.43.0):
-    resolution: {integrity: sha512-xt02HVlj5lBoAPzYOKDfVa3swjFr2Vh0Rj6TsInWmfcmQcjEkDMnu9olUAF8Q+LqHr0wQr5z6GmcxJskSqOmjQ==}
+  /eslint-plugin-astro@0.27.2(eslint@8.43.0):
+    resolution: {integrity: sha512-MUEkKXvj4onjq9/IyLMfbg8nUjY+SznhHcOvKDnHLgqzGzxUEoaOTR+mPZrDIyqAPC716GxpjsK9MDgoYLPyFA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=7.0.0'
