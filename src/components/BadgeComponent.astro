@@ -11,7 +11,7 @@ const { badge, name, size } = Astro.props;
 ---
 
 <div
-  class="group relative mx-1 mb-7 inline-block align-bottom transition hover:scale-105"
+  class="group relative mx-1 mb-2 inline-block align-bottom transition hover:scale-105 lg:mb-4"
 >
   <img
     src={badge.image ?? "https://awc.moe/static/images/badge-placeholder.png"}
@@ -21,25 +21,33 @@ const { badge, name, size } = Astro.props;
       "transition group-hover:saturate-100 group-hover:opacity-100",
       {
         "saturate-0 opacity-50": badge.status !== "completed",
-        "h-48": size === "large",
-        "h-40": size === "small",
+        "h-36 lg:h-48": size === "large",
+        "h-28 lg:h-40": size === "small",
       },
     ]}
   />
 
   {
     badge.status === "in-progress" && (
-      <div class="absolute -bottom-3 left-1/2 -ml-14 w-28 rounded bg-gradient-to-br from-ctp-lavender to-ctp-mauve py-2 text-center text-xs font-bold uppercase text-ctp-base">
-        in progress
-      </div>
+      <>
+        <div class="absolute -bottom-3 left-1/2 -ml-14 hidden w-28 rounded bg-gradient-to-br from-ctp-lavender to-ctp-mauve py-2 text-center text-xs font-bold uppercase text-ctp-base lg:block">
+          in progress
+        </div>
+        <div class="absolute -right-2 -top-2 h-4 w-4 rounded-full bg-gradient-to-br from-ctp-lavender to-ctp-mauve lg:hidden" />
+        <div class="absolute -right-2 -top-2 h-4 w-4 animate-ping rounded-full bg-gradient-to-br from-ctp-lavender to-ctp-mauve lg:hidden" />
+      </>
     )
   }
 
   {
     badge.status === "submitted" && (
-      <div class="absolute -bottom-3 left-1/2 -ml-14 w-28 rounded bg-gradient-to-br from-ctp-green to-ctp-sapphire py-2 text-center text-xs font-bold uppercase text-ctp-base">
-        submitted
-      </div>
+      <>
+        <div class="lg:blockS absolute -bottom-3 left-1/2 -ml-14 hidden w-28 rounded bg-gradient-to-br from-ctp-green to-ctp-sapphire py-2 text-center text-xs font-bold uppercase text-ctp-base">
+          submitted
+        </div>
+        <div class="absolute -right-2 -top-2 h-4 w-4 rounded-full bg-gradient-to-br from-ctp-green to-ctp-sapphire lg:hidden" />
+        <div class="ping absolute -right-2 -top-2 h-4 w-4 rounded-full bg-gradient-to-br from-ctp-green to-ctp-sapphire lg:hidden" />
+      </>
     )
   }
 </div>
