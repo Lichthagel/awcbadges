@@ -22,14 +22,14 @@ const { badge, name, size } = Astro.props;
       {
         "saturate-0 opacity-50": badge.status !== "completed",
         "h-48": size === "large",
-        "h-36": size === "small",
+        "h-40": size === "small",
       },
     ]}
   />
 
   {
     badge.status === "in-progress" && (
-      <div class="absolute -bottom-3 left-1/2 -ml-14 w-28 rounded bg-ctp-lavender py-2 text-center text-xs font-bold uppercase text-ctp-base">
+      <div class="absolute -bottom-3 left-1/2 -ml-14 w-28 rounded bg-gradient-to-br from-ctp-lavender to-ctp-mauve py-2 text-center text-xs font-bold uppercase text-ctp-base">
         in progress
       </div>
     )
@@ -37,7 +37,7 @@ const { badge, name, size } = Astro.props;
 
   {
     badge.status === "submitted" && (
-      <div class="absolute -bottom-3 left-1/2 -ml-14 w-28 rounded bg-ctp-mauve py-2 text-center text-xs font-bold uppercase text-ctp-base">
+      <div class="absolute -bottom-3 left-1/2 -ml-14 w-28 rounded bg-gradient-to-br from-ctp-green to-ctp-sapphire py-2 text-center text-xs font-bold uppercase text-ctp-base">
         submitted
       </div>
     )

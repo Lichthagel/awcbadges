@@ -16,10 +16,22 @@ const mangaCategories = allCategories.filter(
 
 <BaseLayout>
   <div class="text-center">
-    <h1 class="my-10 text-6xl font-bold uppercase">Anime</h1>
-    {animeCategories.map((category) => <CategoryComponent category={category} />)}
+    <h1 class="text-gradient mx-auto my-10 w-max text-6xl font-bold uppercase">
+      Anime
+    </h1>
+    {
+      animeCategories.map((category) => (
+        <CategoryComponent category={category} />
+      ))
+    }
 
-    <h1 class="my-10 text-6xl font-bold uppercase">Manga</h1>
-    {mangaCategories.map((category) => <CategoryComponent category={category} />)}
+    <h1 class="text-gradient mx-auto my-10 w-max text-6xl font-bold uppercase">
+      Manga
+    </h1>
+    {
+      mangaCategories.map((category) => (
+        <CategoryComponent category={category} />
+      ))
+    }
   </div>
 </BaseLayout>
