@@ -26,13 +26,17 @@ const show = (() => {
 ---
 
 {
-  show && (
-    // <a href={`/${challenge.id}`}>
-    <a href={challenge.data.url.full} target="_blank" rel="noopener noreferrer">
-      {Array.isArray(challenge.data.badge) &&
-      challenge.data.visibility !== "only-focus" ? (
-        <div class="m-1 inline-block rounded bg-ctp-mantle p-1 shadow">
-          {challenge.data.badge.map((badge) => (
+  show &&
+  // <a href={`/${challenge.id}`}>
+    (Array.isArray(challenge.data.badge) &&
+    challenge.data.visibility !== "only-focus" ? (
+      <div class="m-1 inline-block rounded bg-ctp-mantle p-1 shadow">
+        {challenge.data.badge.map((badge) => (
+          <a
+            href={badge.url?.full ?? challenge.data.url.full}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <BadgeComponent
               badge={badge}
               name={badge.name}
@@ -42,14 +46,20 @@ const show = (() => {
                   : "small"
               }
             />
-          ))}
+          </a>
+        ))}
 
-          <h4 class="ml-auto mr-1 w-max font-light uppercase">
-            {challenge.data.name}
-          </h4>
-        </div>
-      ) : (
-        <div class="my-1 inline-block rounded py-1">
+        <h4 class="ml-auto mr-1 w-max font-light uppercase">
+          {challenge.data.name}
+        </h4>
+      </div>
+    ) : (
+      <div class="my-1 inline-block rounded py-1">
+        <a
+          href={challenge.data.url.full}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <BadgeComponent
             badge={
               Array.isArray(challenge.data.badge)
@@ -62,8 +72,7 @@ const show = (() => {
           />
 
           <h4 class="font-light uppercase">{challenge.data.name}</h4>
-        </div>
-      )}
-    </a>
-  )
+        </a>
+      </div>
+    ))
 }

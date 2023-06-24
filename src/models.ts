@@ -16,27 +16,29 @@ const zBadge = z.object({
 
 export type Badge = z.infer<typeof zBadge>;
 
+const zThreadCommentUrl = z
+  .string()
+  .url()
+  .regex(/https:\/\/anilist\.co\/forum\/thread\/([0-9]+)\/comment\/([0-9]+)/)
+  .transform((url) => {
+    const match = url.match(
+      /https:\/\/anilist\.co\/forum\/thread\/([0-9]+)\/comment\/([0-9]+)/
+    );
+
+    if (!match) {
+      throw new Error("Invalid URL");
+    }
+
+    return {
+      thread: parseInt(match[1]),
+      comment: parseInt(match[2]),
+      full: url,
+    };
+  });
+
 const zChallengeBase = z.object({
   name: z.string(),
-  url: z
-    .string()
-    .url()
-    .regex(/https:\/\/anilist\.co\/forum\/thread\/([0-9]+)\/comment\/([0-9]+)/)
-    .transform((url) => {
-      const match = url.match(
-        /https:\/\/anilist\.co\/forum\/thread\/([0-9]+)\/comment\/([0-9]+)/
-      );
-
-      if (!match) {
-        throw new Error("Invalid URL");
-      }
-
-      return {
-        thread: parseInt(match[1]),
-        comment: parseInt(match[2]),
-        full: url,
-      };
-    }),
+  url: zThreadCommentUrl,
 });
 
 const zChallengeSingle = zChallengeBase.extend({
@@ -49,7 +51,9 @@ const zChallengeSingle = zChallengeBase.extend({
 
 const zChallengeMulti = zChallengeBase.extend({
   badge: z
-    .array(zBadge.extend({ name: z.string() }))
+    .array(
+      zBadge.extend({ name: z.string(), url: zThreadCommentUrl.optional() })
+    )
     .nonempty()
     .transform((badges) => {
       let idx = 0;
