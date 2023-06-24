@@ -4,7 +4,14 @@ const zBadge = z.object({
   image: z.string().url().optional(),
   started: z.coerce.date(),
   completed: z.coerce.date().optional(),
-  status: z.enum(["in-progress", "submitted", "completed", "incomplete"]),
+  status: z.enum([
+    "in-progress",
+    "submitted",
+    "completed",
+    "incomplete",
+    "not-started",
+    "on-hold",
+  ]),
 });
 
 export type Badge = z.infer<typeof zBadge>;

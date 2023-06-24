@@ -50,4 +50,15 @@ const { badge, name, size } = Astro.props;
       </>
     )
   }
+
+  {
+    badge.status === "on-hold" && (
+      <>
+        <div class="absolute -bottom-3 left-1/2 -ml-14 hidden w-28 rounded bg-gradient-to-br from-ctp-red to-ctp-peach py-2 text-center text-xs font-bold uppercase text-ctp-base lg:block">
+          on hold
+        </div>
+        <div class="absolute -right-2 -top-2 h-4 w-4 rounded-full bg-gradient-to-br from-ctp-red to-ctp-maroon lg:hidden" />
+      </>
+    )
+  }
 </div>
