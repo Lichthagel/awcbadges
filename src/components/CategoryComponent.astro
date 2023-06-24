@@ -13,9 +13,11 @@ const category = Astro.props.category;
   <h2 class="text-gradient mx-auto my-5 w-max text-3xl lowercase">
     {category.data.name}
   </h2>
-  {
-    category.data.challenges.map((challenge) => (
-      <ChallengeComponent challenge={challenge} />
-    ))
-  }
+  <div class="overflow-x-scroll whitespace-nowrap lg:whitespace-normal">
+    {
+      category.data.challenges.map((challenge) => (
+        <ChallengeComponent challenge={challenge} />
+      ))
+    }
+  </div>
 </div>
