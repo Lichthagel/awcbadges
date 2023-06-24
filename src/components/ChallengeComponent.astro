@@ -12,37 +12,51 @@ const challenge = await getEntry(Astro.props.challenge);
 if (!challenge) {
   throw new Error("Challenge not found");
 }
+
+const show = (() => {
+  if (Array.isArray(challenge.data.badge)) {
+    return challenge.data.badge.find((badge) => badge.status !== "incomplete");
+  } else {
+    return challenge.data.badge.status !== "incomplete";
+  }
+})();
 ---
 
-<!-- <a href={`/${challenge.id}`}> -->
-<a href={challenge.data.url.full} target="_blank" rel="noopener noreferrer">
-  {
-    Array.isArray(challenge.data.badge) &&
-    challenge.data.visibility !== "only-focus" ? (
-      <div class="m-1 inline-block rounded bg-ctp-mantle p-2 shadow">
-        {challenge.data.badge.map((badge) => (
-          <BadgeComponent
-            badge={badge}
-            name={badge.name}
-            size={badge.focus || challenge.data.visibility === "all" ? "large" : "small"}
-          />
-        ))}
+{
+  show && (
+    // <a href={`/${challenge.id}`}>
+    <a href={challenge.data.url.full} target="_blank" rel="noopener noreferrer">
+      {Array.isArray(challenge.data.badge) &&
+      challenge.data.visibility !== "only-focus" ? (
+        <div class="m-1 inline-block rounded bg-ctp-mantle p-2 shadow">
+          {challenge.data.badge.map((badge) => (
+            <BadgeComponent
+              badge={badge}
+              name={badge.name}
+              size={
+                badge.focus || challenge.data.visibility === "all"
+                  ? "large"
+                  : "small"
+              }
+            />
+          ))}
 
-        <h4 class="ml-auto mr-1 w-max font-light uppercase">
-          {challenge.data.name}
-        </h4>
-      </div>
-    ) : (
-      <BadgeComponent
-        badge={
-          Array.isArray(challenge.data.badge)
-          // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-            ? challenge.data.badge.find((badge) => badge.focus)!
-            : challenge.data.badge
-        }
-        name={challenge.data.name}
-        size="large"
-      />
-    )
-  }
-</a>
+          <h4 class="ml-auto mr-1 w-max font-light uppercase">
+            {challenge.data.name}
+          </h4>
+        </div>
+      ) : (
+        <BadgeComponent
+          badge={
+            Array.isArray(challenge.data.badge)
+            // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+              ? challenge.data.badge.find((badge) => badge.focus)!
+              : challenge.data.badge
+          }
+          name={challenge.data.name}
+          size="large"
+        />
+      )}
+    </a>
+  )
+}
