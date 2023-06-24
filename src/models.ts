@@ -37,7 +37,7 @@ const zChallengeSingle = zChallengeBase.extend({
     ...badge,
     focus: true,
   })),
-  all: z.undefined(),
+  visibility: z.undefined(),
 });
 
 const zChallengeMulti = zChallengeBase.extend({
@@ -58,7 +58,7 @@ const zChallengeMulti = zChallengeBase.extend({
         focus: index === idx,
       }));
     }),
-  all: z.boolean().default(true),
+  visibility: z.enum(["all", "focus-only"]).default("all"),
 });
 
 export const zChallenge = z.union([zChallengeSingle, zChallengeMulti]);
