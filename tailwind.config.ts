@@ -17,7 +17,6 @@ export default {
   plugins: [
     catppuccin({
       prefix: "ctp",
-      defaultFlavour: "latte",
     }),
   ],
 } satisfies Config;

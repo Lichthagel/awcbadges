@@ -1,5 +1,6 @@
 ---
 import CategoryComponent from "../components/CategoryComponent.astro";
+import Header from "../components/Header.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 
@@ -16,57 +17,65 @@ const mangaCategories = allCategories
 
 <BaseLayout>
   <div class="text-center">
-    <div class="px-4 text-start text-sm lg:hidden">
-      <div class="my-4 flex flex-row items-center">
-        <div
-          class="h-6 w-6 flex-shrink-0 rounded-full bg-gradient-to-br from-ctp-lavender to-ctp-mauve"
-        >
+    <Header />
+
+    <main class="container mx-auto">
+      <div class="px-4 text-start text-sm lg:hidden">
+        <div class="my-4 flex flex-row items-center">
+          <div
+            class="h-6 w-6 flex-shrink-0 rounded-full bg-gradient-to-br from-ctp-lavender to-ctp-mauve"
+          >
+          </div>
+          <div class="flex-grow pl-4">
+            <div class="font-bold">in progress</div>
+            <div>challenges i am (somewhat) regularly working on</div>
+          </div>
         </div>
-        <div class="flex-grow pl-4">
-          <div class="font-bold">in progress</div>
-          <div>challenges i am (somewhat) regularly working on</div>
+
+        <div class="my-4 flex flex-row items-center">
+          <div
+            class="h-6 w-6 flex-shrink-0 rounded-full bg-gradient-to-br from-ctp-green to-ctp-sapphire"
+          >
+          </div>
+          <div class="flex-grow pl-4">
+            <div class="font-bold">submitted</div>
+            <div>challenges i submitted for review</div>
+          </div>
+        </div>
+
+        <div class="my-4 flex flex-row items-center">
+          <div
+            class="h-6 w-6 flex-shrink-0 rounded-full bg-gradient-to-br from-ctp-red to-ctp-maroon"
+          >
+          </div>
+          <div class="flex-grow pl-4">
+            <div class="font-bold">on hold</div>
+            <div>challenges i don't plan to finish anytime soon</div>
+          </div>
         </div>
       </div>
 
-      <div class="my-4 flex flex-row items-center">
-        <div
-          class="h-6 w-6 flex-shrink-0 rounded-full bg-gradient-to-br from-ctp-green to-ctp-sapphire"
-        >
-        </div>
-        <div class="flex-grow pl-4">
-          <div class="font-bold">submitted</div>
-          <div>challenges i submitted for review</div>
-        </div>
-      </div>
+      <h1
+        class="text-gradient mx-auto my-10 w-max text-6xl font-bold uppercase"
+      >
+        Anime
+      </h1>
+      {
+        animeCategories.map((category) => (
+          <CategoryComponent category={category} />
+        ))
+      }
 
-      <div class="my-4 flex flex-row items-center">
-        <div
-          class="h-6 w-6 flex-shrink-0 rounded-full bg-gradient-to-br from-ctp-red to-ctp-maroon"
-        >
-        </div>
-        <div class="flex-grow pl-4">
-          <div class="font-bold">on hold</div>
-          <div>challenges i don't plan to finish anytime soon</div>
-        </div>
-      </div>
-    </div>
-
-    <h1 class="text-gradient mx-auto my-10 w-max text-6xl font-bold uppercase">
-      Anime
-    </h1>
-    {
-      animeCategories.map((category) => (
-        <CategoryComponent category={category} />
-      ))
-    }
-
-    <h1 class="text-gradient mx-auto my-10 w-max text-6xl font-bold uppercase">
-      Manga
-    </h1>
-    {
-      mangaCategories.map((category) => (
-        <CategoryComponent category={category} />
-      ))
-    }
+      <h1
+        class="text-gradient mx-auto my-10 w-max text-6xl font-bold uppercase"
+      >
+        Manga
+      </h1>
+      {
+        mangaCategories.map((category) => (
+          <CategoryComponent category={category} />
+        ))
+      }
+    </main>
   </div>
 </BaseLayout>

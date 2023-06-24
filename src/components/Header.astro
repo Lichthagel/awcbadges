@@ -1,0 +1,75 @@
+---
+import { getCollection } from "astro:content";
+import type { Badge } from "../models";
+import BadgeComponent from "./BadgeComponent.astro";
+
+const allChallenges = await getCollection("challenge");
+
+const badges = allChallenges.flatMap<Badge & { name: string; url: string }>(
+  (challenge) => {
+    if (Array.isArray(challenge.data.badge)) {
+      return challenge.data.badge.map((badge) => ({
+        ...badge,
+        url: badge.url?.full ?? challenge.data.url.full,
+      }));
+    } else {
+      return {
+        ...challenge.data.badge,
+        name: challenge.data.name,
+        url: challenge.data.url.full,
+      };
+    }
+  }
+);
+
+const recentlyCompleted = badges
+  .filter((badge) => badge.status === "completed")
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+  .sort((a, b) => b.completed!.valueOf() - a.completed!.valueOf())
+  .slice(0, 5);
+
+const recentlyStarted = badges
+  .filter((badge) => badge.status === "in-progress")
+  .sort((a, b) => b.started.valueOf() - a.started.valueOf())
+  .slice(0, 5);
+---
+
+<header
+  class="ctp-mocha bg-gradient-to-br from-ctp-peach to-ctp-mauve text-ctp-base dark:ctp-latte"
+>
+  <div class="container mx-auto flex h-screen flex-col justify-evenly py-5">
+    <div>
+      <h2 class="mx-auto my-5 w-max text-3xl lowercase">recently completed</h2>
+      <div class="overflow-x-scroll whitespace-nowrap lg:whitespace-normal">
+        {
+          recentlyCompleted.map((badge) => (
+            <div class="my-1 inline-block rounded py-1">
+              <a href={badge.url} target="_blank" rel="noopener noreferrer">
+                <BadgeComponent badge={badge} name={badge.name} size="large" />
+
+                <h4 class="font-light uppercase">{badge.name}</h4>
+              </a>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+
+    <div>
+      <h2 class="mx-auto my-5 w-max text-3xl lowercase">recently started</h2>
+      <div class="overflow-x-scroll whitespace-nowrap lg:whitespace-normal">
+        {
+          recentlyStarted.map((badge) => (
+            <div class="my-1 inline-block rounded py-1">
+              <a href={badge.url} target="_blank" rel="noopener noreferrer">
+                <BadgeComponent badge={badge} name={badge.name} size="large" />
+
+                <h4 class="font-light uppercase">{badge.name}</h4>
+              </a>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</header>
