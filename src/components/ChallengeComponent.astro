@@ -14,7 +14,8 @@ if (!challenge) {
 }
 ---
 
-<a href={`/${challenge.id}`}>
+<!-- <a href={`/${challenge.id}`}> -->
+<a href={challenge.data.url.full} target="_blank" rel="noopener noreferrer">
   {
     Array.isArray(challenge.data.badge) &&
     challenge.data.visibility === "all" ? (
