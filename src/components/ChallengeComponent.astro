@@ -15,7 +15,10 @@ if (!challenge) {
 
 const show = (() => {
   if (Array.isArray(challenge.data.badge)) {
-    return challenge.data.badge.find((badge) => badge.status !== "incomplete");
+    return (
+      challenge.data.badge.find((badge) => badge.status !== "incomplete") !==
+      undefined
+    );
   } else {
     return challenge.data.badge.status !== "incomplete";
   }
@@ -28,7 +31,7 @@ const show = (() => {
     <a href={challenge.data.url.full} target="_blank" rel="noopener noreferrer">
       {Array.isArray(challenge.data.badge) &&
       challenge.data.visibility !== "only-focus" ? (
-        <div class="m-1 inline-block rounded bg-ctp-mantle p-2 shadow">
+        <div class="m-1 inline-block rounded bg-ctp-mantle p-1 shadow">
           {challenge.data.badge.map((badge) => (
             <BadgeComponent
               badge={badge}
@@ -46,16 +49,20 @@ const show = (() => {
           </h4>
         </div>
       ) : (
-        <BadgeComponent
-          badge={
-            Array.isArray(challenge.data.badge)
-            // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-              ? challenge.data.badge.find((badge) => badge.focus)!
-              : challenge.data.badge
-          }
-          name={challenge.data.name}
-          size="large"
-        />
+        <div class="m-1 inline-block rounded p-1">
+          <BadgeComponent
+            badge={
+              Array.isArray(challenge.data.badge)
+              // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+                ? challenge.data.badge.find((badge) => badge.focus)!
+                : challenge.data.badge
+            }
+            name={challenge.data.name}
+            size="large"
+          />
+
+          <h4 class="w-full font-light uppercase">{challenge.data.name}</h4>
+        </div>
       )}
     </a>
   )
