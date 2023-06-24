@@ -58,7 +58,7 @@ const zChallengeMulti = zChallengeBase.extend({
         focus: index === idx,
       }));
     }),
-  visibility: z.enum(["all", "focus-only"]).default("all"),
+  visibility: z.enum(["all", "only-focus", "with-focus"]).default("with-focus"),
 });
 
 export const zChallenge = z.union([zChallengeSingle, zChallengeMulti]);

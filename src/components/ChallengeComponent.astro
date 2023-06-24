@@ -18,13 +18,13 @@ if (!challenge) {
 <a href={challenge.data.url.full} target="_blank" rel="noopener noreferrer">
   {
     Array.isArray(challenge.data.badge) &&
-    challenge.data.visibility === "all" ? (
+    challenge.data.visibility !== "only-focus" ? (
       <div class="m-1 inline-block rounded bg-ctp-mantle p-2 shadow">
         {challenge.data.badge.map((badge) => (
           <BadgeComponent
             badge={badge}
             name={badge.name}
-            size={badge.focus ? "large" : "small"}
+            size={badge.focus || challenge.data.visibility === "all" ? "large" : "small"}
           />
         ))}
 
