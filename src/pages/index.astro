@@ -1,19 +1,8 @@
 ---
-import CategoryComponent from "../components/CategoryComponent.astro";
 import Header from "../components/Header.astro";
 import Legend from "../components/Legend.astro";
+import Section from "../components/Section.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { getCollection } from "astro:content";
-
-const allCategories = await getCollection("category");
-
-const animeCategories = allCategories
-  .filter((category) => category.data.type === "anime")
-  .sort((a, b) => a.data.sortKey - b.data.sortKey);
-
-const mangaCategories = allCategories
-  .filter((category) => category.data.type === "manga")
-  .sort((a, b) => a.data.sortKey - b.data.sortKey);
 ---
 
 <BaseLayout>
@@ -23,27 +12,9 @@ const mangaCategories = allCategories
     <main class="container mx-auto">
       <Legend />
 
-      <h1
-        class="text-gradient mx-auto my-10 w-max text-6xl font-bold uppercase"
-      >
-        Anime
-      </h1>
-      {
-        animeCategories.map((category) => (
-          <CategoryComponent category={category} />
-        ))
-      }
+      <Section type="anime" />
 
-      <h1
-        class="text-gradient mx-auto my-10 w-max text-6xl font-bold uppercase"
-      >
-        Manga
-      </h1>
-      {
-        mangaCategories.map((category) => (
-          <CategoryComponent category={category} />
-        ))
-      }
+      <Section type="manga" />
     </main>
   </div>
 </BaseLayout>
