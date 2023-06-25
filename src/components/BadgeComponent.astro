@@ -42,11 +42,11 @@ const { badge, name, size } = Astro.props;
   {
     badge.status === "submitted" && (
       <>
-        <div class="lg:blockS bg-submitted absolute -bottom-3 left-1/2 -ml-14 hidden w-28 rounded py-2 text-center text-xs font-bold uppercase text-ctp-base">
+        <div class="bg-submitted absolute -bottom-3 left-1/2 -ml-14 hidden w-28 rounded py-2 text-center text-xs font-bold uppercase text-ctp-base lg:block">
           submitted
         </div>
         <div class="bg-submitted absolute -right-2 -top-2 h-4 w-4 rounded-full lg:hidden" />
-        <div class="ping bg-submitted absolute -right-2 -top-2 h-4 w-4 rounded-full lg:hidden" />
+        <div class="bg-submitted absolute -right-2 -top-2 h-4 w-4 animate-ping rounded-full lg:hidden" />
       </>
     )
   }
