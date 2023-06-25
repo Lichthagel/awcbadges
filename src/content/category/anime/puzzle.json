@@ -1,0 +1,13 @@
+{
+  "name": "Puzzle",
+  "type": "anime",
+  "challenges": [
+    "puzzle/genre-jigsaw",
+    "puzzle/double-dipping",
+    "puzzle/tag-domino",
+    "puzzle/battleship",
+    "puzzle/gomoku",
+    "puzzle/plus-minus",
+    "puzzle/tetris"
+  ]
+}

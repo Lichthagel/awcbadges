@@ -1,0 +1,24 @@
+{
+  "name": "Mahou Shoujo",
+  "url": "https://anilist.co/forum/thread/6376/comment/675383",
+  "badge": [
+    {
+      "name": "Easy Mode",
+      "image": "https://i.postimg.cc/0jrHs6Qk/Genre-Mahou-Shoujo-Easy.png",
+      "started": "2021-02-20",
+      "status": "in-progress"
+    },
+    {
+      "name": "Normal Mode",
+      "image": "https://i.postimg.cc/sx8HDVQp/Genre-Mahou-Shoujo-Normal.png",
+      "started": "2021-02-20",
+      "status": "not-started"
+    },
+    {
+      "name": "Hard Mode",
+      "image": "https://i.postimg.cc/2jXKxxcV/Genre-Mahou-Shoujo-Hard.png",
+      "started": "2021-02-20",
+      "status": "not-started"
+    }
+  ]
+}

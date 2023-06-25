@@ -1,0 +1,11 @@
+{
+  "name": "Studio Collection",
+  "type": "anime",
+  "sortKey": 10,
+  "challenges": [
+    "studio/ghibli",
+    "studio/kyoani",
+    "studio/wit",
+    "studio/madhouse"
+  ]
+}

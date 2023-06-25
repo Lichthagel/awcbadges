@@ -1,0 +1,24 @@
+{
+  "name": "Mecha",
+  "url": "https://anilist.co/forum/thread/6112/comment/675387",
+  "badge": [
+    {
+      "name": "Easy Mode",
+      "image": "https://i.postimg.cc/vHJ2JZdy/Genre-Mecha-Easy.png",
+      "started": "2021-02-20",
+      "status": "in-progress"
+    },
+    {
+      "name": "Normal Mode",
+      "image": "https://i.postimg.cc/RZwp4xMH/Genre-Mecha-Normal.png",
+      "started": "2021-02-20",
+      "status": "not-started"
+    },
+    {
+      "name": "Hard Mode",
+      "image": "https://i.postimg.cc/q70b7DRZ/Genre-Mecha-Hard.png",
+      "started": "2021-02-20",
+      "status": "not-started"
+    }
+  ]
+}

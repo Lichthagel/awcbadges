@@ -1,0 +1,21 @@
+{
+  "name": "2021 February",
+  "url": "https://anilist.co/forum/thread/23941/comment/627010",
+  "visibility": "only-focus",
+  "badge": [
+    {
+      "name": "Easy Mode",
+      "image": "https://i.postimg.cc/NFXnMG87/Monthly-2021-Febraury-Easy-Animated.png",
+      "started": "2021-02-01",
+      "completed": "2021-02-18",
+      "status": "completed"
+    },
+    {
+      "name": "Hard Mode",
+      "image": "https://i.postimg.cc/05KFZZgM/Monthly-2021-Febraury-Hard-Animated.png",
+      "started": "2021-02-01",
+      "completed": "2021-02-18",
+      "status": "completed"
+    }
+  ]
+}

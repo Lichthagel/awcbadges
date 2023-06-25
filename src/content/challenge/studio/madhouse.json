@@ -1,0 +1,19 @@
+{
+  "name": "Madhouse",
+  "release": "2021-06-18",
+  "url": "https://anilist.co/forum/thread/36321/comment/1033548",
+  "badge": [
+    {
+      "name": "Bingo!",
+      "image": "https://i.postimg.cc/wjhtDxxj/Collection-Studio-Madhouse-Line.png",
+      "started": "2021-02-18",
+      "status": "in-progress"
+    },
+    {
+      "name": "Clear the Board!",
+      "image": "https://i.postimg.cc/wBg12K3c/Collection-Studio-Madhouse-Board.png",
+      "started": "2021-02-18",
+      "status": "not-started"
+    }
+  ]
+}

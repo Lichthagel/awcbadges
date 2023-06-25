@@ -1,0 +1,34 @@
+{
+  "name": "Slice of Life",
+  "url": "https://anilist.co/forum/thread/5293/comment/675403",
+  "badge": [
+    {
+      "name": "Easy Mode",
+      "image": "https://i.postimg.cc/Qtvnj8Wc/Genre-Slice-Of-Life-Easy.png",
+      "started": "2021-02-20",
+      "completed": "2021-07-05",
+      "status": "completed"
+    },
+    {
+      "name": "Normal Mode",
+      "image": "https://i.postimg.cc/L5fQXczw/Genre-Slice-Of-Life-Normal.png",
+      "started": "2021-02-20",
+      "completed": "2021-11-03",
+      "status": "completed"
+    },
+    {
+      "name": "Hard Mode",
+      "image": "https://i.postimg.cc/SQzvDMwd/Genre-Slice-Of-Life-Hard.png",
+      "started": "2021-02-20",
+      "completed": "2022-06-26",
+      "status": "completed"
+    },
+    {
+      "name": "Mastery",
+      "url": "https://anilist.co/forum/thread/5293/comment/1848342",
+      "image": "https://i.postimg.cc/J0WMsdKf/AWC-Genre-Slice-Of-Life-Mastery-Animated.png",
+      "started": "2022-07-04",
+      "status": "in-progress"
+    }
+  ]
+}

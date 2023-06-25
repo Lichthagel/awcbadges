@@ -1,0 +1,26 @@
+{
+  "name": "Romance",
+  "url": "https://anilist.co/forum/thread/5291/comment/675398",
+  "badge": [
+    {
+      "name": "Easy Mode",
+      "image": "https://i.postimg.cc/zvRS7Tvg/Genre-Romance-Easy.png",
+      "started": "2021-02-20",
+      "completed": "2021-06-26",
+      "status": "completed"
+    },
+    {
+      "name": "Normal Mode",
+      "image": "https://i.postimg.cc/2jqPMJB4/Genre-Romance-Normal.png",
+      "started": "2021-02-20",
+      "completed": "2022-04-02",
+      "status": "completed"
+    },
+    {
+      "name": "Hard Mode",
+      "image": "https://i.postimg.cc/qB99TL8W/Genre-Romance-Hard.png",
+      "started": "2021-02-20",
+      "status": "in-progress"
+    }
+  ]
+}

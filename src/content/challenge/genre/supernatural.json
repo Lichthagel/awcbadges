@@ -1,0 +1,34 @@
+{
+  "name": "Supernatural",
+  "url": "https://anilist.co/forum/thread/6630/comment/675406",
+  "badge": [
+    {
+      "name": "Easy Mode",
+      "image": "https://i.postimg.cc/VN67Mrqj/Genre-Supernatural-Easy.png",
+      "started": "2021-02-20",
+      "completed": "2021-07-05",
+      "status": "completed"
+    },
+    {
+      "name": "Normal Mode",
+      "image": "https://i.postimg.cc/tgMBzqk8/Genre-Supernatural-Normal.png",
+      "started": "2021-02-20",
+      "completed": "2021-09-25",
+      "status": "completed"
+    },
+    {
+      "name": "Hard Mode",
+      "image": "https://i.postimg.cc/Y9Lbn5y0/Genre-Supernatural-Hard.png",
+      "started": "2021-02-20",
+      "completed": "2022-05-11",
+      "status": "completed"
+    },
+    {
+      "name": "Mastery",
+      "url": "https://anilist.co/forum/thread/6630/comment/1765248",
+      "image": "https://i.postimg.cc/7hv0fDFq/AWC-Genre-Supernatural-Mastery-Animated.png",
+      "started": "2022-05-19",
+      "status": "in-progress"
+    }
+  ]
+}

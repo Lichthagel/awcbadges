@@ -1,0 +1,22 @@
+{
+  "name": "Special",
+  "type": "anime",
+  "sortKey": -60,
+  "challenges": [
+    "special/gamblers-11",
+    "special/chinese-zodiac",
+    "special/rainbow",
+    "special/archaeologists",
+    "special/monster",
+    "special/recommendations",
+    "special/quiz",
+    "special/marathon",
+    "special/gamblers-20",
+    "special/masterpiece",
+    "special/olympic-games",
+    "special/western-zodiac",
+    "special/heros-dawn",
+    "special/community-workshop",
+    "special/hidden-gems"
+  ]
+}

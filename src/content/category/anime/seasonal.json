@@ -1,0 +1,18 @@
+{
+  "name": "Seasonal",
+  "type": "anime",
+  "sortKey": -90,
+  "challenges": [
+    "seasonal/2023-spring",
+    "seasonal/2023-winter",
+    "seasonal/2022-fall",
+    "seasonal/2022-summer",
+    "seasonal/2022-spring",
+    "seasonal/2022-winter",
+    "seasonal/2021-fall",
+    "seasonal/2021-summer",
+    "seasonal/2021-spring",
+    "seasonal/2021-winter",
+    "seasonal/2020-fall"
+  ]
+}

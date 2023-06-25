@@ -1,0 +1,19 @@
+{
+  "name": "2022 February",
+  "url": "https://anilist.co/forum/thread/50456/comment/1541898",
+  "visibility": "only-focus",
+  "badge": [
+    {
+      "name": "Easy Mode",
+      "image": "https://i.postimg.cc/t7QkSN8L/Monthly-2022-February-Easy-Static.png",
+      "started": "2022-02-01",
+      "status": "incomplete"
+    },
+    {
+      "name": "Hard Mode",
+      "image": "https://i.postimg.cc/zXTYJtDH/Monthly-2022-February-Hard-Static.png",
+      "started": "2022-02-01",
+      "status": "incomplete"
+    }
+  ]
+}

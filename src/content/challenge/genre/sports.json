@@ -1,0 +1,25 @@
+{
+  "name": "Sports",
+  "url": "https://anilist.co/forum/thread/5876/comment/675404",
+  "badge": [
+    {
+      "name": "Easy Mode",
+      "image": "https://i.postimg.cc/zXZPMfNr/Genre-Sports-Easy.png",
+      "started": "2021-02-20",
+      "completed": "2022-07-15",
+      "status": "completed"
+    },
+    {
+      "name": "Normal Mode",
+      "image": "https://i.postimg.cc/zXZPMfNr/Genre-Sports-Easy.png",
+      "started": "2021-02-20",
+      "status": "in-progress"
+    },
+    {
+      "name": "Hard Mode",
+      "image": "https://i.postimg.cc/zXZPMfNr/Genre-Sports-Easy.png",
+      "started": "2021-02-20",
+      "status": "not-started"
+    }
+  ]
+}

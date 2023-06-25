@@ -1,0 +1,26 @@
+{
+  "name": "Action",
+  "url": "https://anilist.co/forum/thread/5288/comment/675366",
+  "badge": [
+    {
+      "name": "Easy Mode",
+      "image": "https://i.postimg.cc/fLGrjzCB/Genre-Action-Easy.png",
+      "started": "2021-02-20",
+      "completed": "2021-07-13",
+      "status": "completed"
+    },
+    {
+      "name": "Normal Mode",
+      "image": "https://i.postimg.cc/RVzYW0N0/Genre-Action-Normal.png",
+      "started": "2021-02-20",
+      "completed": "2022-04-17",
+      "status": "completed"
+    },
+    {
+      "name": "Hard Mode",
+      "image": "https://i.postimg.cc/kXFpKdbv/Genre-Action-Hard.png",
+      "started": "2021-02-20",
+      "status": "in-progress"
+    }
+  ]
+}

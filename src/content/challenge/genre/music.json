@@ -1,0 +1,25 @@
+{
+  "name": "Music",
+  "url": "https://anilist.co/forum/thread/6375/comment/675391",
+  "badge": [
+    {
+      "name": "Easy Mode",
+      "image": "https://i.postimg.cc/hjt2LJVL/Genre-Music-Easy.png",
+      "started": "2021-02-20",
+      "completed": "2022-01-09",
+      "status": "completed"
+    },
+    {
+      "name": "Normal Mode",
+      "image": "https://i.postimg.cc/DZpBB2ct/Genre-Music-Normal.png",
+      "started": "2021-02-20",
+      "status": "in-progress"
+    },
+    {
+      "name": "Hard Mode",
+      "image": "https://i.postimg.cc/GtBzfZ79/Genre-Music-Hard.png",
+      "started": "2021-02-20",
+      "status": "not-started"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "2022 January",
+  "url": "https://anilist.co/forum/thread/48908/comment/1483030",
+  "visibility": "only-focus",
+  "badge": [
+    {
+      "name": "Easy Mode",
+      "image": "https://i.postimg.cc/05LM2qqm/Monthly-2022-January-Easy-Animated.png",
+      "started": "2022-01-01",
+      "completed": "2022-01-15",
+      "status": "completed"
+    },
+    {
+      "name": "Hard Mode",
+      "image": "https://i.postimg.cc/kgyBc6RF/Monthly-2022-January-Hard-Animated.png",
+      "started": "2022-01-01",
+      "completed": "2022-01-15",
+      "status": "completed"
+    }
+  ]
+}

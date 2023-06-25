@@ -1,0 +1,25 @@
+{
+  "name": "Adventure",
+  "url": "https://anilist.co/forum/thread/6111/comment/675370",
+  "badge": [
+    {
+      "name": "Easy Mode",
+      "image": "https://i.postimg.cc/xTR6qyws/Genre-Adventure-Easy.png",
+      "started": "2021-02-20",
+      "completed": "2021-12-16",
+      "status": "completed"
+    },
+    {
+      "name": "Normal Mode",
+      "image": "https://i.postimg.cc/wBSVnWNB/Genre-Adventure-Normal.png",
+      "started": "2021-02-20",
+      "status": "in-progress"
+    },
+    {
+      "name": "Hard Mode",
+      "image": "https://i.postimg.cc/NFtxj5pq/Genre-Adventure-Hard.png",
+      "started": "2021-02-20",
+      "status": "not-started"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Sci-Fi",
+  "url": "https://anilist.co/forum/thread/5292/comment/675400",
+  "badge": [
+    {
+      "name": "Easy Mode",
+      "image": "https://i.postimg.cc/pXz3XFCr/Genre-Sci-Fi-Easy.png",
+      "started": "2021-02-20",
+      "completed": "2021-11-03",
+      "status": "completed"
+    },
+    {
+      "name": "Normal Mode",
+      "image": "https://i.postimg.cc/CKL2N6gn/Genre-Sci-Fi-Normal.png",
+      "started": "2021-02-20",
+      "status": "in-progress"
+    },
+    {
+      "name": "Hard Mode",
+      "image": "https://i.postimg.cc/261Kpb3z/Genre-Sci-Fi-Hard.png",
+      "started": "2021-02-20",
+      "status": "not-started"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Legend Collection",
+  "type": "anime",
+  "sortKey": 10,
+  "challenges": [
+    "legend/satoshi-kon",
+    "legend/makoto-shinkai",
+    "legend/isao-takahata",
+    "legend/kunihiko-ikuhara",
+    "legend/mitsuru-adachi"
+  ]
+}

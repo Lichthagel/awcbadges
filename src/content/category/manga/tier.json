@@ -1,0 +1,6 @@
+{
+  "name": "Tier",
+  "type": "manga",
+  "sortKey": -70,
+  "challenges": ["tier/manga-beginner", "tier/manga-intermediate"]
+}

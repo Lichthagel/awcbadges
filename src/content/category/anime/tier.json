@@ -1,0 +1,10 @@
+{
+  "name": "Tier",
+  "type": "anime",
+  "sortKey": -70,
+  "challenges": [
+    "tier/anime-beginner",
+    "tier/anime-intermediate",
+    "tier/anime-advanced"
+  ]
+}

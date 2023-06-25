@@ -1,0 +1,14 @@
+{
+  "name": "Special",
+  "type": "manga",
+  "sortKey": -60,
+  "challenges": [
+    "special/explorer",
+    "special/recommendations",
+    "special/space-adventurer",
+    "special/manga-lottery",
+    "special/art-n-artists",
+    "special/formula-1",
+    "special/light-novel"
+  ]
+}

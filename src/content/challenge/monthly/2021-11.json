@@ -1,0 +1,21 @@
+{
+  "name": "2021 November",
+  "url": "https://anilist.co/forum/thread/45832/comment/1360769",
+  "visibility": "only-focus",
+  "badge": [
+    {
+      "name": "Easy Mode",
+      "image": "https://i.postimg.cc/xdy7KjVx/Monthly-2021-November-Easy-Animated.png",
+      "started": "2021-11-01",
+      "completed": "2021-11-30",
+      "status": "completed"
+    },
+    {
+      "name": "Hard Mode",
+      "image": "https://i.postimg.cc/HnjhDQcR/Monthly-2021-November-Hard-Animated.png",
+      "started": "2021-11-01",
+      "completed": "2021-11-30",
+      "status": "completed"
+    }
+  ]
+}

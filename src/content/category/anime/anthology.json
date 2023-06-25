@@ -1,0 +1,6 @@
+{
+  "name": "Anthology Collection",
+  "type": "anime",
+  "sortKey": 10,
+  "challenges": ["anthology/jafc"]
+}

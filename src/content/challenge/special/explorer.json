@@ -1,0 +1,28 @@
+{
+  "name": "Explorer",
+  "release": "2019-11-08",
+  "url": "https://anilist.co/forum/thread/9960/comment/636520",
+  "visibility": "all",
+  "badge": [
+    {
+      "name": "Field Path",
+      "image": "https://i.postimg.cc/9Q8CgnNp/Special-Explorers-Field.png",
+      "started": "2021-02-04",
+      "completed": "2021-10-07",
+      "status": "completed"
+    },
+    {
+      "name": "Mountain Path",
+      "image": "https://i.postimg.cc/HksT2g3n/Special-Explorers-Mountain.png",
+      "started": "2021-02-04",
+      "completed": "2021-07-17",
+      "status": "completed"
+    },
+    {
+      "name": "Ocean Path",
+      "image": "https://i.postimg.cc/5tX1hShM/Special-Explorers-Ocean.png",
+      "started": "2021-02-04",
+      "status": "in-progress"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Studio Ghibli",
+  "release": "2019-04-26",
+  "url": "https://anilist.co/forum/thread/7284/comment/671732",
+  "badge": [
+    {
+      "name": "Bingo!",
+      "image": "https://i.postimg.cc/W4L2Bx0Z/Collection-Studio-Studio-Ghibli-Line.png",
+      "started": "2021-02-18",
+      "status": "in-progress"
+    },
+    {
+      "name": "Clear the Board!",
+      "image": "https://i.postimg.cc/fbcwD5vr/Collection-Studio-Studio-Ghibli-Board.png",
+      "started": "2021-02-18",
+      "status": "not-started"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Wit Studio",
+  "release": "2020-06-26",
+  "url": "https://anilist.co/forum/thread/13775/comment/671810",
+  "badge": [
+    {
+      "name": "Bingo!",
+      "image": "https://i.postimg.cc/RhF91mxk/Collection-Studio-Wit-Studio-Line.png",
+      "started": "2021-02-18",
+      "completed": "2021-02-18",
+      "status": "completed"
+    },
+    {
+      "name": "Clear the Board!",
+      "image": "https://i.postimg.cc/NGJQsK1B/Collection-Studio-Wit-Studio-Board.png",
+      "started": "2021-02-18",
+      "status": "in-progress"
+    }
+  ]
+}

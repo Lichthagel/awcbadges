@@ -1,0 +1,19 @@
+{
+  "name": "Franchise Collection",
+  "type": "anime",
+  "sortKey": 10,
+  "challenges": [
+    "franchise/monogatari",
+    "franchise/jojo",
+    "franchise/initial-d",
+    "franchise/higurashi",
+    "franchise/gintama",
+    "franchise/love-live",
+    "franchise/evangelion",
+    "franchise/cardcaptor-sakura",
+    "franchise/aria",
+    "franchise/urusei-yatsura",
+    "franchise/precure",
+    "franchise/inuyasha"
+  ]
+}

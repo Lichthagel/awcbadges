@@ -1,0 +1,27 @@
+{
+  "name": "Monthly",
+  "type": "anime",
+  "sortKey": -100,
+  "challenges": [
+    "monthly/2022-07",
+    "monthly/2022-06",
+    "monthly/2022-05",
+    "monthly/2022-04",
+    "monthly/2022-03",
+    "monthly/2022-02",
+    "monthly/2022-01",
+    "monthly/2021-12",
+    "monthly/2021-11",
+    "monthly/2021-10",
+    "monthly/2021-09",
+    "monthly/2021-08",
+    "monthly/2021-07",
+    "monthly/2021-06",
+    "monthly/2021-05",
+    "monthly/2021-04",
+    "monthly/2021-03",
+    "monthly/2021-02",
+    "monthly/2021-01",
+    "monthly/2020-12"
+  ]
+}

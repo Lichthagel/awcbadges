@@ -1,0 +1,21 @@
+{
+  "name": "Space Adventurer",
+  "release": "2020-08-21",
+  "url": "https://anilist.co/forum/thread/16045/comment/674315",
+  "visibility": "all",
+  "badge": [
+    {
+      "name": "Voyager Path",
+      "image": "https://i.postimg.cc/cJPZ08Wt/Special-Space-Adventurers-Voyager.png",
+      "started": "2021-02-20",
+      "completed": "2021-03-11",
+      "status": "completed"
+    },
+    {
+      "name": "Invader Path",
+      "image": "https://i.postimg.cc/rF98xm17/Special-Space-Adventurers-Invader.png",
+      "started": "2021-03-15",
+      "status": "in-progress"
+    }
+  ]
+}

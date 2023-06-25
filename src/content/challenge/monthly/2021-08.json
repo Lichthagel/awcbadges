@@ -1,0 +1,21 @@
+{
+  "name": "2021 August",
+  "url": "https://anilist.co/forum/thread/39659/comment/1149536",
+  "visibility": "only-focus",
+  "badge": [
+    {
+      "name": "Easy Mode",
+      "image": "https://i.postimg.cc/C1JsBqTQ/Monthly-2021-August-Easy-Animated.png",
+      "started": "2021-08-01",
+      "completed": "2021-08-30",
+      "status": "completed"
+    },
+    {
+      "name": "Hard Mode",
+      "image": "https://i.postimg.cc/pLD85FKJ/Monthly-2021-August-Hard-Animated.png",
+      "started": "2021-08-01",
+      "completed": "2021-08-30",
+      "status": "completed"
+    }
+  ]
+}

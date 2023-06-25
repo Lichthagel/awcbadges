@@ -1,0 +1,24 @@
+{
+  "name": "Manga City",
+  "type": "manga",
+  "sortKey": -100,
+  "challenges": [
+    "manga-city/school",
+    "manga-city/museum",
+    "manga-city/beach",
+    "manga-city/cemetery",
+    "manga-city/airport",
+    "manga-city/casino",
+    "manga-city/office",
+    "manga-city/amusement-park",
+    "manga-city/garage",
+    "manga-city/konbini",
+    "manga-city/onsen",
+    "manga-city/military-base",
+    "manga-city/hospital",
+    "manga-city/park",
+    "manga-city/home",
+    "manga-city/construction-site",
+    "manga-city/mall"
+  ]
+}

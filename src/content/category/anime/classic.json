@@ -1,0 +1,17 @@
+{
+  "name": "Classic",
+  "type": "anime",
+  "sortKey": -80,
+  "challenges": [
+    "classic/pioneers",
+    "classic/retro",
+    "classic/2014",
+    "classic/2015",
+    "classic/2016",
+    "classic/2017",
+    "classic/2018",
+    "classic/2019",
+    "classic/2020",
+    "classic/2021"
+  ]
+}

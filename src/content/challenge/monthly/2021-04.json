@@ -1,0 +1,21 @@
+{
+  "name": "2021 April",
+  "url": "https://anilist.co/forum/thread/29066/comment/788740",
+  "visibility": "only-focus",
+  "badge": [
+    {
+      "name": "Easy Mode",
+      "image": "https://i.postimg.cc/sxzYYVdJ/Monthly-2021-April-Easy-Animated.png",
+      "started": "2021-04-02",
+      "completed": "2021-04-30",
+      "status": "completed"
+    },
+    {
+      "name": "Hard Mode",
+      "image": "https://i.postimg.cc/kGyxwk7P/Monthly-2021-April-Hard-Animated.png",
+      "started": "2021-04-02",
+      "completed": "2021-04-30",
+      "status": "completed"
+    }
+  ]
+}

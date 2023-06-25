@@ -1,0 +1,25 @@
+{
+  "name": "Ecchi",
+  "url": "https://anilist.co/forum/thread/6631/comment/675377",
+  "badge": [
+    {
+      "name": "Easy Mode",
+      "image": "https://i.postimg.cc/HW3MyZL7/Genre-Ecchi-Easy.png",
+      "started": "2021-02-20",
+      "completed": "2021-05-05",
+      "status": "completed"
+    },
+    {
+      "name": "Normal Mode",
+      "image": "https://i.postimg.cc/yYdZXmJp/Genre-Ecchi-Normal.png",
+      "started": "2021-02-20",
+      "status": "in-progress"
+    },
+    {
+      "name": "Hard Mode",
+      "image": "https://i.postimg.cc/QxyW6F18/Genre-Ecchi-Hard.png",
+      "started": "2021-02-20",
+      "status": "not-started"
+    }
+  ]
+}

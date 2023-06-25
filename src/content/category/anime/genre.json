@@ -1,0 +1,24 @@
+{
+  "name": "Genre",
+  "type": "anime",
+  "challenges": [
+    "genre/action",
+    "genre/adventure",
+    "genre/comedy",
+    "genre/drama",
+    "genre/ecchi",
+    "genre/fantasy",
+    "genre/hentai",
+    "genre/horror",
+    "genre/mahou-shoujo",
+    "genre/mecha",
+    "genre/music",
+    "genre/mystery",
+    "genre/thriller",
+    "genre/romance",
+    "genre/scifi",
+    "genre/sol",
+    "genre/sports",
+    "genre/supernatural"
+  ]
+}
