@@ -1,6 +1,7 @@
 {
   "name": "Puzzle",
   "type": "anime",
+  "sortKey": -10,
   "challenges": [
     "puzzle/genre-jigsaw",
     "puzzle/double-dipping",
