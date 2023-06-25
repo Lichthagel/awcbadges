@@ -18,4 +18,8 @@
   .bg-on-hold {
     @apply bg-gradient-to-br from-ctp-red to-ctp-maroon;
   }
+
+  .bg-completed {
+    @apply bg-gradient-to-br from-ctp-teal to-ctp-green;
+  }
 }
