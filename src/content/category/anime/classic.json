@@ -5,6 +5,7 @@
   "challenges": [
     "classic/pioneers",
     "classic/retro",
+    "classic/2013",
     "classic/2014",
     "classic/2015",
     "classic/2016",
@@ -12,6 +13,7 @@
     "classic/2018",
     "classic/2019",
     "classic/2020",
-    "classic/2021"
+    "classic/2021",
+    "classic/2022"
   ]
 }

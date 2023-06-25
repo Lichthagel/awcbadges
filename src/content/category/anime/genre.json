@@ -14,11 +14,11 @@
     "genre/mecha",
     "genre/music",
     "genre/mystery",
-    "genre/thriller",
     "genre/romance",
     "genre/scifi",
     "genre/sol",
     "genre/sports",
-    "genre/supernatural"
+    "genre/supernatural",
+    "genre/thriller"
   ]
 }
