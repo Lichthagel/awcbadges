@@ -1,13 +1,20 @@
 ---
-import { getCollection } from "astro:content";
+import { CollectionEntry, getCollection } from "astro:content";
 import type { Badge } from "../models";
 import BadgeComponent from "./BadgeComponent.astro";
 import { Icon } from "astro-icon";
 
+const allCategories = await getCollection("category");
+
 const allChallenges = await getCollection("challenge");
 
 const badges = allChallenges.flatMap<
-  Badge & { challengeName: string; url: string; badgeName?: string }
+  Badge & {
+    challengeName: string;
+    url: string;
+    badgeName?: string;
+    id: CollectionEntry<"challenge">["id"];
+  }
 >((challenge) => {
   if (Array.isArray(challenge.data.badge)) {
     return challenge.data.badge.map((badge) => ({
@@ -15,12 +22,14 @@ const badges = allChallenges.flatMap<
       challengeName: challenge.data.name,
       badgeName: badge.name,
       url: badge.url?.full ?? challenge.data.url.full,
+      id: challenge.id,
     }));
   } else {
     return {
       ...challenge.data.badge,
       challengeName: challenge.data.name,
       url: challenge.data.url.full,
+      id: challenge.id,
     };
   }
 });
@@ -29,12 +38,30 @@ const recentlyCompleted = badges
   .filter((badge) => badge.status === "completed")
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   .sort((a, b) => b.completed!.valueOf() - a.completed!.valueOf())
-  .slice(0, 5);
+  .slice(0, 5)
+  .map((badge) => ({
+    ...badge,
+    category: allCategories.find(
+      (category) =>
+        category.data.challenges.find(
+          (challenge) => challenge.id === badge.id
+        ) !== undefined
+    )?.data.name,
+  }));
 
 const recentlyStarted = badges
   .filter((badge) => badge.status === "in-progress")
   .sort((a, b) => b.started.valueOf() - a.started.valueOf())
-  .slice(0, 5);
+  .slice(0, 5)
+  .map((badge) => ({
+    ...badge,
+    category: allCategories.find(
+      (category) =>
+        category.data.challenges.find(
+          (challenge) => challenge.id === badge.id
+        ) !== undefined
+    )?.data.name,
+  }));
 ---
 
 <header
@@ -56,6 +83,7 @@ const recentlyStarted = badges
                   size="large"
                 />
 
+                <div class="text-sm font-light">{badge.category}</div>
                 <h4 class="font-light">{badge.challengeName}</h4>
                 <div class="text-xs font-extralight">
                   {badge.badgeName ?? "\u00a0"}
@@ -86,6 +114,7 @@ const recentlyStarted = badges
                   size="large"
                 />
 
+                <div class="text-sm font-light">{badge.category}</div>
                 <h4 class="font-light">{badge.challengeName}</h4>
                 <div class="text-xs font-extralight">
                   {badge.badgeName ?? "\u00a0"}
