@@ -8,4 +8,5 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
   ],
+  site: "https://badges.lichthagel.de",
 });
