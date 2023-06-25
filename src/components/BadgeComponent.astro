@@ -30,11 +30,11 @@ const { badge, name, size } = Astro.props;
   {
     badge.status === "in-progress" && (
       <>
-        <div class="absolute -bottom-3 left-1/2 -ml-14 hidden w-28 rounded bg-gradient-to-br from-ctp-lavender to-ctp-mauve py-2 text-center text-xs font-bold uppercase text-ctp-base lg:block">
+        <div class="bg-in-progress absolute -bottom-3 left-1/2 -ml-14 hidden w-28 rounded py-2 text-center text-xs font-bold uppercase text-ctp-base lg:block">
           in progress
         </div>
-        <div class="absolute -right-2 -top-2 h-4 w-4 rounded-full bg-gradient-to-br from-ctp-lavender to-ctp-mauve lg:hidden" />
-        <div class="absolute -right-2 -top-2 h-4 w-4 animate-ping rounded-full bg-gradient-to-br from-ctp-lavender to-ctp-mauve lg:hidden" />
+        <div class="bg-in-progress absolute -right-2 -top-2 h-4 w-4 rounded-full lg:hidden" />
+        <div class="bg-in-progress absolute -right-2 -top-2 h-4 w-4 animate-ping rounded-full lg:hidden" />
       </>
     )
   }
@@ -42,11 +42,11 @@ const { badge, name, size } = Astro.props;
   {
     badge.status === "submitted" && (
       <>
-        <div class="lg:blockS absolute -bottom-3 left-1/2 -ml-14 hidden w-28 rounded bg-gradient-to-br from-ctp-green to-ctp-sapphire py-2 text-center text-xs font-bold uppercase text-ctp-base">
+        <div class="lg:blockS bg-submitted absolute -bottom-3 left-1/2 -ml-14 hidden w-28 rounded py-2 text-center text-xs font-bold uppercase text-ctp-base">
           submitted
         </div>
-        <div class="absolute -right-2 -top-2 h-4 w-4 rounded-full bg-gradient-to-br from-ctp-green to-ctp-sapphire lg:hidden" />
-        <div class="ping absolute -right-2 -top-2 h-4 w-4 rounded-full bg-gradient-to-br from-ctp-green to-ctp-sapphire lg:hidden" />
+        <div class="bg-submitted absolute -right-2 -top-2 h-4 w-4 rounded-full lg:hidden" />
+        <div class="ping bg-submitted absolute -right-2 -top-2 h-4 w-4 rounded-full lg:hidden" />
       </>
     )
   }
@@ -54,10 +54,10 @@ const { badge, name, size } = Astro.props;
   {
     badge.status === "on-hold" && (
       <>
-        <div class="absolute -bottom-3 left-1/2 -ml-14 hidden w-28 rounded bg-gradient-to-br from-ctp-red to-ctp-peach py-2 text-center text-xs font-bold uppercase text-ctp-base lg:block">
+        <div class="bg-on-hold absolute -bottom-3 left-1/2 -ml-14 hidden w-28 rounded py-2 text-center text-xs font-bold uppercase text-ctp-base lg:block">
           on hold
         </div>
-        <div class="absolute -right-2 -top-2 h-4 w-4 rounded-full bg-gradient-to-br from-ctp-red to-ctp-maroon lg:hidden" />
+        <div class="bg-on-hold absolute -right-2 -top-2 h-4 w-4 rounded-full lg:hidden" />
       </>
     )
   }

@@ -4,6 +4,18 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-ctp-mauve to-ctp-flamingo;
+    @apply bg-gradient-to-r from-ctp-mauve to-ctp-flamingo bg-clip-text text-transparent;
+  }
+
+  .bg-in-progress {
+    @apply bg-gradient-to-br from-ctp-lavender to-ctp-mauve;
+  }
+
+  .bg-submitted {
+    @apply bg-gradient-to-br from-ctp-green to-ctp-sapphire;
+  }
+
+  .bg-on-hold {
+    @apply bg-gradient-to-br from-ctp-red to-ctp-maroon;
   }
 }
