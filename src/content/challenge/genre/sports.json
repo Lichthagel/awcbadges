@@ -11,13 +11,13 @@
     },
     {
       "name": "Normal Mode",
-      "image": "https://i.postimg.cc/zXZPMfNr/Genre-Sports-Easy.png",
+      "image": "https://i.postimg.cc/gkVBPPc6/Genre-Sports-Normal.png",
       "started": "2021-02-20",
       "status": "in-progress"
     },
     {
       "name": "Hard Mode",
-      "image": "https://i.postimg.cc/zXZPMfNr/Genre-Sports-Easy.png",
+      "image": "https://i.postimg.cc/cLdkx56k/Genre-Sports-Hard.png",
       "started": "2021-02-20",
       "status": "not-started"
     }
