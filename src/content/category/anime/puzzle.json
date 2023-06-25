@@ -8,6 +8,7 @@
     "puzzle/battleship",
     "puzzle/gomoku",
     "puzzle/plus-minus",
-    "puzzle/tetris"
+    "puzzle/tetris",
+    "puzzle/chain"
   ]
 }
