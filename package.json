@@ -19,7 +19,7 @@
     "astro-icon": "^0.8.1",
     "date-fns": "^2.30.0",
     "eslint": "^8.43.0",
-    "eslint-config-lichthagel": "link:..\\eslint-config-lichthagel",
+    "eslint-config-lichthagel": "github:lichthagel/eslint-config-lichthagel",
     "eslint-plugin-astro": "^0.27.2",
     "marked": "^5.1.0",
     "prettier": "^2.8.8",
