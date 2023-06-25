@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <div class="text-center">
+    <textarea
+      id="input"
+      rows="50"
+      class="h-[99vh] w-[45%] resize-none bg-ctp-crust"></textarea>
+    <textarea
+      id="output"
+      rows="50"
+      class="h-[99vh] w-[45%] resize-none bg-ctp-crust"></textarea>
+  </div>
+</BaseLayout>
+
+<script>
+  const header =
+    "<center>img70%(banner)\n\nChallenge Start Date: %START% // Challenge Finish Date: YYYY-MM-DD\n\nLegend: [✅] = Completed / [▶️] = Current / [❌️] = Not Completed</center>\n\n<hr>";
+
+  const input = document.getElementById("input") as HTMLTextAreaElement | null;
+  const output = document.getElementById(
+    "output"
+  ) as HTMLTextAreaElement | null;
+
+  input?.addEventListener("input", (event) => {
+    if (!event.target) return;
+    const target = event.target as HTMLTextAreaElement;
+    let text = target.value;
+
+    text = text.replace(/^[^<]*<hr>/, header);
+    text = text.replace(/\[O\]/g, "[❌️]");
+    text = text.replace(/\[.*_Title\]\(.*\)/g, "");
+    text = text.replace(
+      /\[.*\]\(https:\/\/anilist.co\/(anime|manga)\/([^/()]*\/?)\)/g,
+      "https://anilist.co/$1/$2"
+    );
+
+    text = text.replace("%START%", new Date().toISOString().split("T")[0]);
+
+    if (output) {
+      output.value = text;
+    }
+  });
+</script>
