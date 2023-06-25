@@ -16,24 +16,22 @@ const badges = allChallenges.flatMap<
     badgeName?: string;
     id: CollectionEntry<"challenge">["id"];
   }
->((challenge) => {
-  if (Array.isArray(challenge.data.badge)) {
-    return challenge.data.badge.map((badge) => ({
-      ...badge,
-      challengeName: challenge.data.name,
-      badgeName: badge.name,
-      url: badge.url?.full ?? challenge.data.url.full,
-      id: challenge.id,
-    }));
-  } else {
-    return {
-      ...challenge.data.badge,
-      challengeName: challenge.data.name,
-      url: challenge.data.url.full,
-      id: challenge.id,
-    };
-  }
-});
+>((challenge) =>
+  Array.isArray(challenge.data.badge)
+    ? challenge.data.badge.map((badge) => ({
+        ...badge,
+        challengeName: challenge.data.name,
+        badgeName: badge.name,
+        url: badge.url?.full ?? challenge.data.url.full,
+        id: challenge.id,
+      }))
+    : {
+        ...challenge.data.badge,
+        challengeName: challenge.data.name,
+        url: challenge.data.url.full,
+        id: challenge.id,
+      }
+);
 
 const recentlyCompleted = badges
   .filter((badge) => badge.status === "completed")
@@ -42,11 +40,8 @@ const recentlyCompleted = badges
   .slice(0, 5)
   .map((badge) => ({
     ...badge,
-    category: allCategories.find(
-      (category) =>
-        category.data.challenges.find(
-          (challenge) => challenge.id === badge.id
-        ) !== undefined
+    category: allCategories.find((category) =>
+      category.data.challenges.some((challenge) => challenge.id === badge.id)
     )?.data.name,
   }));
 
@@ -56,11 +51,8 @@ const recentlyStarted = badges
   .slice(0, 5)
   .map((badge) => ({
     ...badge,
-    category: allCategories.find(
-      (category) =>
-        category.data.challenges.find(
-          (challenge) => challenge.id === badge.id
-        ) !== undefined
+    category: allCategories.find((category) =>
+      category.data.challenges.some((challenge) => challenge.id === badge.id)
     )?.data.name,
   }));
 ---
@@ -87,7 +79,7 @@ const recentlyStarted = badges
                 <div class="text-sm font-light">{badge.category}</div>
                 <h4 class="font-light">{badge.challengeName}</h4>
                 <div class="text-xs font-extralight">
-                  {badge.badgeName ?? "\u00a0"}
+                  {badge.badgeName ?? "\u00A0"}
                 </div>
                 <div class="text-xs font-extralight">
                   <Icon name="lucide:check" class="inline-block h-4 w-4" />
@@ -118,7 +110,7 @@ const recentlyStarted = badges
                 <div class="text-sm font-light">{badge.category}</div>
                 <h4 class="font-light">{badge.challengeName}</h4>
                 <div class="text-xs font-extralight">
-                  {badge.badgeName ?? "\u00a0"}
+                  {badge.badgeName ?? "\u00A0"}
                 </div>
                 <div class="text-xs font-extralight">
                   <Icon name="lucide:play" class="inline-block h-4 w-4" />

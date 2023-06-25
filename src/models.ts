@@ -19,10 +19,10 @@ export type Badge = z.infer<typeof zBadge>;
 const zThreadCommentUrl = z
   .string()
   .url()
-  .regex(/https:\/\/anilist\.co\/forum\/thread\/([0-9]+)\/comment\/([0-9]+)/)
+  .regex(/https:\/\/anilist\.co\/forum\/thread\/(\d+)\/comment\/(\d+)/)
   .transform((url) => {
     const match = url.match(
-      /https:\/\/anilist\.co\/forum\/thread\/([0-9]+)\/comment\/([0-9]+)/
+      /https:\/\/anilist\.co\/forum\/thread\/(\d+)\/comment\/(\d+)/
     );
 
     if (!match) {
@@ -30,8 +30,8 @@ const zThreadCommentUrl = z
     }
 
     return {
-      thread: parseInt(match[1]),
-      comment: parseInt(match[2]),
+      thread: Number.parseInt(match[1]),
+      comment: Number.parseInt(match[2]),
       full: url,
     };
   });
@@ -58,11 +58,11 @@ const zChallengeMulti = zChallengeBase.extend({
     .transform((badges) => {
       let idx = 0;
 
-      badges.forEach((badge, index) => {
+      for (const [index, badge] of badges.entries()) {
         if (badge.status === "completed") {
           idx = index;
         }
-      });
+      }
 
       return badges.map((badge, index) => ({
         ...badge,

@@ -13,16 +13,10 @@ if (!challenge) {
   throw new Error("Challenge not found");
 }
 
-const show = (() => {
-  if (Array.isArray(challenge.data.badge)) {
-    return (
-      challenge.data.badge.find((badge) => badge.status !== "incomplete") !==
-      undefined
-    );
-  } else {
-    return challenge.data.badge.status !== "incomplete";
-  }
-})();
+const show = (() =>
+  Array.isArray(challenge.data.badge)
+    ? challenge.data.badge.some((badge) => badge.status !== "incomplete")
+    : challenge.data.badge.status !== "incomplete")();
 ---
 
 {

@@ -6,8 +6,8 @@ type Props = {
 import { z } from "astro:content";
 import marked from "../marked";
 
-const regex =
-  /(\d+)\)\s*\[([^\]]*)\]\s*__([^_\n]*)__\s*\nhttps:\/\/anilist\.co\/(anime|manga)\/(\d+)\/\nStart: (\d\d\d\d-\d\d-\d\d) Finish: (\d\d\d\d-\d\d-\d\d)/g;
+// const regex =
+//   /(\d+)\)\s*\[([^\]]*)]\s*__([^\n_]*)__\s*\nhttps:\/\/anilist\.co\/(anime|manga)\/(\d+)\/\nStart: (\d\d\d\d-\d\d-\d\d) Finish: (\d\d\d\d-\d\d-\d\d)/g;
 
 const { commentId } = Astro.props;
 

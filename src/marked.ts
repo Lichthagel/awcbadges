@@ -13,4 +13,4 @@ marked.use({
   headerIds: false,
 });
 
-export default marked;
+export { marked as default } from "marked";
