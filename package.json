@@ -17,6 +17,7 @@
     "@typescript-eslint/parser": "^5.60.0",
     "astro": "^2.7.0",
     "astro-icon": "^0.8.1",
+    "date-fns": "^2.30.0",
     "eslint": "^8.43.0",
     "eslint-config-lichthagel": "link:..\\eslint-config-lichthagel",
     "eslint-plugin-astro": "^0.27.2",

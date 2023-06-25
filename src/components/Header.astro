@@ -3,6 +3,7 @@ import { CollectionEntry, getCollection } from "astro:content";
 import type { Badge } from "../models";
 import BadgeComponent from "./BadgeComponent.astro";
 import { Icon } from "astro-icon";
+import { format } from "date-fns";
 
 const allCategories = await getCollection("category");
 
@@ -90,7 +91,7 @@ const recentlyStarted = badges
                 </div>
                 <div class="text-xs font-extralight">
                   <Icon name="lucide:check" class="inline-block h-4 w-4" />
-                  on {badge.completed?.toLocaleDateString()}
+                  on {format(badge.completed ?? 0, "yyyy-MM-dd")}
                 </div>
               </a>
             </div>
@@ -121,7 +122,7 @@ const recentlyStarted = badges
                 </div>
                 <div class="text-xs font-extralight">
                   <Icon name="lucide:play" class="inline-block h-4 w-4" />
-                  on {badge.started.toLocaleDateString()}
+                  on {format(badge.started, "yyyy-MM-dd")}
                 </div>
               </a>
             </div>
