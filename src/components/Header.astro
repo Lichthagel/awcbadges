@@ -16,22 +16,36 @@ const badges = allChallenges.flatMap<
     badgeName?: string;
     id: CollectionEntry<"challenge">["id"];
   }
->((challenge) =>
-  Array.isArray(challenge.data.badge)
-    ? challenge.data.badge.map((badge) => ({
+>((challenge) => {
+  if (Array.isArray(challenge.data.badge)) {
+    if (challenge.data.visibility === "only-focus") {
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      const badge = challenge.data.badge.find((badge) => badge.focus)!;
+
+      return {
         ...badge,
         challengeName: challenge.data.name,
         badgeName: badge.name,
         url: badge.url?.full ?? challenge.data.url.full,
         id: challenge.id,
-      }))
-    : {
-        ...challenge.data.badge,
-        challengeName: challenge.data.name,
-        url: challenge.data.url.full,
-        id: challenge.id,
-      }
-);
+      };
+    }
+
+    return challenge.data.badge.map((badge) => ({
+      ...badge,
+      challengeName: challenge.data.name,
+      badgeName: badge.name,
+      url: badge.url?.full ?? challenge.data.url.full,
+      id: challenge.id,
+    }));
+  } else
+    return {
+      ...challenge.data.badge,
+      challengeName: challenge.data.name,
+      url: challenge.data.url.full,
+      id: challenge.id,
+    };
+});
 
 const recentlyCompleted = badges
   .filter((badge) => badge.status === "completed")
