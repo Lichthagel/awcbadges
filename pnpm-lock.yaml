@@ -34,7 +34,7 @@ dependencies:
     version: 8.44.0
   eslint-config-lichthagel:
     specifier: github:lichthagel/eslint-config-lichthagel
-    version: github.com/lichthagel/eslint-config-lichthagel/1cd3e7053941d62139c3a52c65787160bd973fbb(eslint@8.44.0)(typescript@5.1.6)
+    version: github.com/lichthagel/eslint-config-lichthagel/9a3b34517573a0ca4f475c060bc25cbd038816b2(eslint@8.44.0)(typescript@5.1.6)
   eslint-plugin-astro:
     specifier: ^0.27.2
     version: 0.27.2(eslint@8.44.0)
@@ -991,7 +991,7 @@ packages:
   /@vscode/emmet-helper@2.9.2:
     resolution: {integrity: sha512-MaGuyW+fa13q3aYsluKqclmh62Hgp0BpKIqS66fCxfOaBcVQ1OnMQxRRgQUYnCkxFISAQlkJ0qWWPyXjro1Qrg==}
     dependencies:
-      emmet: 2.4.4
+      emmet: 2.4.5
       jsonc-parser: 2.3.1
       vscode-languageserver-textdocument: 1.0.8
       vscode-languageserver-types: 3.17.3
@@ -1254,7 +1254,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.9
-      caniuse-lite: 1.0.30001509
+      caniuse-lite: 1.0.30001511
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -1341,7 +1341,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001509
+      caniuse-lite: 1.0.30001511
       electron-to-chromium: 1.4.447
       node-releases: 2.0.12
       update-browserslist-db: 1.0.11(browserslist@4.21.9)
@@ -1401,8 +1401,8 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /caniuse-lite@1.0.30001509:
-    resolution: {integrity: sha512-2uDDk+TRiTX5hMcUYT/7CSyzMZxjfGu0vAUjS2g0LSD8UoXOv0LtpH4LxGMemsiPq6LCVIUjNwVM0erkOkGCDA==}
+  /caniuse-lite@1.0.30001511:
+    resolution: {integrity: sha512-NaWPJawcoedlghN4P7bDNeADD7K+rZaY6V8ZcME7PkEZo/nfOg+lnrUgRWiKbNxcQ4/toFKSxnS4WdbyPZnKkw==}
     dev: false
 
   /ccount@2.0.1:
@@ -1759,8 +1759,8 @@ packages:
     resolution: {integrity: sha512-sxX0LXh+uL41hSJsujAN86PjhrV/6c79XmpY0TvjZStV6VxIgarf8SRkUoUTuYmFcZQTemsoqo8qXOGw5npWfw==}
     dev: false
 
-  /emmet@2.4.4:
-    resolution: {integrity: sha512-v8Mwpjym55CS3EjJgiCLWUB3J2HSR93jhzXW325720u8KvYxdI2voYLstW3pHBxFz54H6jFjayR9G4LfTG0q+g==}
+  /emmet@2.4.5:
+    resolution: {integrity: sha512-xOiVNINJFh0dMik+KzXSEYbAnFLTnadEzanxj7+F15uIf6avQwu3uPa1wI/8AFtOWKZ8lHg7TjC83wXcPhgOPw==}
     dependencies:
       '@emmetio/abbreviation': 2.3.3
       '@emmetio/css-abbreviation': 2.1.8
@@ -1942,7 +1942,7 @@ packages:
       eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.60.1)(eslint-import-resolver-node@0.3.7)(eslint-import-resolver-typescript@3.5.5)(eslint@8.44.0)
       eslint-plugin-import: /eslint-plugin-i@2.27.5-3(@typescript-eslint/parser@5.60.1)(eslint-import-resolver-typescript@3.5.5)(eslint@8.44.0)
       get-tsconfig: 4.6.2
-      globby: 13.2.0
+      globby: 13.2.1
       is-core-module: 2.12.1
       is-glob: 4.0.3
       synckit: 0.8.5
@@ -2510,8 +2510,8 @@ packages:
       slash: 3.0.0
     dev: false
 
-  /globby@13.2.0:
-    resolution: {integrity: sha512-jWsQfayf13NvqKUIL3Ta+CIqMnvlaIDFveWE/dpOZ9+3AMEJozsxDvKA02zync9UuvOM8rOXzsD5GqKP4OnWPQ==}
+  /globby@13.2.1:
+    resolution: {integrity: sha512-DPCBxctI7dN4EeIqjW2KGqgdcUMbrhJ9AzON+PlxCtvppWhubTLD4+a0GFxiym14ZvacUydTPjLPc2DlKz7EIg==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       dir-glob: 3.0.1
@@ -5192,9 +5192,9 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: false
 
-  github.com/lichthagel/eslint-config-lichthagel/1cd3e7053941d62139c3a52c65787160bd973fbb(eslint@8.44.0)(typescript@5.1.6):
-    resolution: {tarball: https://codeload.github.com/lichthagel/eslint-config-lichthagel/tar.gz/1cd3e7053941d62139c3a52c65787160bd973fbb}
-    id: github.com/lichthagel/eslint-config-lichthagel/1cd3e7053941d62139c3a52c65787160bd973fbb
+  github.com/lichthagel/eslint-config-lichthagel/9a3b34517573a0ca4f475c060bc25cbd038816b2(eslint@8.44.0)(typescript@5.1.6):
+    resolution: {tarball: https://codeload.github.com/lichthagel/eslint-config-lichthagel/tar.gz/9a3b34517573a0ca4f475c060bc25cbd038816b2}
+    id: github.com/lichthagel/eslint-config-lichthagel/9a3b34517573a0ca4f475c060bc25cbd038816b2
     name: eslint-config-lichthagel
     version: 1.0.0
     peerDependencies:
