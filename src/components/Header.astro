@@ -60,7 +60,7 @@ const recentlyCompleted = badges
   }));
 
 const recentlyStarted = badges
-  .filter((badge) => badge.status === "in-progress")
+  .filter((badge) => badge.status !== "completed")
   .sort((a, b) => b.started.valueOf() - a.started.valueOf())
   .slice(0, 5)
   .map((badge) => ({
