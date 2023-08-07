@@ -20,6 +20,11 @@
       "image": "https://i.postimg.cc/QxyW6F18/Genre-Ecchi-Hard.png",
       "started": "2021-02-20",
       "status": "not-started"
+    },
+    {
+      "name": "Mastery",
+      "image": "https://i.postimg.cc/ZnjFWX4n/AWC-Genre-Ecchi-Mastery-Animated.png",
+      "status": "hidden"
     }
   ]
 }

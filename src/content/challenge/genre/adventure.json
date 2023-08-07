@@ -21,6 +21,11 @@
       "image": "https://i.postimg.cc/NFtxj5pq/Genre-Adventure-Hard.png",
       "started": "2021-02-20",
       "status": "in-progress"
+    },
+    {
+      "name": "Mastery",
+      "image": "https://i.postimg.cc/vH9rGqgX/AWC-Genre-Adventure-Mastery-Animated.png",
+      "status": "hidden"
     }
   ]
 }

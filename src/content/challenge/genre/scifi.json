@@ -20,6 +20,10 @@
       "image": "https://i.postimg.cc/261Kpb3z/Genre-Sci-Fi-Hard.png",
       "started": "2021-02-20",
       "status": "not-started"
+    },
+    {
+      "name": "Mastery",
+      "status": "hidden"
     }
   ]
 }

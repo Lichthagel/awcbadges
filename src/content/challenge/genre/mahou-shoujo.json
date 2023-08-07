@@ -19,6 +19,11 @@
       "image": "https://i.postimg.cc/2jXKxxcV/Genre-Mahou-Shoujo-Hard.png",
       "started": "2021-02-20",
       "status": "not-started"
+    },
+    {
+      "name": "Mastery",
+      "image": "https://i.postimg.cc/0jrrC47b/AWC-Genre-Mahou-Shoujo-Mastery-Animated.png",
+      "status": "hidden"
     }
   ]
 }

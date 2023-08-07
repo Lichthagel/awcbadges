@@ -20,6 +20,11 @@
       "image": "https://i.postimg.cc/GtBzfZ79/Genre-Music-Hard.png",
       "started": "2021-02-20",
       "status": "not-started"
+    },
+    {
+      "name": "Mastery",
+      "image": "https://i.postimg.cc/sf82rwp4/AWC-Genre-Music-Mastery-Animated.png",
+      "status": "hidden"
     }
   ]
 }

@@ -20,6 +20,11 @@
       "image": "https://i.postimg.cc/j5Mkm6R3/Genre-Horror-Hard.png",
       "started": "2021-02-20",
       "status": "not-started"
+    },
+    {
+      "name": "Mastery",
+      "image": "https://i.postimg.cc/7Lv7Zq0X/AWC-Genre-Horror-Mastery-Animated.png",
+      "status": "hidden"
     }
   ]
 }

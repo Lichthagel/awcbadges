@@ -22,6 +22,10 @@
       "image": "https://i.postimg.cc/50ymHhMp/Genre-Psych-Thriller-Hard.png",
       "started": "2021-02-20",
       "status": "in-progress"
+    },
+    {
+      "name": "Mastery",
+      "status": "hidden"
     }
   ]
 }

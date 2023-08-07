@@ -20,6 +20,10 @@
       "image": "https://i.postimg.cc/cLdkx56k/Genre-Sports-Hard.png",
       "started": "2021-02-20",
       "status": "not-started"
+    },
+    {
+      "name": "Mastery",
+      "status": "hidden"
     }
   ]
 }

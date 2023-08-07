@@ -21,6 +21,10 @@
       "image": "https://i.postimg.cc/YS1Gq8V0/Genre-Fantasy-Hard.png",
       "started": "2021-02-20",
       "status": "in-progress"
+    },
+    {
+      "name": "Mastery",
+      "status": "hidden"
     }
   ]
 }
