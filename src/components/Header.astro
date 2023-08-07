@@ -1,6 +1,6 @@
 ---
 import { CollectionEntry, getCollection } from "astro:content";
-import type { Badge } from "../models";
+import type { Badge, BadgeFinished, BadgeOngoing } from "../models";
 import BadgeComponent from "./BadgeComponent.astro";
 import { Icon } from "astro-icon";
 import { format } from "date-fns";
@@ -9,14 +9,14 @@ const allCategories = await getCollection("category");
 
 const allChallenges = await getCollection("challenge");
 
-const badges = allChallenges.flatMap<
-  Badge & {
-    challengeName: string;
-    url: string;
-    badgeName?: string;
-    id: CollectionEntry<"challenge">["id"];
-  }
->((challenge) => {
+type BadgeExt<T> = T & {
+  challengeName: string;
+  url: string;
+  badgeName?: string;
+  id: CollectionEntry<"challenge">["id"];
+};
+
+const badges = allChallenges.flatMap<BadgeExt<Badge>>((challenge) => {
   if (Array.isArray(challenge.data.badge)) {
     if (challenge.data.visibility === "only-focus") {
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
@@ -48,25 +48,31 @@ const badges = allChallenges.flatMap<
 });
 
 const recentlyCompleted = badges
-  .filter((badge) => badge.status === "completed")
+  // eslint-disable-next-line unicorn/no-array-callback-reference
+  .filter(
+    (badge): badge is BadgeExt<BadgeFinished> => badge.status === "completed",
+  )
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-  .sort((a, b) => b.completed!.valueOf() - a.completed!.valueOf())
+  .sort((a, b) => b.completed.valueOf() - a.completed.valueOf())
   .slice(0, 5)
   .map((badge) => ({
     ...badge,
     category: allCategories.find((category) =>
-      category.data.challenges.some((challenge) => challenge.id === badge.id)
+      category.data.challenges.some((challenge) => challenge.id === badge.id),
     )?.data.name,
   }));
 
 const recentlyStarted = badges
-  .filter((badge) => badge.status !== "completed")
+  .filter(
+    (badge: BadgeExt<Badge>): badge is BadgeExt<BadgeOngoing> =>
+      badge.status === "in-progress" || badge.status === "on-hold",
+  )
   .sort((a, b) => b.started.valueOf() - a.started.valueOf())
   .slice(0, 5)
   .map((badge) => ({
     ...badge,
     category: allCategories.find((category) =>
-      category.data.challenges.some((challenge) => challenge.id === badge.id)
+      category.data.challenges.some((challenge) => challenge.id === badge.id),
     )?.data.name,
   }));
 ---

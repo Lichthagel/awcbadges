@@ -1,28 +1,12 @@
 import { reference, z } from "astro:content";
 
-const zBadge = z.object({
-  image: z.string().url().optional(),
-  started: z.coerce.date(),
-  completed: z.coerce.date().optional(),
-  status: z.enum([
-    "in-progress",
-    "submitted",
-    "completed",
-    "incomplete",
-    "not-started",
-    "on-hold",
-  ]),
-});
-
-export type Badge = z.infer<typeof zBadge>;
-
 const zThreadCommentUrl = z
   .string()
   .url()
   .regex(/https:\/\/anilist\.co\/forum\/thread\/(\d+)\/comment\/(\d+)/)
   .transform((url) => {
     const match = url.match(
-      /https:\/\/anilist\.co\/forum\/thread\/(\d+)\/comment\/(\d+)/
+      /https:\/\/anilist\.co\/forum\/thread\/(\d+)\/comment\/(\d+)/,
     );
 
     if (!match) {
@@ -35,6 +19,64 @@ const zThreadCommentUrl = z
       full: url,
     };
   });
+
+const zBadgeBase = z.object({
+  image: z.string().url().optional(),
+});
+
+const zBadgeMultiBase = zBadgeBase.extend({
+  name: z.string(),
+  url: zThreadCommentUrl.optional().optional(),
+});
+
+const zBadgePreparedImpl = z.object({
+  status: z.literal("not-started"),
+});
+
+const zBadgePrepared = zBadgeBase.merge(zBadgePreparedImpl);
+
+export type BadgePrepared = z.infer<typeof zBadgePrepared>;
+
+const zBadgeMultiPrepared = zBadgeMultiBase.merge(zBadgePreparedImpl);
+
+const zBadgeOngoingImpl = z.object({
+  started: z.coerce.date(),
+  status: z.enum(["in-progress", "incomplete", "on-hold"]),
+});
+
+const zBadgeOngoing = zBadgeBase.merge(zBadgeOngoingImpl);
+
+export type BadgeOngoing = z.infer<typeof zBadgeOngoing>;
+
+const zBadgeMultiOngoing = zBadgeMultiBase.merge(zBadgeOngoingImpl);
+
+const zBadgeFinishedImpl = z.object({
+  started: z.coerce.date(),
+  completed: z.coerce.date(),
+  status: z.enum(["submitted", "completed"]),
+});
+
+const zBadgeFinished = zBadgeBase.merge(zBadgeFinishedImpl);
+
+export type BadgeFinished = z.infer<typeof zBadgeFinished>;
+
+const zBadgeMultiFinished = zBadgeMultiBase.merge(zBadgeFinishedImpl);
+
+const zBadge = z.discriminatedUnion("status", [
+  zBadgePrepared,
+  zBadgeOngoing,
+  zBadgeFinished,
+]);
+
+const zBadgeMulti = z.discriminatedUnion("status", [
+  zBadgeMultiPrepared,
+  zBadgeMultiOngoing,
+  zBadgeMultiFinished,
+]);
+
+export type Badge = z.infer<typeof zBadge>;
+
+export type BadgeMulti = z.infer<typeof zBadgeMulti>;
 
 const zChallengeBase = z.object({
   name: z.string(),
@@ -51,9 +93,7 @@ const zChallengeSingle = zChallengeBase.extend({
 
 const zChallengeMulti = zChallengeBase.extend({
   badge: z
-    .array(
-      zBadge.extend({ name: z.string(), url: zThreadCommentUrl.optional() })
-    )
+    .array(zBadgeMulti)
     .nonempty()
     .transform((badges) => {
       let idx = 0;
