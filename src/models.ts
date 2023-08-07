@@ -30,7 +30,7 @@ const zBadgeMultiBase = zBadgeBase.extend({
 });
 
 const zBadgePreparedImpl = z.object({
-  status: z.literal("not-started"),
+  status: z.enum(["not-started", "hidden"]),
 });
 
 const zBadgePrepared = zBadgeBase.merge(zBadgePreparedImpl);

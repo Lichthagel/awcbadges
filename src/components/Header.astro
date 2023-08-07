@@ -16,36 +16,38 @@ type BadgeExt<T> = T & {
   id: CollectionEntry<"challenge">["id"];
 };
 
-const badges = allChallenges.flatMap<BadgeExt<Badge>>((challenge) => {
-  if (Array.isArray(challenge.data.badge)) {
-    if (challenge.data.visibility === "only-focus") {
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-      const badge = challenge.data.badge.find((badge) => badge.focus)!;
+const badges = allChallenges
+  .flatMap<BadgeExt<Badge>>((challenge) => {
+    if (Array.isArray(challenge.data.badge)) {
+      if (challenge.data.visibility === "only-focus") {
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+        const badge = challenge.data.badge.find((badge) => badge.focus)!;
 
-      return {
+        return {
+          ...badge,
+          challengeName: challenge.data.name,
+          badgeName: badge.name,
+          url: badge.url?.full ?? challenge.data.url.full,
+          id: challenge.id,
+        };
+      }
+
+      return challenge.data.badge.map((badge) => ({
         ...badge,
         challengeName: challenge.data.name,
         badgeName: badge.name,
         url: badge.url?.full ?? challenge.data.url.full,
         id: challenge.id,
+      }));
+    } else
+      return {
+        ...challenge.data.badge,
+        challengeName: challenge.data.name,
+        url: challenge.data.url.full,
+        id: challenge.id,
       };
-    }
-
-    return challenge.data.badge.map((badge) => ({
-      ...badge,
-      challengeName: challenge.data.name,
-      badgeName: badge.name,
-      url: badge.url?.full ?? challenge.data.url.full,
-      id: challenge.id,
-    }));
-  } else
-    return {
-      ...challenge.data.badge,
-      challengeName: challenge.data.name,
-      url: challenge.data.url.full,
-      id: challenge.id,
-    };
-});
+  })
+  .filter((badge) => badge.status !== "hidden");
 
 const recentlyCompleted = badges
   // eslint-disable-next-line unicorn/no-array-callback-reference
