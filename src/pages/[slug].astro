@@ -47,12 +47,14 @@ const { challenge } = Astro.props;
 
                 <div>
                   <span>Started: </span>
-                  {format(badge.started, "yyyy-MM-dd")}
+                  {"started" in badge
+                    ? format(badge.started, "yyyy-MM-dd")
+                    : "Not started"}
                 </div>
 
                 <div>
                   <span>Completed: </span>
-                  {badge.completed
+                  {"completed" in badge
                     ? format(badge.completed, "yyyy-MM-dd")
                     : "Not completed"}
                 </div>
