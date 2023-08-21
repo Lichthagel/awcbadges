@@ -37,7 +37,7 @@ dependencies:
     version: 8.47.0
   eslint-config-lichthagel:
     specifier: github:lichthagel/eslint-config-lichthagel
-    version: github.com/lichthagel/eslint-config-lichthagel/9a3b34517573a0ca4f475c060bc25cbd038816b2(eslint@8.47.0)(typescript@5.1.6)
+    version: git/github.com+lichthagel/eslint-config-lichthagel/9a3b34517573a0ca4f475c060bc25cbd038816b2(eslint@8.47.0)(typescript@5.1.6)
   eslint-plugin-astro:
     specifier: ^0.28.0
     version: 0.28.0(eslint@8.47.0)
@@ -45,8 +45,8 @@ dependencies:
     specifier: ^2.32.4
     version: 2.32.4(eslint@8.47.0)(svelte@4.2.0)
   marked:
-    specifier: ^7.0.3
-    version: 7.0.3
+    specifier: ^7.0.4
+    version: 7.0.4
   prettier:
     specifier: ^3.0.2
     version: 3.0.2
@@ -3599,8 +3599,8 @@ packages:
     resolution: {integrity: sha512-Z1NL3Tb1M9wH4XESsCDEksWoKTdlUafKc4pt0GRwjUyXaCFZ+dc3g2erqB6zm3szA2IUSi7VnPI+o/9jnxh9hw==}
     dev: false
 
-  /marked@7.0.3:
-    resolution: {integrity: sha512-ev2uM40p0zQ/GbvqotfKcSWEa59fJwluGZj5dcaUOwDRrB1F3dncdXy8NWUApk4fi8atU3kTBOwjyjZ0ud0dxw==}
+  /marked@7.0.4:
+    resolution: {integrity: sha512-t8eP0dXRJMtMvBojtkcsA7n48BkauktUKzfkPSCq85ZMTJ0v76Rke4DYz01omYpPTUh4p/f7HePgRo3ebG8+QQ==}
     engines: {node: '>= 16'}
     hasBin: true
     dev: false
@@ -5854,9 +5854,9 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: false
 
-  github.com/lichthagel/eslint-config-lichthagel/9a3b34517573a0ca4f475c060bc25cbd038816b2(eslint@8.47.0)(typescript@5.1.6):
-    resolution: {tarball: https://codeload.github.com/lichthagel/eslint-config-lichthagel/tar.gz/9a3b34517573a0ca4f475c060bc25cbd038816b2}
-    id: github.com/lichthagel/eslint-config-lichthagel/9a3b34517573a0ca4f475c060bc25cbd038816b2
+  git/github.com+lichthagel/eslint-config-lichthagel/9a3b34517573a0ca4f475c060bc25cbd038816b2(eslint@8.47.0)(typescript@5.1.6):
+    resolution: {commit: 9a3b34517573a0ca4f475c060bc25cbd038816b2, repo: git@github.com:lichthagel/eslint-config-lichthagel.git, type: git}
+    id: git@github.com+lichthagel/eslint-config-lichthagel/9a3b34517573a0ca4f475c060bc25cbd038816b2
     name: eslint-config-lichthagel
     version: 1.0.0
     peerDependencies:
