@@ -18,5 +18,7 @@
         "bradlc.vscode-tailwindcss"
       ]
     }
-  }
+  },
+  "runArgs": ["--userns=keep-id"],
+  "containerUser": "vscode"
 }
