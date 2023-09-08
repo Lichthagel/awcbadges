@@ -14,7 +14,7 @@ dependencies:
   '@catppuccin/tailwindcss':
     specifier: ^0.1.6
     version: 0.1.6(tailwindcss@3.3.3)
-  '@fontsource-variable/readex-pro':
+  '@fontsource-variable/sora':
     specifier: ^5.0.8
     version: 5.0.8
   '@types/marked':
@@ -854,8 +854,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: false
 
-  /@fontsource-variable/readex-pro@5.0.8:
-    resolution: {integrity: sha512-hl1pW5gcDtKxufNLf7Tjxw3uUO/kp/dfK0UmiZlCNZqyOQI/awvVtsOXcAHceU4BhnRsoVf8QYvR95SSidBC6g==}
+  /@fontsource-variable/sora@5.0.8:
+    resolution: {integrity: sha512-/KAMDJwGk4XPyLrawqN4u+fvKqgs21eg9j81OcFULs2P7+In35dwF5XQbgRaoUa7Jq+chrFTgg+LLmy8q9x2Pw==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.11:

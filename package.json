@@ -13,7 +13,7 @@
     "@astrojs/svelte": "^4.0.1",
     "@astrojs/tailwind": "^5.0.0",
     "@catppuccin/tailwindcss": "^0.1.6",
-    "@fontsource-variable/readex-pro": "^5.0.8",
+    "@fontsource-variable/sora": "^5.0.8",
     "@types/marked": "^5.0.1",
     "@typescript-eslint/parser": "^6.6.0",
     "astro": "^3.0.10",

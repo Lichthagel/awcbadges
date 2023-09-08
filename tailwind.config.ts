@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Readex Pro Variable", ...defaultTheme.fontFamily.sans],
+        sans: ["Sora Variable", ...defaultTheme.fontFamily.sans],
       },
     },
   },
