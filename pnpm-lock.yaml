@@ -7,10 +7,10 @@ settings:
 dependencies:
   '@astrojs/svelte':
     specifier: ^4.0.2
-    version: 4.0.2(astro@3.1.1)(svelte@4.2.0)(typescript@5.2.2)(vite@4.4.9)
+    version: 4.0.2(astro@3.1.2)(svelte@4.2.0)(typescript@5.2.2)(vite@4.4.9)
   '@astrojs/tailwind':
     specifier: ^5.0.0
-    version: 5.0.0(astro@3.1.1)(tailwindcss@3.3.3)
+    version: 5.0.0(astro@3.1.2)(tailwindcss@3.3.3)
   '@catppuccin/tailwindcss':
     specifier: ^0.1.6
     version: 0.1.6(tailwindcss@3.3.3)
@@ -24,8 +24,8 @@ dependencies:
     specifier: ^6.7.2
     version: 6.7.2(eslint@8.49.0)(typescript@5.2.2)
   astro:
-    specifier: ^3.1.1
-    version: 3.1.1
+    specifier: ^3.1.2
+    version: 3.1.2
   astro-icon:
     specifier: ^0.8.1
     version: 0.8.1
@@ -37,7 +37,7 @@ dependencies:
     version: 8.49.0
   eslint-config-lichthagel:
     specifier: github:lichthagel/eslint-config-lichthagel
-    version: github.com/lichthagel/eslint-config-lichthagel/9a3b34517573a0ca4f475c060bc25cbd038816b2(eslint@8.49.0)(typescript@5.2.2)
+    version: git/github.com+lichthagel/eslint-config-lichthagel/9a3b34517573a0ca4f475c060bc25cbd038816b2(eslint@8.49.0)(typescript@5.2.2)
   eslint-plugin-astro:
     specifier: ^0.29.0
     version: 0.29.0(eslint@8.49.0)
@@ -101,13 +101,13 @@ packages:
     resolution: {integrity: sha512-NQ4ppp1CM0HNkKbJNM4saVSfmUYzGlRalF6wx7F6T/MYHYSWGuojY89/oFTy4t8VlOGUCUijlsVNNeziWaUo5g==}
     dev: false
 
-  /@astrojs/markdown-remark@3.2.0(astro@3.1.1):
+  /@astrojs/markdown-remark@3.2.0(astro@3.1.2):
     resolution: {integrity: sha512-jigyLfefUZPKgVmmraCkVpdUuFH1R3SrpgQO13axsgwLDBgkggaQpNR5Ag4O9PDualeBtbdt30aYSfvnBKx9Hg==}
     peerDependencies:
       astro: ^3.1.0
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.1.1
+      astro: 3.1.2
       github-slugger: 2.0.0
       import-meta-resolve: 3.0.0
       mdast-util-definitions: 6.0.0
@@ -132,7 +132,7 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/svelte@4.0.2(astro@3.1.1)(svelte@4.2.0)(typescript@5.2.2)(vite@4.4.9):
+  /@astrojs/svelte@4.0.2(astro@3.1.2)(svelte@4.2.0)(typescript@5.2.2)(vite@4.4.9):
     resolution: {integrity: sha512-XB9Sexq+iW5aUpctDk6zuKHbWIAuPlAnZKbfgaS9VOaOUtx1t12crP9YoKEVcTifXYgoRuWWfeEAm2I8pYlLIQ==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
@@ -140,7 +140,7 @@ packages:
       svelte: ^3.55.0 || ^4.0.0
     dependencies:
       '@sveltejs/vite-plugin-svelte': 2.4.6(svelte@4.2.0)(vite@4.4.9)
-      astro: 3.1.1
+      astro: 3.1.2
       svelte: 4.2.0
       svelte2tsx: 0.6.22(svelte@4.2.0)(typescript@5.2.2)
     transitivePeerDependencies:
@@ -149,13 +149,13 @@ packages:
       - vite
     dev: false
 
-  /@astrojs/tailwind@5.0.0(astro@3.1.1)(tailwindcss@3.3.3):
+  /@astrojs/tailwind@5.0.0(astro@3.1.2)(tailwindcss@3.3.3):
     resolution: {integrity: sha512-bMZZNNm/SW+ijUKMQDhdiuNWDdR3CubEKUHb2Ran4Arx1ikWn/kKIkFDXUV+MUnsLa7s19x9VMRlARRyKbqMkQ==}
     peerDependencies:
       astro: ^3.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 3.1.1
+      astro: 3.1.2
       autoprefixer: 10.4.15(postcss@8.4.30)
       postcss: 8.4.30
       postcss-load-config: 4.0.1(postcss@8.4.30)
@@ -164,8 +164,8 @@ packages:
       - ts-node
     dev: false
 
-  /@astrojs/telemetry@3.0.1:
-    resolution: {integrity: sha512-7zJMuikRDQ0LLLivteu0+y4pqdgznrChFiRrY3qmKlOEkLWD1T3u1a5M970lvpErP7Vgh4P298JBPjv8LTj+sw==}
+  /@astrojs/telemetry@3.0.2:
+    resolution: {integrity: sha512-ef+jqCkqopCzjGfsMsr+8p56Nj6F9ZzouWcWZt+dKsqbRccI3c8K3jfkLcdq4AyfFZtKBDB6N4ZuI68g33oiOg==}
     engines: {node: '>=18.14.1'}
     dependencies:
       ci-info: 3.8.0
@@ -1461,15 +1461,15 @@ packages:
       svgo: 2.8.0
     dev: false
 
-  /astro@3.1.1:
-    resolution: {integrity: sha512-KLtzCcLiQEsoWHJO0vQ5QZ/9/80P3cUuBeIkl87YezRkzs3Am0kuzfeGLumb6OOcrR2W0AZGlVlS0ub+q/yiaA==}
+  /astro@3.1.2:
+    resolution: {integrity: sha512-9rlKyk6Qmw50Pc188+ey7JAEYBsJGh5an46AXGPMHIdEkH6YOc4b2z9Rr+TNF8QmM/U+C2ZQFRVQyCKU4i8/pg==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
       '@astrojs/compiler': 2.1.0
       '@astrojs/internal-helpers': 0.2.0
-      '@astrojs/markdown-remark': 3.2.0(astro@3.1.1)
-      '@astrojs/telemetry': 3.0.1
+      '@astrojs/markdown-remark': 3.2.0(astro@3.1.2)
+      '@astrojs/telemetry': 3.0.2
       '@babel/core': 7.22.20
       '@babel/generator': 7.22.15
       '@babel/parser': 7.22.16
@@ -6167,9 +6167,9 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: false
 
-  github.com/lichthagel/eslint-config-lichthagel/9a3b34517573a0ca4f475c060bc25cbd038816b2(eslint@8.49.0)(typescript@5.2.2):
-    resolution: {tarball: https://codeload.github.com/lichthagel/eslint-config-lichthagel/tar.gz/9a3b34517573a0ca4f475c060bc25cbd038816b2}
-    id: github.com/lichthagel/eslint-config-lichthagel/9a3b34517573a0ca4f475c060bc25cbd038816b2
+  git/github.com+lichthagel/eslint-config-lichthagel/9a3b34517573a0ca4f475c060bc25cbd038816b2(eslint@8.49.0)(typescript@5.2.2):
+    resolution: {commit: 9a3b34517573a0ca4f475c060bc25cbd038816b2, repo: git@github.com:lichthagel/eslint-config-lichthagel.git, type: git}
+    id: git@github.com+lichthagel/eslint-config-lichthagel/9a3b34517573a0ca4f475c060bc25cbd038816b2
     name: eslint-config-lichthagel
     version: 1.0.0
     peerDependencies:
