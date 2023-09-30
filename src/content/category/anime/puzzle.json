@@ -11,6 +11,7 @@
     "puzzle/plus-minus",
     "puzzle/tetris",
     "puzzle/chain",
-    "puzzle/sudoku"
+    "puzzle/sudoku",
+    "puzzle/board-game"
   ]
 }
