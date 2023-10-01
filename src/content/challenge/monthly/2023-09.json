@@ -7,13 +7,13 @@
       "name": "Easy Mode",
       "image": "https://i.postimg.cc/vBthN1XP/Monthly-2023-September-Easy-Static.png",
       "started": "2023-09-01",
-      "status": "in-progress"
+      "status": "incomplete"
     },
     {
       "name": "Hard Mode",
       "image": "https://i.postimg.cc/T19DxgWs/Monthly-2023-September-Hard-Static.png",
       "started": "2023-09-01",
-      "status": "in-progress"
+      "status": "incomplete"
     }
   ]
 }
