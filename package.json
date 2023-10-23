@@ -13,7 +13,7 @@
     "@astrojs/svelte": "^4.0.3",
     "@astrojs/tailwind": "^5.0.2",
     "@catppuccin/tailwindcss": "^0.1.6",
-    "@fontsource-variable/sora": "^5.0.14",
+    "@fontsource-variable/sora": "^5.0.15",
     "@types/marked": "^6.0.0",
     "@typescript-eslint/parser": "^6.8.0",
     "astro": "^3.3.2",
