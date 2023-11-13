@@ -16,7 +16,7 @@
     "@fontsource-variable/sora": "^5.0.15",
     "@types/marked": "^6.0.0",
     "@typescript-eslint/parser": "^6.10.0",
-    "astro": "^3.5.0",
+    "astro": "^3.5.3",
     "astro-icon": "^0.8.1",
     "date-fns": "^2.30.0",
     "eslint": "^8.53.0",
