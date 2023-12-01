@@ -1,0 +1,19 @@
+{
+  "name": "2023 December",
+  "url": "https://anilist.co/forum/thread/69917/comment/2465649",
+  "visibility": "only-focus",
+  "badge": [
+    {
+      "name": "Easy Mode",
+      "image": "https://i.postimg.cc/kXKN5W0g/Monthly-2023-December-Easy-Static.png",
+      "started": "2023-12-01",
+      "status": "in-progress"
+    },
+    {
+      "name": "Hard Mode",
+      "image": "https://i.postimg.cc/jqNn6tZ8/Monthly-2023-December-Hard-Static.png",
+      "started": "2023-12-01",
+      "status": "in-progress"
+    }
+  ]
+}
