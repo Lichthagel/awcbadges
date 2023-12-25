@@ -7,10 +7,10 @@ settings:
 dependencies:
   '@astrojs/svelte':
     specifier: ^5.0.1
-    version: 5.0.1(astro@4.0.6)(svelte@4.2.8)(typescript@5.3.3)(vite@5.0.10)
+    version: 5.0.1(astro@4.0.7)(svelte@4.2.8)(typescript@5.3.3)(vite@5.0.10)
   '@astrojs/tailwind':
     specifier: ^5.0.3
-    version: 5.0.3(astro@4.0.6)(tailwindcss@3.3.6)
+    version: 5.0.3(astro@4.0.7)(tailwindcss@3.3.6)
   '@catppuccin/tailwindcss':
     specifier: ^0.1.6
     version: 0.1.6(tailwindcss@3.3.6)
@@ -24,8 +24,8 @@ dependencies:
     specifier: ^6.14.0
     version: 6.14.0(eslint@8.56.0)(typescript@5.3.3)
   astro:
-    specifier: ^4.0.6
-    version: 4.0.6(typescript@5.3.3)
+    specifier: ^4.0.7
+    version: 4.0.7(typescript@5.3.3)
   astro-icon:
     specifier: ^0.8.2
     version: 0.8.2
@@ -129,7 +129,7 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/svelte@5.0.1(astro@4.0.6)(svelte@4.2.8)(typescript@5.3.3)(vite@5.0.10):
+  /@astrojs/svelte@5.0.1(astro@4.0.7)(svelte@4.2.8)(typescript@5.3.3)(vite@5.0.10):
     resolution: {integrity: sha512-MQvm0VmkiHVBb41hkKvQKtZa2YZqImdJD23dDW6EGhFxRy1GEgJ4Hm6p4T30FXrLPQUoiay/BU5U/lHDd6ZlNg==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
@@ -137,7 +137,7 @@ packages:
       svelte: ^4.0.0 || ^5.0.0-next.1
     dependencies:
       '@sveltejs/vite-plugin-svelte': 3.0.1(svelte@4.2.8)(vite@5.0.10)
-      astro: 4.0.6(typescript@5.3.3)
+      astro: 4.0.7(typescript@5.3.3)
       svelte: 4.2.8
       svelte2tsx: 0.6.27(svelte@4.2.8)(typescript@5.3.3)
     transitivePeerDependencies:
@@ -146,13 +146,13 @@ packages:
       - vite
     dev: false
 
-  /@astrojs/tailwind@5.0.3(astro@4.0.6)(tailwindcss@3.3.6):
+  /@astrojs/tailwind@5.0.3(astro@4.0.7)(tailwindcss@3.3.6):
     resolution: {integrity: sha512-p+uFa1PNuV8RxhGkPUFgVq8CUbmS3xr0u5k1An2xKECLotRh7vsrGcPUijHvYOt42URohcg8rIq0CxNoVMhReg==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.0.6(typescript@5.3.3)
+      astro: 4.0.7(typescript@5.3.3)
       autoprefixer: 10.4.16(postcss@8.4.32)
       postcss: 8.4.32
       postcss-load-config: 4.0.2(postcss@8.4.32)
@@ -1347,8 +1347,8 @@ packages:
       svgo: 2.8.0
     dev: false
 
-  /astro@4.0.6(typescript@5.3.3):
-    resolution: {integrity: sha512-P7CfFqWKzkJozzF6IoOC6qoI2ONndV8P3ULhGDgMiXPL7xVkWI5haTBSpyrcjBx643tVXspIRsSV/v+Cx+CjGw==}
+  /astro@4.0.7(typescript@5.3.3):
+    resolution: {integrity: sha512-K+Ms2AAQvi6yERPuglcI69tnHyTT44JCjzqprSjw3uOwFX7N9obpLgbhmLMH1fPFTgzt3ZD7APjmtDPN51makw==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
@@ -1393,7 +1393,7 @@ packages:
       mime: 3.0.0
       ora: 7.0.1
       p-limit: 5.0.0
-      p-queue: 7.4.1
+      p-queue: 8.0.1
       path-to-regexp: 6.2.1
       preferred-pm: 3.1.2
       probe-image-size: 7.2.3
@@ -4343,17 +4343,17 @@ packages:
       p-limit: 3.1.0
     dev: false
 
-  /p-queue@7.4.1:
-    resolution: {integrity: sha512-vRpMXmIkYF2/1hLBKisKeVYJZ8S2tZ0zEAmIJgdVKP2nq0nh4qCdf8bgw+ZgKrkh71AOCaqzwbJJk1WtdcF3VA==}
-    engines: {node: '>=12'}
+  /p-queue@8.0.1:
+    resolution: {integrity: sha512-NXzu9aQJTAzbBqOt2hwsR63ea7yvxJc0PwN/zobNAudYfb1B7R08SzB4TsLeSbUCuG467NhnoT0oO6w1qRO+BA==}
+    engines: {node: '>=18'}
     dependencies:
       eventemitter3: 5.0.1
-      p-timeout: 5.1.0
+      p-timeout: 6.1.2
     dev: false
 
-  /p-timeout@5.1.0:
-    resolution: {integrity: sha512-auFDyzzzGZZZdHz3BtET9VEz0SE/uMEAx7uWfGPucfzEwwe/xH0iVeZibQmANYE/hp9T2+UUZT5m+BKyrDp3Ew==}
-    engines: {node: '>=12'}
+  /p-timeout@6.1.2:
+    resolution: {integrity: sha512-UbD77BuZ9Bc9aABo74gfXhNvzC9Tx7SxtHSh1fxvx3jTLLYvmVhiQZZrJzqqU0jKbN32kb5VOKiLEQI/3bIjgQ==}
+    engines: {node: '>=14.16'}
     dev: false
 
   /p-try@2.2.0:
