@@ -30,6 +30,6 @@
     "prettier-plugin-tailwindcss": "^0.5.9",
     "svelte": "^4.2.8",
     "svelte-eslint-parser": "^0.33.1",
-    "tailwindcss": "^3.3.6"
+    "tailwindcss": "^3.4.0"
   }
 }

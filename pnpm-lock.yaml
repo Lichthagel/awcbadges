@@ -10,10 +10,10 @@ dependencies:
     version: 5.0.1(astro@4.0.6)(svelte@4.2.8)(typescript@5.3.3)(vite@5.0.10)
   '@astrojs/tailwind':
     specifier: ^5.0.3
-    version: 5.0.3(astro@4.0.6)(tailwindcss@3.3.6)
+    version: 5.0.3(astro@4.0.6)(tailwindcss@3.4.0)
   '@catppuccin/tailwindcss':
     specifier: ^0.1.6
-    version: 0.1.6(tailwindcss@3.3.6)
+    version: 0.1.6(tailwindcss@3.4.0)
   '@fontsource-variable/sora':
     specifier: ^5.0.16
     version: 5.0.16
@@ -66,8 +66,8 @@ dependencies:
     specifier: ^0.33.1
     version: 0.33.1(svelte@4.2.8)
   tailwindcss:
-    specifier: ^3.3.6
-    version: 3.3.6
+    specifier: ^3.4.0
+    version: 3.4.0
 
 packages:
 
@@ -146,7 +146,7 @@ packages:
       - vite
     dev: false
 
-  /@astrojs/tailwind@5.0.3(astro@4.0.6)(tailwindcss@3.3.6):
+  /@astrojs/tailwind@5.0.3(astro@4.0.6)(tailwindcss@3.4.0):
     resolution: {integrity: sha512-p+uFa1PNuV8RxhGkPUFgVq8CUbmS3xr0u5k1An2xKECLotRh7vsrGcPUijHvYOt42URohcg8rIq0CxNoVMhReg==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
@@ -156,7 +156,7 @@ packages:
       autoprefixer: 10.4.16(postcss@8.4.32)
       postcss: 8.4.32
       postcss-load-config: 4.0.2(postcss@8.4.32)
-      tailwindcss: 3.3.6
+      tailwindcss: 3.4.0
     transitivePeerDependencies:
       - ts-node
     dev: false
@@ -410,12 +410,12 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
-  /@catppuccin/tailwindcss@0.1.6(tailwindcss@3.3.6):
+  /@catppuccin/tailwindcss@0.1.6(tailwindcss@3.4.0):
     resolution: {integrity: sha512-V+Y0AwZ5SSyvOVAcDl7Ng30xy+m82OKnEJ+9+kcZZ7lRyXuZrAb2GScdq9XR3v+ggt8qiZ/G4TvaC9cJ88AAXA==}
     peerDependencies:
       tailwindcss: '>=3.0.0'
     dependencies:
-      tailwindcss: 3.3.6
+      tailwindcss: 3.4.0
     dev: false
 
   /@esbuild/android-arm64@0.19.9:
@@ -2286,7 +2286,7 @@ packages:
       eslint-plugin-import: /eslint-plugin-i@2.27.5-3(@typescript-eslint/parser@5.62.0)(eslint-import-resolver-typescript@3.6.0)(eslint@8.56.0)
       fast-glob: 3.3.2
       get-tsconfig: 4.7.0
-      is-core-module: 2.13.0
+      is-core-module: 2.13.1
       is-glob: 4.0.3
     transitivePeerDependencies:
       - '@typescript-eslint/parser'
@@ -2424,7 +2424,7 @@ packages:
       eslint-plugin-es-x: 7.2.0(eslint@8.56.0)
       get-tsconfig: 4.7.0
       ignore: 5.3.0
-      is-core-module: 2.13.0
+      is-core-module: 2.13.1
       minimatch: 3.1.2
       resolve: 1.22.8
       semver: 7.5.4
@@ -3255,12 +3255,6 @@ packages:
   /is-callable@1.2.7:
     resolution: {integrity: sha512-1BC0BVFhS/p0qtw6enp8e+8OD0UrK0oFLztSjNzhcKA3WDuJxxAPXzPuPtKkjEY9UUoEWlX/8fgKeu2S8i9JTA==}
     engines: {node: '>= 0.4'}
-    dev: false
-
-  /is-core-module@2.13.0:
-    resolution: {integrity: sha512-Z7dk6Qo8pOCp3l4tsX2C5ZVas4V+UxwQodwZhLopL91TX8UyyHEXafPcyoeeWuLrwzHcr3igO78wNLwHJHsMCQ==}
-    dependencies:
-      has: 1.0.4
     dev: false
 
   /is-core-module@2.13.1:
@@ -5521,8 +5515,8 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /tailwindcss@3.3.6:
-    resolution: {integrity: sha512-AKjF7qbbLvLaPieoKeTjG1+FyNZT6KaJMJPFeQyLfIp7l82ggH1fbHJSsYIvnbTFQOlkh+gBYpyby5GT1LIdLw==}
+  /tailwindcss@3.4.0:
+    resolution: {integrity: sha512-VigzymniH77knD1dryXbyxR+ePHihHociZbXnLZHUyzf2MMs2ZVqlUrZ3FvpXP8pno9JzmILt1sZPD19M3IxtA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
