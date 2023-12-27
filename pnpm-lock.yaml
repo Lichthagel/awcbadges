@@ -17,6 +17,9 @@ dependencies:
   '@fontsource-variable/sora':
     specifier: ^5.0.16
     version: 5.0.16
+  '@iconify-json/lucide':
+    specifier: ^1.1.149
+    version: 1.1.149
   '@types/marked':
     specifier: ^6.0.0
     version: 6.0.0
@@ -688,6 +691,12 @@ packages:
 
   /@humanwhocodes/object-schema@2.0.1:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
+    dev: false
+
+  /@iconify-json/lucide@1.1.149:
+    resolution: {integrity: sha512-qbDGZN/MjTNzwXvM/uArh4YMJ7mLtUd5Ilz6ARiNYKsuSEN6d8YrNggjCN8endXM4aH9wnZLjkdvureXWU46TQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
     dev: false
 
   /@iconify/tools@3.0.7:

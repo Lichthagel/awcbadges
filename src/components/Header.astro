@@ -1,9 +1,9 @@
 ---
+import { Icon } from "astro-icon/components";
 import { CollectionEntry, getCollection } from "astro:content";
+import { format } from "date-fns";
 import type { Badge, BadgeFinished, BadgeOngoing } from "../models";
 import BadgeComponent from "./BadgeComponent.astro";
-import { Icon } from "astro-icon";
-import { format } from "date-fns";
 
 const allCategories = await getCollection("category");
 
