@@ -18,22 +18,22 @@ dependencies:
     specifier: ^5.0.16
     version: 5.0.16
   '@iconify-json/lucide':
-    specifier: ^1.1.151
+    specifier: ^1.1.156
     version: 1.1.156
   '@types/marked':
     specifier: ^6.0.0
     version: 6.0.0
   '@typescript-eslint/parser':
-    specifier: ^6.17.0
+    specifier: ^6.19.0
     version: 6.19.0(eslint@8.56.0)(typescript@5.3.3)
   astro:
-    specifier: ^4.1.0
+    specifier: ^4.2.1
     version: 4.2.1(typescript@5.3.3)
   astro-icon:
     specifier: ^1.0.2
     version: 1.0.2
   date-fns:
-    specifier: ^3.1.0
+    specifier: ^3.3.0
     version: 3.3.0
   eslint:
     specifier: ^8.56.0
@@ -42,13 +42,13 @@ dependencies:
     specifier: github:lichthagel/eslint-config-lichthagel
     version: github.com/lichthagel/eslint-config-lichthagel/9a3b34517573a0ca4f475c060bc25cbd038816b2(eslint@8.56.0)(typescript@5.3.3)
   eslint-plugin-astro:
-    specifier: ^0.31.0
+    specifier: ^0.31.3
     version: 0.31.3(eslint@8.56.0)
   eslint-plugin-svelte:
     specifier: ^2.35.1
     version: 2.35.1(eslint@8.56.0)(svelte@4.2.9)
   prettier:
-    specifier: ^3.1.1
+    specifier: ^3.2.4
     version: 3.2.4
   prettier-plugin-astro:
     specifier: ^0.13.0
@@ -57,16 +57,16 @@ dependencies:
     specifier: ^3.1.2
     version: 3.1.2(prettier@3.2.4)(svelte@4.2.9)
   prettier-plugin-tailwindcss:
-    specifier: ^0.5.10
+    specifier: ^0.5.11
     version: 0.5.11(prettier-plugin-astro@0.13.0)(prettier-plugin-svelte@3.1.2)(prettier@3.2.4)
   svelte:
-    specifier: ^4.2.8
+    specifier: ^4.2.9
     version: 4.2.9
   svelte-eslint-parser:
     specifier: ^0.33.1
     version: 0.33.1(svelte@4.2.9)
   tailwindcss:
-    specifier: ^3.4.0
+    specifier: ^3.4.1
     version: 3.4.1
 
 packages:
