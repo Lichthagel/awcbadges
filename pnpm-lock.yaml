@@ -47,9 +47,6 @@ dependencies:
   eslint-plugin-svelte:
     specifier: ^2.35.1
     version: 2.35.1(eslint@8.56.0)(svelte@4.2.9)
-  marked:
-    specifier: ^11.1.1
-    version: 11.1.1
   prettier:
     specifier: ^3.1.1
     version: 3.2.4
