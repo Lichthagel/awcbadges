@@ -4,6 +4,5 @@
   "labels": ["dependencies"],
   "lockFileMaintenance": {
     "enabled": true
-  },
-  "reviewers": ["Lichthagel"]
+  }
 }
