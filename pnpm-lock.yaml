@@ -18,7 +18,7 @@ dependencies:
     specifier: ^5.0.16
     version: 5.0.16
   '@iconify-json/lucide':
-    specifier: ^1.1.156
+    specifier: ^1.1.157
     version: 1.1.157
   '@types/marked':
     specifier: ^6.0.0
