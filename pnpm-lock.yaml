@@ -19,7 +19,7 @@ dependencies:
     version: 5.0.16
   '@iconify-json/lucide':
     specifier: ^1.1.165
-    version: 1.1.165
+    version: 1.1.168
   '@types/marked':
     specifier: ^6.0.0
     version: 6.0.0
@@ -690,8 +690,8 @@ packages:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
     dev: false
 
-  /@iconify-json/lucide@1.1.165:
-    resolution: {integrity: sha512-JkfIpIxKKpvJ2Xx7mGpUkYSpxVy3WrJTp3F/dhmX3ShxE47e90YMFfl8TyANNLSVgxSC/LMnY4I4Xh+7h34h9w==}
+  /@iconify-json/lucide@1.1.168:
+    resolution: {integrity: sha512-dQhtbY/jidzI0YFy0d+njoGo9e8yob3jW+Xjwo7EAh3YuFrtPe1O9vh/R8FWtiS70p7JdbcC2beJRLe/KzMdbw==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
@@ -2020,6 +2020,7 @@ packages:
 
   /color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+    requiresBuild: true
     dev: false
 
   /color-string@1.9.1:
