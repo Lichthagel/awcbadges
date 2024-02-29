@@ -12,6 +12,7 @@
     "puzzle/tetris",
     "puzzle/chain",
     "puzzle/sudoku",
-    "puzzle/board-game"
+    "puzzle/board-game",
+    "puzzle/chess"
   ]
 }
