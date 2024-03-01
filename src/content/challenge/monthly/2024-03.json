@@ -1,0 +1,19 @@
+{
+  "name": "2024 March",
+  "url": "https://anilist.co/forum/thread/72023/comment/2560531",
+  "visibility": "only-focus",
+  "badge": [
+    {
+      "name": "Easy Mode",
+      "image": "https://i.postimg.cc/6qxbCVVZ/march-easy.png",
+      "started": "2024-03-01",
+      "status": "in-progress"
+    },
+    {
+      "name": "Hard Mode",
+      "image": "https://i.postimg.cc/4d9FK2cZ/march-hard.png",
+      "started": "2024-03-01",
+      "status": "in-progress"
+    }
+  ]
+}
