@@ -67,7 +67,10 @@ const recentlyCompleted = badges
 const recentlyStarted = badges
   .filter(
     (badge: BadgeExt<Badge>): badge is BadgeExt<BadgeOngoing> =>
-      badge.status === "in-progress" || badge.status === "on-hold" || badge.status === "submitted" || badge.status === "completed",
+      badge.status === "in-progress" ||
+      badge.status === "on-hold" ||
+      badge.status === "submitted" ||
+      badge.status === "completed",
   )
   .sort((a, b) => b.started.valueOf() - a.started.valueOf())
   .slice(0, 5)
@@ -98,12 +101,14 @@ const recentlyStarted = badges
                   size="large"
                 />
 
-                <div class="text-sm font-light">{badge.category}</div>
-                <h4 class="font-light">{badge.challengeName}</h4>
+                <div class="text-sm font-light text-ctp-surface0">
+                  {badge.category}
+                </div>
+                <h4 class="font-bold">{badge.challengeName}</h4>
                 <div class="text-xs font-extralight">
                   {badge.badgeName ?? "\u00A0"}
                 </div>
-                <div class="text-xs font-extralight">
+                <div class="text-xs font-extralight text-ctp-surface0">
                   <Icon name="lucide:check" class="inline-block h-4 w-4" />
                   on {format(badge.completed ?? 0, "yyyy-MM-dd")}
                 </div>
@@ -129,12 +134,14 @@ const recentlyStarted = badges
                   size="large"
                 />
 
-                <div class="text-sm font-light">{badge.category}</div>
-                <h4 class="font-light">{badge.challengeName}</h4>
+                <div class="text-sm font-light text-ctp-surface0">
+                  {badge.category}
+                </div>
+                <h4 class="font-bold">{badge.challengeName}</h4>
                 <div class="text-xs font-extralight">
                   {badge.badgeName ?? "\u00A0"}
                 </div>
-                <div class="text-xs font-extralight">
+                <div class="text-xs font-extralight text-ctp-surface0">
                   <Icon name="lucide:play" class="inline-block h-4 w-4" />
                   on {format(badge.started, "yyyy-MM-dd")}
                 </div>

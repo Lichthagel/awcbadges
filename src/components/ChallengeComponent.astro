@@ -1,6 +1,6 @@
 ---
-import type { ChallengeEntry } from "../models";
 import { getEntry } from "astro:content";
+import type { ChallengeEntry } from "../models";
 import BadgeComponent from "./BadgeComponent.astro";
 
 type Props = {
@@ -51,7 +51,7 @@ const show = (() =>
             </a>
           ))}
 
-        <h4 class="ml-auto mr-1 w-max font-light">{challenge.data.name}</h4>
+        <h4 class="ml-auto mr-1 w-max font-bold">{challenge.data.name}</h4>
       </div>
     ) : (
       <div class="mb-1 mt-6 inline-block rounded py-1">
@@ -71,7 +71,7 @@ const show = (() =>
             size="large"
           />
 
-          <h4 class="mx-1 font-light">{challenge.data.name}</h4>
+          <h4 class="mx-1 font-bold">{challenge.data.name}</h4>
         </a>
       </div>
     ))
