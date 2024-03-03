@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 // const defaultTheme = require("tailwindcss/defaultTheme");
+import catppuccin from "@catppuccin/tailwindcss";
 import type { Config } from "tailwindcss";
 import defaultTheme from "tailwindcss/defaultTheme";
-import catppuccin from "@catppuccin/tailwindcss";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Sora Variable", ...defaultTheme.fontFamily.sans],
+        sans: ["Gabarito Variable", ...defaultTheme.fontFamily.sans],
       },
     },
   },

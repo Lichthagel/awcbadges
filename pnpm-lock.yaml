@@ -14,9 +14,9 @@ dependencies:
   '@catppuccin/tailwindcss':
     specifier: ^0.1.6
     version: 0.1.6(tailwindcss@3.4.1)
-  '@fontsource-variable/sora':
-    specifier: ^5.0.16
-    version: 5.0.16
+  '@fontsource-variable/gabarito':
+    specifier: ^5.0.2
+    version: 5.0.2
   '@iconify-json/lucide':
     specifier: ^1.1.165
     version: 1.1.170
@@ -675,8 +675,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: false
 
-  /@fontsource-variable/sora@5.0.16:
-    resolution: {integrity: sha512-Kzndyvd1FZbgGu4/Wu0tEUv6W978IVc7g0I85sWOTDIsJLh+wwmR+9Xa5i6s9k8g86QSMR7tu586OCgrlSlpAg==}
+  /@fontsource-variable/gabarito@5.0.2:
+    resolution: {integrity: sha512-fRd/I3fuelQU9sVJQJJEqIDBurR1A/gcBmMix90HnAzLhmBtCXUzKWcJEsGdC8NCqvotgXhguH5rQkxDl0JS3w==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.14:
