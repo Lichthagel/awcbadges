@@ -19,7 +19,7 @@ dependencies:
     version: 5.0.2
   '@iconify-json/lucide':
     specifier: ^1.1.165
-    version: 1.1.170
+    version: 1.1.171
   '@types/marked':
     specifier: ^6.0.0
     version: 6.0.0
@@ -699,8 +699,8 @@ packages:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
     dev: false
 
-  /@iconify-json/lucide@1.1.170:
-    resolution: {integrity: sha512-PRo/1IbIKE6O++XJjPUNM/+enA4sVOZLS8ykpy3ztPziNfmKgrgzx/1+fe6O6Zhy51C7RPQFkVuYPsCLiUiKFQ==}
+  /@iconify-json/lucide@1.1.171:
+    resolution: {integrity: sha512-qYOXqnmYBHwH6yGVHOyNgLQ2WFz3UrZpBou37jFe1OWtTKbu/8fDixZuv/rBEhyQcX1mw+dFY+dguYNlGjYAmQ==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
