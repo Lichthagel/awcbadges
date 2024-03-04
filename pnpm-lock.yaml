@@ -16,7 +16,7 @@ dependencies:
     version: 0.1.6(tailwindcss@3.4.1)
   '@fontsource-variable/gabarito':
     specifier: ^5.0.2
-    version: 5.0.2
+    version: 5.0.3
   '@iconify-json/lucide':
     specifier: ^1.1.165
     version: 1.1.171
@@ -675,8 +675,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: false
 
-  /@fontsource-variable/gabarito@5.0.2:
-    resolution: {integrity: sha512-fRd/I3fuelQU9sVJQJJEqIDBurR1A/gcBmMix90HnAzLhmBtCXUzKWcJEsGdC8NCqvotgXhguH5rQkxDl0JS3w==}
+  /@fontsource-variable/gabarito@5.0.3:
+    resolution: {integrity: sha512-bjOsX1WlwQi06E0kH3gEx4WfIXJm0Hk19Q51M6MS5IweXqgPFdzhg47XNMzsKciv4lUwl66tlzVznvtEXfWPhg==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.14:
