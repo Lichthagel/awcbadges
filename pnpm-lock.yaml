@@ -19,7 +19,7 @@ dependencies:
     version: 5.0.3
   '@iconify-json/lucide':
     specifier: ^1.1.165
-    version: 1.1.171
+    version: 1.1.172
   '@types/marked':
     specifier: ^6.0.0
     version: 6.0.0
@@ -695,8 +695,8 @@ packages:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
     dev: false
 
-  /@iconify-json/lucide@1.1.171:
-    resolution: {integrity: sha512-qYOXqnmYBHwH6yGVHOyNgLQ2WFz3UrZpBou37jFe1OWtTKbu/8fDixZuv/rBEhyQcX1mw+dFY+dguYNlGjYAmQ==}
+  /@iconify-json/lucide@1.1.172:
+    resolution: {integrity: sha512-D7O4Z/Sx9xYVtkx5EcNpe6B5btZwEH9Fxf2KQh9nwFgOGGXdTuOB2Sh0AHfR6K3eCQ63Uhvz/4MzaIyUoixPQw==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
@@ -2549,7 +2549,7 @@ packages:
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
       eslint-module-utils: 2.8.1(@typescript-eslint/parser@7.1.1)(eslint-import-resolver-node@0.3.9)(eslint@8.57.0)
-      get-tsconfig: 4.7.2
+      get-tsconfig: 4.7.3
       has: 1.0.4
       is-core-module: 2.13.1
       is-glob: 4.0.3
@@ -3037,6 +3037,12 @@ packages:
 
   /get-tsconfig@4.7.2:
     resolution: {integrity: sha512-wuMsz4leaj5hbGgg4IvDU0bqJagpftG5l5cXIAvo8uZrqn0NJqwtfupTN00VnkQJPcIRrxYrm1Ue24btpCha2A==}
+    dependencies:
+      resolve-pkg-maps: 1.0.0
+    dev: false
+
+  /get-tsconfig@4.7.3:
+    resolution: {integrity: sha512-ZvkrzoUA0PQZM6fy6+/Hce561s+faD1rsNwhnO5FelNjyy7EMGJ3Rz1AQ8GYDWjhRs/7dBLOEJvhK8MiEJOAFg==}
     dependencies:
       resolve-pkg-maps: 1.0.0
     dev: false
