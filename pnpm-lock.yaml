@@ -43,7 +43,7 @@ dependencies:
     version: github.com/lichthagel/eslint-config-lichthagel/9a3b34517573a0ca4f475c060bc25cbd038816b2(eslint@8.57.0)(typescript@5.4.3)
   eslint-plugin-astro:
     specifier: ^0.33.0
-    version: 0.33.0(eslint@8.57.0)
+    version: 0.33.1(eslint@8.57.0)
   eslint-plugin-svelte:
     specifier: ^2.35.1
     version: 2.35.1(eslint@8.57.0)(svelte@4.2.12)
@@ -2782,8 +2782,8 @@ packages:
       - supports-color
     dev: false
 
-  /eslint-plugin-astro@0.33.0(eslint@8.57.0):
-    resolution: {integrity: sha512-Plvj8Kg1/4IbFThzhLSZ+tackLT/BR1VVkrmyDYDScZFxB6AmuTcn9d6SW71QL6xgnEKjGI8mQiTjSq8BdCl7Q==}
+  /eslint-plugin-astro@0.33.1(eslint@8.57.0):
+    resolution: {integrity: sha512-wVyxAf8Ulmljv5qJQLgspWe17LR4hLXcksIENtUlEC3W7rleBVEKXS+hIqzBfCbpkBLZpl1tsYes1AGpYHd13w==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=7.0.0'
