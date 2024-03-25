@@ -42,8 +42,8 @@ dependencies:
     specifier: github:lichthagel/eslint-config-lichthagel
     version: github.com/lichthagel/eslint-config-lichthagel/9a3b34517573a0ca4f475c060bc25cbd038816b2(eslint@8.57.0)(typescript@5.4.3)
   eslint-plugin-astro:
-    specifier: ^0.32.0
-    version: 0.32.0(eslint@8.57.0)
+    specifier: ^0.33.0
+    version: 0.33.0(eslint@8.57.0)
   eslint-plugin-svelte:
     specifier: ^2.35.1
     version: 2.35.1(eslint@8.57.0)(svelte@4.2.12)
@@ -2204,7 +2204,7 @@ packages:
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0, npm: '>=7.0.0'}
     dependencies:
       mdn-data: 2.0.28
-      source-map-js: 1.1.0
+      source-map-js: 1.2.0
     dev: false
 
   /css-tree@2.3.1:
@@ -2782,8 +2782,8 @@ packages:
       - supports-color
     dev: false
 
-  /eslint-plugin-astro@0.32.0(eslint@8.57.0):
-    resolution: {integrity: sha512-T8Chx9yG4vrWLCMkQGEbBvUJYSwMVXbw95+EpceFue/jr8JavjYw9A6K1xUxMyycnlWOGMiK7wJ5d/hHNsKBhg==}
+  /eslint-plugin-astro@0.33.0(eslint@8.57.0):
+    resolution: {integrity: sha512-Plvj8Kg1/4IbFThzhLSZ+tackLT/BR1VVkrmyDYDScZFxB6AmuTcn9d6SW71QL6xgnEKjGI8mQiTjSq8BdCl7Q==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=7.0.0'
@@ -2795,7 +2795,7 @@ packages:
       eslint: 8.57.0
       eslint-compat-utils: 0.5.0(eslint@8.57.0)
       globals: 13.24.0
-      postcss: 8.4.36
+      postcss: 8.4.38
       postcss-selector-parser: 6.0.16
     transitivePeerDependencies:
       - supports-color
