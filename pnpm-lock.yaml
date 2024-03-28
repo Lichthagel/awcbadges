@@ -10,10 +10,10 @@ dependencies:
     version: 5.2.0(astro@4.5.10)(svelte@4.2.12)(typescript@5.4.3)(vite@5.2.6)
   '@astrojs/tailwind':
     specifier: ^5.1.0
-    version: 5.1.0(astro@4.5.10)(tailwindcss@3.4.2)
+    version: 5.1.0(astro@4.5.10)(tailwindcss@3.4.3)
   '@catppuccin/tailwindcss':
     specifier: ^0.1.6
-    version: 0.1.6(tailwindcss@3.4.2)
+    version: 0.1.6(tailwindcss@3.4.3)
   '@fontsource-variable/gabarito':
     specifier: ^5.0.2
     version: 5.0.3
@@ -67,7 +67,7 @@ dependencies:
     version: 0.33.1(svelte@4.2.12)
   tailwindcss:
     specifier: ^3.4.1
-    version: 3.4.2
+    version: 3.4.3
 
 packages:
 
@@ -162,7 +162,7 @@ packages:
       - vite
     dev: false
 
-  /@astrojs/tailwind@5.1.0(astro@4.5.10)(tailwindcss@3.4.2):
+  /@astrojs/tailwind@5.1.0(astro@4.5.10)(tailwindcss@3.4.3):
     resolution: {integrity: sha512-BJoCDKuWhU9FT2qYg+fr6Nfb3qP4ShtyjXGHKA/4mHN94z7BGcmauQK23iy+YH5qWvTnhqkd6mQPQ1yTZTe9Ig==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
@@ -172,7 +172,7 @@ packages:
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 4.0.2(postcss@8.4.38)
-      tailwindcss: 3.4.2
+      tailwindcss: 3.4.3
     transitivePeerDependencies:
       - ts-node
     dev: false
@@ -420,12 +420,12 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
-  /@catppuccin/tailwindcss@0.1.6(tailwindcss@3.4.2):
+  /@catppuccin/tailwindcss@0.1.6(tailwindcss@3.4.3):
     resolution: {integrity: sha512-V+Y0AwZ5SSyvOVAcDl7Ng30xy+m82OKnEJ+9+kcZZ7lRyXuZrAb2GScdq9XR3v+ggt8qiZ/G4TvaC9cJ88AAXA==}
     peerDependencies:
       tailwindcss: '>=3.0.0'
     dependencies:
-      tailwindcss: 3.4.2
+      tailwindcss: 3.4.3
     dev: false
 
   /@esbuild/aix-ppc64@0.19.12:
@@ -6028,8 +6028,8 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /tailwindcss@3.4.2:
-    resolution: {integrity: sha512-1kIzVecynNKMhhX8mPTOwTkkVHupUTMbEvk4n1ByxdM8sQTJ8fE41Y4TdORG6GmiVXHhfZ/++0hiIFJFwfadsA==}
+  /tailwindcss@3.4.3:
+    resolution: {integrity: sha512-U7sxQk/n397Bmx4JHbJx/iSOOv5G+II3f1kpLpY2QeUv5DcPdcTsYLlusZfq1NthHS1c1cZoyFmmkex1rzke0A==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
