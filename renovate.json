@@ -3,7 +3,12 @@
   "extends": ["config:recommended"],
   "baseBranches": ["main"],
   "labels": ["dependencies"],
-  "lockFileMaintenance": {
-    "enabled": true
-  }
+  "schedule": ["before 5am on the first day of the week"],
+  "packageRules": [
+    {
+      "description": "Group minor and patch upgrades together",
+      "matchUpdateTypes": ["minor", "patch", "digest"],
+      "groupName": "minor and patch upgrades"
+    }
+  ]
 }
