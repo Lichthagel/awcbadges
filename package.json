@@ -21,7 +21,7 @@
     "astro-icon": "^1.1.0",
     "date-fns": "^3.3.1",
     "eslint": "^9.0.0",
-    "eslint-config-lichthagel": "github:lichthagel/eslint-config-lichthagel",
+    "eslint-config-lichthagel": "github:lichthagel/eslint-config-lichthagel#feat/flat-config",
     "eslint-plugin-astro": "^0.34.0",
     "eslint-plugin-svelte": "^2.35.1",
     "prettier": "^3.2.5",

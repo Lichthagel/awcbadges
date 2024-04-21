@@ -5,27 +5,29 @@ import Section from "../components/Section.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout>
-  <div class="text-center">
-    <Header />
+  <BaseLayout>
+    <div class="text-center">
+      <Header />
 
-    <main class="container mx-auto">
-      <Legend />
+      <main class="container mx-auto">
+        <Legend />
 
-      <Section type="anime" />
+        <Section type="anime" />
 
-      <Section type="manga" />
-    </main>
+        <Section type="manga" />
+      </main>
 
-    <footer class="my-10">
-      <a
-        href="https://github.com/Lichthagel/awcbadges"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="underline">github</a
-      >
-      &nbsp;|&nbsp;
-      <a href="/cct" class="underline">cct</a>
-    </footer>
-  </div>
-</BaseLayout>
+      <footer class="my-10">
+        <a
+          href="https://github.com/Lichthagel/awcbadges"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="underline"
+        >
+          github
+        </a>
+        &nbsp;|&nbsp;
+        <a href="/cct" class="underline">cct</a>
+      </footer>
+    </div>
+  </BaseLayout>
