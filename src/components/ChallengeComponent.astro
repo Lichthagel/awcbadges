@@ -14,19 +14,19 @@ if (!challenge) {
 }
 
 const show = (() =>
-  Array.isArray(challenge.data.badge)
-    ? challenge.data.badge.some(
+  Array.isArray(challenge.data.badge) ?
+    challenge.data.badge.some(
         (badge) => badge.status !== "incomplete" && badge.status !== "hidden",
-      )
-    : challenge.data.badge.status !== "incomplete" &&
-      challenge.data.badge.status !== "hidden")();
+      ) :
+    challenge.data.badge.status !== "incomplete" &&
+    challenge.data.badge.status !== "hidden")();
 ---
 
 {
   show &&
-    // <a href={`/${challenge.id}`}>
-    (Array.isArray(challenge.data.badge) &&
-    challenge.data.visibility !== "only-focus" ? (
+  (Array.isArray(challenge.data.badge) &&
+  challenge.data.visibility !== "only-focus" ?
+(
       <div class="m-1 mt-6 inline-block rounded bg-ctp-mantle p-1 shadow">
         {challenge.data.badge
           .filter(
@@ -43,9 +43,9 @@ const show = (() =>
                 badge={badge}
                 name={badge.name}
                 size={
-                  badge.focus || challenge.data.visibility === "all"
-                    ? "large"
-                    : "small"
+                  badge.focus || challenge.data.visibility === "all" ?
+                    "large" :
+                    "small"
                 }
               />
             </a>
@@ -53,7 +53,8 @@ const show = (() =>
 
         <h4 class="ml-auto mr-1 w-max font-bold">{challenge.data.name}</h4>
       </div>
-    ) : (
+    ) :
+(
       <div class="mb-1 mt-6 inline-block rounded py-1">
         <a
           href={challenge.data.url.full}
@@ -62,10 +63,9 @@ const show = (() =>
         >
           <BadgeComponent
             badge={
-              Array.isArray(challenge.data.badge)
-                ? // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-                  challenge.data.badge.find((badge) => badge.focus)!
-                : challenge.data.badge
+              Array.isArray(challenge.data.badge) ?
+                challenge.data.badge.find((badge) => badge.focus)! :
+                challenge.data.badge
             }
             name={challenge.data.name}
             size="large"

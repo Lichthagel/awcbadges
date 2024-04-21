@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call */
 // const defaultTheme = require("tailwindcss/defaultTheme");
 import catppuccin from "@catppuccin/tailwindcss";
 import type { Config } from "tailwindcss";
