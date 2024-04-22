@@ -1,30 +1,42 @@
 {
   description = "awcbadges";
 
-  outputs = {
-    self,
-    nixpkgs,
-    flake-parts,
-    flake-utils,
-  } @ inputs:
-    flake-parts.lib.mkFlake {inherit inputs;} {
-      systems = flake-utils.lib.defaultSystems;
+  outputs =
+    { nixpkgs, ... }:
+    let
+      systems = [
+        "x86_64-linux"
+        "aarch64-linux"
+        "x86_64-darwin"
+        "aaarch64-darwin"
+      ];
+      eachSystems =
+        f:
+        nixpkgs.lib.genAttrs systems (
+          system:
+          f {
+            inherit system;
+            pkgs = nixpkgs.legacyPackages.${system};
+          }
+        );
+    in
+    {
+      devShells = eachSystems (
+        { pkgs, ... }:
+        {
+          default = pkgs.mkShell {
+            name = "awcbadges-dev";
 
-      perSystem = {config, lib, pkgs, system,...}: {
-        devShells.default = pkgs.mkShell {
-          packages = with pkgs; [
-            nodejs
-            nodePackages.pnpm
-          ];
-        };
-      };
+            packages = with pkgs; [
+              nodejs
+              corepack
+            ];
+          };
+        }
+      );
     };
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-
-    flake-parts.url = "github:hercules-ci/flake-parts";
-
-    flake-utils.url = "github:numtide/flake-utils";
   };
 }
