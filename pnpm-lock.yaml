@@ -42,8 +42,8 @@ importers:
         specifier: ^9.0.0
         version: 9.1.1
       eslint-config-lichthagel:
-        specifier: github:lichthagel/eslint-config-lichthagel
-        version: https://codeload.github.com/lichthagel/eslint-config-lichthagel/tar.gz/c05423745fe34cecab24602c353edb67d4a0cea8(astro-eslint-parser@0.17.0(typescript@5.4.5))(eslint-plugin-n@17.4.0(eslint@9.1.1))(eslint@9.1.1)(svelte-eslint-parser@0.34.1(svelte@4.2.15))(svelte@4.2.15)(typescript-eslint@7.8.0(eslint@9.1.1)(typescript@5.4.5))(typescript@5.4.5)
+        specifier: github:lichthagel/eslint-config-lichthagel#42a9aed354d1ce6c4c02cb8a367997ee50bb23a0
+        version: https://codeload.github.com/lichthagel/eslint-config-lichthagel/tar.gz/42a9aed354d1ce6c4c02cb8a367997ee50bb23a0(eslint-plugin-n@17.4.0(eslint@9.1.1))(eslint@9.1.1)(typescript-eslint@7.8.0(eslint@9.1.1)(typescript@5.4.5))(typescript@5.4.5)
       eslint-plugin-astro:
         specifier: ^0.34.0
         version: 0.34.0(eslint@9.1.1)(typescript@5.4.5)
@@ -188,10 +188,6 @@ packages:
 
   '@babel/helper-string-parser@7.24.1':
     resolution: {integrity: sha512-2ofRCjnnA9y+wk8b9IAREroeUP02KHp431N2mhKniy2yKIDKpbrHv9eXwm8cBeWQYcJmzv5qKCu65P47eCF7CQ==}
-    engines: {node: '>=6.9.0'}
-
-  '@babel/helper-validator-identifier@7.22.20':
-    resolution: {integrity: sha512-Y4OZ+ytlatR8AI+8KZfKuL5urKp7qey08ha31L8b3BwewJAoJamTzyvxPR/5D+KkdJCGPq/+8TukHBlY10FX9A==}
     engines: {node: '>=6.9.0'}
 
   '@babel/helper-validator-identifier@7.24.5':
@@ -1323,8 +1319,8 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  eslint-config-lichthagel@https://codeload.github.com/lichthagel/eslint-config-lichthagel/tar.gz/c05423745fe34cecab24602c353edb67d4a0cea8:
-    resolution: {tarball: https://codeload.github.com/lichthagel/eslint-config-lichthagel/tar.gz/c05423745fe34cecab24602c353edb67d4a0cea8}
+  eslint-config-lichthagel@https://codeload.github.com/lichthagel/eslint-config-lichthagel/tar.gz/42a9aed354d1ce6c4c02cb8a367997ee50bb23a0:
+    resolution: {tarball: https://codeload.github.com/lichthagel/eslint-config-lichthagel/tar.gz/42a9aed354d1ce6c4c02cb8a367997ee50bb23a0}
     version: 2.0.0
     engines: {node: '>=16.0.0'}
     peerDependencies:
@@ -1360,24 +1356,6 @@ packages:
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.23.0'
-
-  eslint-plugin-perfectionist@2.10.0:
-    resolution: {integrity: sha512-P+tdrkHeMWBc55+DZsoDOAftV1WCsEoHaKm6JC7zajFus/syfT4vUPBFb3atGFSuyaVnGQGHlcKpP9X3Q0gH/w==}
-    peerDependencies:
-      astro-eslint-parser: ^0.16.0
-      eslint: '>=8.0.0'
-      svelte: '>=3.0.0'
-      svelte-eslint-parser: ^0.33.0
-      vue-eslint-parser: '>=9.0.0'
-    peerDependenciesMeta:
-      astro-eslint-parser:
-        optional: true
-      svelte:
-        optional: true
-      svelte-eslint-parser:
-        optional: true
-      vue-eslint-parser:
-        optional: true
 
   eslint-plugin-svelte@2.38.0:
     resolution: {integrity: sha512-IwwxhHzitx3dr0/xo0z4jjDlb2AAHBPKt+juMyKKGTLlKi1rZfA4qixMwnveU20/JTHyipM6keX4Vr7LZFYc9g==}
@@ -1588,10 +1566,6 @@ packages:
 
   globals@14.0.0:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
-    engines: {node: '>=18'}
-
-  globals@15.0.0:
-    resolution: {integrity: sha512-m/C/yR4mjO6pXDTm9/R/SpYTAIyaUB4EOzcaaMEl7mds7Mshct9GfejiJNQGjHHbdMPey13Kpu4TMbYi9ex1pw==}
     engines: {node: '>=18'}
 
   globals@15.1.0:
@@ -2134,9 +2108,6 @@ packages:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
-
-  natural-compare-lite@1.4.0:
-    resolution: {integrity: sha512-Tj+HTDSJJKaZnfiuw+iaF9skdPpTo2GtEly5JHnWV/hfv2Qj/9RKsGISQtLh2ox3l5EAGw487hnBee0sIJ6v2g==}
 
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
@@ -3228,8 +3199,6 @@ snapshots:
       '@babel/types': 7.24.5
 
   '@babel/helper-string-parser@7.24.1': {}
-
-  '@babel/helper-validator-identifier@7.22.20': {}
 
   '@babel/helper-validator-identifier@7.24.5': {}
 
@@ -4446,24 +4415,19 @@ snapshots:
       eslint: 9.1.1
       semver: 7.6.0
 
-  eslint-config-lichthagel@https://codeload.github.com/lichthagel/eslint-config-lichthagel/tar.gz/c05423745fe34cecab24602c353edb67d4a0cea8(astro-eslint-parser@0.17.0(typescript@5.4.5))(eslint-plugin-n@17.4.0(eslint@9.1.1))(eslint@9.1.1)(svelte-eslint-parser@0.34.1(svelte@4.2.15))(svelte@4.2.15)(typescript-eslint@7.8.0(eslint@9.1.1)(typescript@5.4.5))(typescript@5.4.5):
+  eslint-config-lichthagel@https://codeload.github.com/lichthagel/eslint-config-lichthagel/tar.gz/42a9aed354d1ce6c4c02cb8a367997ee50bb23a0(eslint-plugin-n@17.4.0(eslint@9.1.1))(eslint@9.1.1)(typescript-eslint@7.8.0(eslint@9.1.1)(typescript@5.4.5))(typescript@5.4.5):
     dependencies:
       '@eslint/js': 9.1.1
       '@stylistic/eslint-plugin': 1.7.2(eslint@9.1.1)(typescript@5.4.5)
       eslint: 9.1.1
-      eslint-plugin-perfectionist: 2.10.0(astro-eslint-parser@0.17.0(typescript@5.4.5))(eslint@9.1.1)(svelte-eslint-parser@0.34.1(svelte@4.2.15))(svelte@4.2.15)(typescript@5.4.5)
       eslint-plugin-unicorn: 52.0.0(eslint@9.1.1)
-      globals: 15.0.0
+      globals: 15.1.0
     optionalDependencies:
       eslint-plugin-n: 17.4.0(eslint@9.1.1)
       typescript-eslint: 7.8.0(eslint@9.1.1)(typescript@5.4.5)
     transitivePeerDependencies:
-      - astro-eslint-parser
       - supports-color
-      - svelte
-      - svelte-eslint-parser
       - typescript
-      - vue-eslint-parser
 
   eslint-plugin-astro@0.34.0(eslint@9.1.1)(typescript@5.4.5):
     dependencies:
@@ -4499,20 +4463,6 @@ snapshots:
       minimatch: 9.0.4
       semver: 7.6.0
 
-  eslint-plugin-perfectionist@2.10.0(astro-eslint-parser@0.17.0(typescript@5.4.5))(eslint@9.1.1)(svelte-eslint-parser@0.34.1(svelte@4.2.15))(svelte@4.2.15)(typescript@5.4.5):
-    dependencies:
-      '@typescript-eslint/utils': 7.8.0(eslint@9.1.1)(typescript@5.4.5)
-      eslint: 9.1.1
-      minimatch: 9.0.4
-      natural-compare-lite: 1.4.0
-    optionalDependencies:
-      astro-eslint-parser: 0.17.0(typescript@5.4.5)
-      svelte: 4.2.15
-      svelte-eslint-parser: 0.34.1(svelte@4.2.15)
-    transitivePeerDependencies:
-      - supports-color
-      - typescript
-
   eslint-plugin-svelte@2.38.0(eslint@9.1.1)(svelte@4.2.15):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@9.1.1)
@@ -4536,7 +4486,7 @@ snapshots:
 
   eslint-plugin-unicorn@52.0.0(eslint@9.1.1):
     dependencies:
-      '@babel/helper-validator-identifier': 7.22.20
+      '@babel/helper-validator-identifier': 7.24.5
       '@eslint-community/eslint-utils': 4.4.0(eslint@9.1.1)
       '@eslint/eslintrc': 2.1.4
       ci-info: 4.0.0
@@ -4792,8 +4742,6 @@ snapshots:
       type-fest: 0.20.2
 
   globals@14.0.0: {}
-
-  globals@15.0.0: {}
 
   globals@15.1.0: {}
 
@@ -5497,8 +5445,6 @@ snapshots:
       thenify-all: 1.6.0
 
   nanoid@3.3.7: {}
-
-  natural-compare-lite@1.4.0: {}
 
   natural-compare@1.4.0: {}
 
