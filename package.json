@@ -23,7 +23,7 @@
     "date-fns": "^3.3.1",
     "eslint": "^9.0.0",
     "eslint-config-lichthagel": "github:lichthagel/eslint-config-lichthagel#42a9aed354d1ce6c4c02cb8a367997ee50bb23a0",
-    "eslint-plugin-astro": "^0.34.0",
+    "eslint-plugin-astro": "^1.0.0",
     "eslint-plugin-n": "^17.2.1",
     "eslint-plugin-svelte": "^2.35.1",
     "prettier": "^3.2.5",
