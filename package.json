@@ -22,7 +22,7 @@
     "astro-icon": "^1.1.0",
     "date-fns": "^3.3.1",
     "eslint": "^9.0.0",
-    "eslint-config-lichthagel": "github:lichthagel/eslint-config-lichthagel#42a9aed354d1ce6c4c02cb8a367997ee50bb23a0",
+    "eslint-config-lichthagel": "github:lichthagel/eslint-config-lichthagel#1d16d52cbf9a9893a83a7f2b60b0695db30fb5dd",
     "eslint-plugin-astro": "^1.0.0",
     "eslint-plugin-n": "^17.2.1",
     "eslint-plugin-svelte": "^2.35.1",
@@ -31,9 +31,9 @@
     "prettier-plugin-svelte": "^3.2.1",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "svelte": "^4.2.11",
-    "svelte-eslint-parser": "^0.34.0",
+    "svelte-eslint-parser": "^0.35.0",
     "tailwindcss": "^3.4.1",
     "typescript-eslint": "^7.7.0"
   },
-  "packageManager": "pnpm@9.0.5+sha256.61bd66913b52012107ec25a6ee4d6a161021ab99e04f6acee3aa50d0e34b4af9"
+  "packageManager": "pnpm@9.0.6"
 }
