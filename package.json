@@ -35,5 +35,5 @@
     "tailwindcss": "^3.4.1",
     "typescript-eslint": "^7.7.0"
   },
-  "packageManager": "pnpm@9.1.0"
+  "packageManager": "pnpm@9.1.1"
 }
