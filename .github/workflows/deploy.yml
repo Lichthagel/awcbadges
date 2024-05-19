@@ -18,6 +18,8 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      COREPACK_ENABLE_STRICT: "0"
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
