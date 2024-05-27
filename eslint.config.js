@@ -4,6 +4,8 @@ import lichthagelNode from "eslint-config-lichthagel/node.js";
 import lichthagelTypescript from "eslint-config-lichthagel/typescript.js";
 import astroPlugin from "eslint-plugin-astro";
 import sveltePlugin from "eslint-plugin-svelte";
+import path from "node:path";
+import url from "node:url";
 
 /** @type {import("eslint").Linter.FlatConfig[]} */
 // @ts-expect-error plugins are not typed correctly
@@ -16,23 +18,21 @@ export default [
     languageOptions: {
       parserOptions: {
         project: true,
-        tsconfigRootDir: import.meta.dirname,
+        tsconfigRootDir: path.dirname(url.fileURLToPath(import.meta.url)),
         extraFileExtensions: [".astro", ".svelte"],
       },
     },
   },
   {
-    files: ["*.svelte", "**/*.svelte"],
+    files: ["**/*.svelte"],
     languageOptions: {
       parserOptions: {
-        parser: {
-          ts: "@typescript-eslint/parser",
-        },
+        parser: "@typescript-eslint/parser",
       },
     },
   },
   {
-    files: ["*.astro", "**/*.astro"],
+    files: ["**/*.astro"],
     rules: {
       "@stylistic/indent": "off",
       "@stylistic/jsx-indent": "off",
