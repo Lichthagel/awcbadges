@@ -6,12 +6,12 @@
     {
       "name": "Easy Mode",
       "started": "2024-05-10",
-      "status": "in-progress"
+      "status": "incomplete"
     },
     {
       "name": "Hard Mode",
       "started": "2024-05-10",
-      "status": "in-progress"
+      "status": "incomplete"
     }
   ]
 }
