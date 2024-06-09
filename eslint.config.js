@@ -1,25 +1,24 @@
 // @ts-check
 
-import lichthagelNode from "eslint-config-lichthagel/node.js";
-import lichthagelTypescript from "eslint-config-lichthagel/typescript.js";
+import lichthagel from "@lichthagel/eslint-config";
 import astroPlugin from "eslint-plugin-astro";
 import sveltePlugin from "eslint-plugin-svelte";
 import path from "node:path";
 import url from "node:url";
 
-/** @type {import("eslint").Linter.FlatConfig[]} */
-// @ts-expect-error plugins are not typed correctly
+/** @type {import("@lichthagel/eslint-config").FlatConfigItem[]} */
 export default [
-  ...lichthagelTypescript,
-  ...lichthagelNode,
-  ...sveltePlugin.configs["flat/recommended"],
+  ...await lichthagel({
+    node: true,
+  }),
+  ...(/** @type {import("eslint").Linter.FlatConfig[]} */ (sveltePlugin.configs["flat/recommended"])),
   ...astroPlugin.configs["flat/recommended"],
   {
     languageOptions: {
       parserOptions: {
+        extraFileExtensions: [".astro", ".svelte"],
         project: true,
         tsconfigRootDir: path.dirname(url.fileURLToPath(import.meta.url)),
-        extraFileExtensions: [".astro", ".svelte"],
       },
     },
   },

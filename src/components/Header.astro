@@ -1,20 +1,22 @@
 ---
+import { type CollectionEntry, getCollection } from "astro:content";
 import { Icon } from "astro-icon/components";
-import { getCollection, type CollectionEntry } from "astro:content";
 import { format } from "date-fns";
+
 import type { Badge, BadgeFinished, BadgeOngoing } from "../models";
+
 import BadgeComponent from "./BadgeComponent.astro";
 
 const allCategories = await getCollection("category");
 
 const allChallenges = await getCollection("challenge");
 
-type BadgeExt<T> = T & {
-  challengeName: string;
-  url: string;
+type BadgeExt<T> = {
   badgeName?: string;
+  challengeName: string;
   id: CollectionEntry<"challenge">["id"];
-};
+  url: string;
+} & T;
 
 const badges = allChallenges
   .flatMap<BadgeExt<Badge>>((challenge) => {
@@ -24,27 +26,28 @@ const badges = allChallenges
 
         return {
           ...badge,
-          challengeName: challenge.data.name,
-          badgeName: badge.name,
-          url: badge.url?.full ?? challenge.data.url.full,
           id: challenge.id,
+          badgeName: badge.name,
+          challengeName: challenge.data.name,
+          url: badge.url?.full ?? challenge.data.url.full,
         };
       }
 
       return challenge.data.badge.map((badge) => ({
         ...badge,
-        challengeName: challenge.data.name,
-        badgeName: badge.name,
-        url: badge.url?.full ?? challenge.data.url.full,
         id: challenge.id,
+        badgeName: badge.name,
+        challengeName: challenge.data.name,
+        url: badge.url?.full ?? challenge.data.url.full,
       }));
-    } else
+    } else {
       return {
         ...challenge.data.badge,
+        id: challenge.id,
         challengeName: challenge.data.name,
         url: challenge.data.url.full,
-        id: challenge.id,
       };
+    }
   })
   .filter((badge) => badge.status !== "hidden");
 
@@ -56,26 +59,21 @@ const recentlyCompleted = badges
   .slice(0, 5)
   .map((badge) => ({
     ...badge,
-    category: allCategories.find((category) =>
-      category.data.challenges.some((challenge) => challenge.id === badge.id),
-    )?.data.name,
+    category: allCategories.find((category) => category.data.challenges.some((challenge) => challenge.id === badge.id))?.data.name,
   }));
 
 const recentlyStarted = badges
   .filter(
-    (badge: BadgeExt<Badge>): badge is BadgeExt<BadgeOngoing> =>
-      badge.status === "in-progress" ||
-      badge.status === "on-hold" ||
-      badge.status === "submitted" ||
-      badge.status === "completed",
+    (badge: BadgeExt<Badge>): badge is BadgeExt<BadgeOngoing> => badge.status === "in-progress" ||
+    badge.status === "on-hold" ||
+    badge.status === "submitted" ||
+    badge.status === "completed",
   )
   .sort((a, b) => b.started.valueOf() - a.started.valueOf())
   .slice(0, 5)
   .map((badge) => ({
     ...badge,
-    category: allCategories.find((category) =>
-      category.data.challenges.some((challenge) => challenge.id === badge.id),
-    )?.data.name,
+    category: allCategories.find((category) => category.data.challenges.some((challenge) => challenge.id === badge.id))?.data.name,
   }));
 ---
 
@@ -91,7 +89,7 @@ const recentlyStarted = badges
         {
           recentlyCompleted.map((badge) => (
             <div class="my-1 inline-block rounded py-1">
-              <a href={badge.url} target="_blank" rel="noopener noreferrer">
+              <a href={badge.url} rel="noopener noreferrer" target="_blank">
                 <BadgeComponent
                   badge={badge}
                   name={badge.challengeName}
@@ -106,7 +104,7 @@ const recentlyStarted = badges
                   {badge.badgeName ?? "\u00A0"}
                 </div>
                 <div class="text-xs font-extralight text-ctp-surface0">
-                  <Icon name="lucide:check" class="inline-block h-4 w-4" />
+                  <Icon class="inline-block h-4 w-4" name="lucide:check" />
                   on
                   {" "}
                   {format(badge.completed ?? 0, "yyyy-MM-dd")}
@@ -126,7 +124,7 @@ const recentlyStarted = badges
         {
           recentlyStarted.map((badge) => (
             <div class="my-1 inline-block rounded py-1">
-              <a href={badge.url} target="_blank" rel="noopener noreferrer">
+              <a href={badge.url} rel="noopener noreferrer" target="_blank">
                 <BadgeComponent
                   badge={badge}
                   name={badge.challengeName}
@@ -141,7 +139,7 @@ const recentlyStarted = badges
                   {badge.badgeName ?? "\u00A0"}
                 </div>
                 <div class="text-xs font-extralight text-ctp-surface0">
-                  <Icon name="lucide:play" class="inline-block h-4 w-4" />
+                  <Icon class="inline-block h-4 w-4" name="lucide:play" />
                   on
                   {" "}
                   {format(badge.started, "yyyy-MM-dd")}

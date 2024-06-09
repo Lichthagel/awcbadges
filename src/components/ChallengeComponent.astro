@@ -1,6 +1,8 @@
 ---
 import { getEntry } from "astro:content";
+
 import type { ChallengeEntry } from "../models";
+
 import BadgeComponent from "./BadgeComponent.astro";
 
 type Props = {
@@ -13,8 +15,7 @@ if (!challenge) {
   throw new Error("Challenge not found");
 }
 
-const show = (() =>
-  Array.isArray(challenge.data.badge) ?
+const show = (() => Array.isArray(challenge.data.badge) ?
     challenge.data.badge.some(
         (badge) => badge.status !== "incomplete" && badge.status !== "hidden",
       ) :
@@ -30,14 +31,13 @@ const show = (() =>
       <div class="m-1 mt-6 inline-block rounded bg-ctp-mantle p-1 shadow">
         {challenge.data.badge
           .filter(
-            (badge) =>
-              badge.status !== "incomplete" && badge.status !== "hidden",
+            (badge) => badge.status !== "incomplete" && badge.status !== "hidden",
           )
           .map((badge) => (
             <a
               href={badge.url?.full ?? challenge.data.url.full}
-              target="_blank"
               rel="noopener noreferrer"
+              target="_blank"
             >
               <BadgeComponent
                 badge={badge}
@@ -58,8 +58,8 @@ const show = (() =>
       <div class="mb-1 mt-6 inline-block rounded py-1">
         <a
           href={challenge.data.url.full}
-          target="_blank"
           rel="noopener noreferrer"
+          target="_blank"
         >
           <BadgeComponent
             badge={

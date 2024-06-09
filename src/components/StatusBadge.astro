@@ -11,10 +11,10 @@ const { status } = Astro.props;
 <div
   class="mx-auto w-28 rounded py-2 text-sm font-bold uppercase text-ctp-base"
   class:list={{
+    "bg-completed": status === "completed",
     "bg-in-progress": status === "in-progress",
     "bg-on-hold": status === "on-hold",
     "bg-submitted": status === "submitted",
-    "bg-completed": status === "completed",
   }}
 >
   {status}

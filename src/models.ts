@@ -14,14 +14,15 @@ const zThreadCommentUrl = z
     }
 
     return {
-      thread: Number.parseInt(match[1]),
       comment: Number.parseInt(match[2]),
       full: url,
+      thread: Number.parseInt(match[1]),
     };
   });
 
 const zBadgeBase = z.object({
-  image: z.string().url().optional(),
+  image: z.string().url()
+    .optional(),
 });
 
 const zBadgeMultiBase = zBadgeBase.extend({
@@ -51,8 +52,8 @@ export type BadgeOngoing = z.infer<typeof zBadgeOngoing>;
 const zBadgeMultiOngoing = zBadgeMultiBase.merge(zBadgeOngoingImpl);
 
 const zBadgeFinishedImpl = z.object({
-  started: z.coerce.date(),
   completed: z.coerce.date(),
+  started: z.coerce.date(),
   status: z.enum(["submitted", "completed"]),
 });
 
@@ -62,17 +63,9 @@ export type BadgeFinished = z.infer<typeof zBadgeFinished>;
 
 const zBadgeMultiFinished = zBadgeMultiBase.merge(zBadgeFinishedImpl);
 
-const zBadge = z.discriminatedUnion("status", [
-  zBadgePrepared,
-  zBadgeOngoing,
-  zBadgeFinished,
-]);
+const zBadge = z.discriminatedUnion("status", [zBadgePrepared, zBadgeOngoing, zBadgeFinished]);
 
-const zBadgeMulti = z.discriminatedUnion("status", [
-  zBadgeMultiPrepared,
-  zBadgeMultiOngoing,
-  zBadgeMultiFinished,
-]);
+const zBadgeMulti = z.discriminatedUnion("status", [zBadgeMultiPrepared, zBadgeMultiOngoing, zBadgeMultiFinished]);
 
 export type Badge = z.infer<typeof zBadge>;
 
@@ -126,9 +119,9 @@ export type ChallengeEntry = z.infer<typeof zChallengeEntry>;
 
 export const zCategory = z.object({
   name: z.string(),
-  type: z.enum(["anime", "manga"]),
-  sortKey: z.number().default(0),
   challenges: z.array(reference("challenge")).nonempty(),
+  sortKey: z.number().default(0),
+  type: z.enum(["anime", "manga"]),
 });
 
 export type Category = z.infer<typeof zCategory>;

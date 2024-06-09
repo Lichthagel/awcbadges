@@ -2,29 +2,29 @@
 import type { Badge } from "../models";
 
 type Props = {
-  badge: Badge & { name?: string };
+  badge: { name?: string } & Badge;
   name: string;
-  size: "small" | "large";
+  size: "large" | "small";
 };
 
-const { badge, name, size } = Astro.props;
+const { name, badge, size } = Astro.props;
 ---
 
 <div
   class="group relative mx-1 mb-2 inline-block align-bottom transition hover:scale-105 lg:mb-4"
 >
   <img
-    src={badge.image ?? "https://awc.moe/static/images/badge-placeholder.png"}
     alt={name}
-    loading="lazy"
     class:list={[
       "transition group-hover:saturate-100 group-hover:opacity-100",
       {
-        "saturate-0 opacity-50": badge.status !== "completed",
-        "h-36 lg:h-48": size === "large",
         "h-28 lg:h-40": size === "small",
+        "h-36 lg:h-48": size === "large",
+        "saturate-0 opacity-50": badge.status !== "completed",
       },
     ]}
+    loading="lazy"
+    src={badge.image ?? "https://awc.moe/static/images/badge-placeholder.png"}
   />
 
   {

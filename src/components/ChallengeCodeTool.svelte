@@ -6,8 +6,6 @@
   let output = "";
 
   const onInput = () => {
-    console.log("input");
-
     let text = input;
 
     text = text.replace(/^[^<]*<hr>/, header);
@@ -18,7 +16,8 @@
       "https://anilist.co/$1/$2",
     );
 
-    text = text.replace("%START%", new Date().toISOString().split("T")[0]);
+    text = text.replace("%START%", new Date().toISOString()
+      .split("T")[0]);
 
     output = text;
   };
@@ -27,13 +26,13 @@
 <div class="text-center">
   <textarea
     bind:value={input}
+    class="h-[99vh] w-[45%] resize-none bg-ctp-crust"
     on:input={onInput}
     rows="50"
-    class="h-[99vh] w-[45%] resize-none bg-ctp-crust"
   />
   <textarea
     bind:value={output}
-    rows="50"
     class="h-[99vh] w-[45%] resize-none bg-ctp-crust"
+    rows="50"
   />
 </div>
