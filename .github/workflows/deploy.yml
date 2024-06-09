@@ -33,7 +33,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Lint
-        run: "pnpm run lint --rule '@typescript-eslint/no-unsafe-assignment: off' --rule '@typescript-eslint/no-unsafe-call: off' --rule '@typescript-eslint/no-unsafe-member-access: off' --rule '@typescript-eslint/no-unsafe-return: off'"
+        run: pnpm run lint
       - name: Build
         run: pnpm run build
       - name: Upload Pages Artifact
