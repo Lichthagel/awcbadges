@@ -13,6 +13,7 @@
     "puzzle/chain",
     "puzzle/sudoku",
     "puzzle/board-game",
-    "puzzle/chess"
+    "puzzle/chess",
+    "puzzle/shiritori"
   ]
 }
