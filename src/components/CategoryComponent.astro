@@ -1,6 +1,7 @@
 ---
 import type { CategoryEntry } from "../models";
 
+import CategoryCollapsible from "./CategoryCollapsible.svelte";
 import ChallengeComponent from "./ChallengeComponent.astro";
 
 type Props = {
@@ -10,15 +11,10 @@ type Props = {
 const category = Astro.props.category;
 ---
 
-<div>
-  <h2 class="text-gradient mx-auto my-5 w-max text-3xl lowercase">
-    {category.data.name}
-  </h2>
-  <div class="overflow-x-scroll whitespace-nowrap lg:whitespace-normal">
-    {
-      category.data.challenges.map((challenge) => (
-        <ChallengeComponent challenge={challenge} />
-      ))
-    }
-  </div>
-</div>
+<CategoryCollapsible client:load title={category.data.name}>
+  {
+    category.data.challenges.map((challenge) => (
+      <ChallengeComponent challenge={challenge} />
+    ))
+  }
+</CategoryCollapsible>
