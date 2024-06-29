@@ -1,6 +1,5 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
-import { Icon } from "astro-icon/components";
 import { format } from "date-fns";
 
 import type { Badge, BadgeFinished, BadgeOngoing } from "../models";
@@ -104,7 +103,7 @@ const recentlyStarted = badges
                   {badge.badgeName ?? "\u00A0"}
                 </div>
                 <div class="text-xs font-extralight text-ctp-surface0">
-                  <Icon class="inline-block h-4 w-4" name="lucide:check" />
+                  <span class="inline-block h-4 w-4 i-lucide-check" />
                   on
                   {" "}
                   {format(badge.completed ?? 0, "yyyy-MM-dd")}
@@ -139,7 +138,7 @@ const recentlyStarted = badges
                   {badge.badgeName ?? "\u00A0"}
                 </div>
                 <div class="text-xs font-extralight text-ctp-surface0">
-                  <Icon class="inline-block h-4 w-4" name="lucide:play" />
+                  <span class="inline-block h-4 w-4 i-lucide-play" />
                   on
                   {" "}
                   {format(badge.started, "yyyy-MM-dd")}

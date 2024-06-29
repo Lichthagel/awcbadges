@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 @layer utilities {
-  .text-gradient {
-    @apply bg-gradient-to-r from-ctp-mauve to-ctp-flamingo bg-clip-text text-transparent;
-  }
-
   .bg-in-progress {
     @apply bg-gradient-to-br from-ctp-lavender to-ctp-mauve;
   }

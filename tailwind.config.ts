@@ -2,6 +2,7 @@
 import type { Config } from "tailwindcss";
 
 import catppuccin from "@catppuccin/tailwindcss";
+import { getIconCollections, iconsPlugin } from "@egoist/tailwindcss-icons";
 import defaultTheme from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
@@ -10,6 +11,13 @@ export default {
   plugins: [
     catppuccin({
       prefix: "ctp",
+    }),
+    iconsPlugin({
+      collections: getIconCollections(["lucide"]),
+      extraProperties: {
+        "display": "inline-block",
+        "vertical-align": "middle",
+      },
     }),
   ],
   theme: {
