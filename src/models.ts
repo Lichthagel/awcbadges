@@ -20,8 +20,16 @@ const zThreadCommentUrl = z
     };
   });
 
+const zImage = z.object({
+  url: z.string().url(),
+  height: z.number().optional(),
+  width: z.number().optional(),
+});
+
+export type Image = z.infer<typeof zImage>;
+
 const zBadgeBase = z.object({
-  image: z.string().url()
+  image: z.union([z.string().url(), zImage])
     .optional(),
 });
 

@@ -3,7 +3,11 @@
   "release": "2019-08-16",
   "url": "https://anilist.co/forum/thread/8889/comment/644352",
   "badge": {
-    "image": "https://i.postimg.cc/K83S8886/Manga-City-Beach.png",
+    "image": {
+      "url": "https://i.postimg.cc/K83S8886/Manga-City-Beach.png",
+      "height": 720,
+      "width": 520
+    },
     "started": "2021-02-08",
     "completed": "2021-11-25",
     "status": "completed"

@@ -2,7 +2,11 @@
   "name": "Intermediate",
   "url": "https://anilist.co/forum/thread/10665/comment/1342182",
   "badge": {
-    "image": "https://i.postimg.cc/t4cqBcsj/Tier-Mange-Intermediate.png",
+    "image": {
+      "url": "https://i.postimg.cc/t4cqBcsj/Tier-Mange-Intermediate.png",
+      "height": 720,
+      "width": 520
+    },
     "started": "2021-10-22",
     "status": "in-progress"
   }

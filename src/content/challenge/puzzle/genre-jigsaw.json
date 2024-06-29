@@ -3,7 +3,11 @@
   "release": "2020-03-21",
   "url": "https://anilist.co/forum/thread/11405/comment/673089",
   "badge": {
-    "image": "https://i.postimg.cc/zBsysW-sB/Puzzle-Genre-Jigsaw.png",
+    "image": {
+      "url": "https://i.postimg.cc/zBsysW-sB/Puzzle-Genre-Jigsaw.png",
+      "height": 720,
+      "width": 520
+    },
     "started": "2021-02-19",
     "completed": "2021-12-23",
     "status": "completed"

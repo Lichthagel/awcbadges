@@ -5,14 +5,22 @@
   "badge": [
     {
       "name": "Bingo!",
-      "image": "https://i.postimg.cc/RhF91mxk/Collection-Studio-Wit-Studio-Line.png",
+      "image": {
+        "url": "https://i.postimg.cc/RhF91mxk/Collection-Studio-Wit-Studio-Line.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-18",
       "completed": "2021-02-18",
       "status": "completed"
     },
     {
       "name": "Clear the Board!",
-      "image": "https://i.postimg.cc/NGJQsK1B/Collection-Studio-Wit-Studio-Board.png",
+      "image": {
+        "url": "https://i.postimg.cc/NGJQsK1B/Collection-Studio-Wit-Studio-Board.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-18",
       "status": "in-progress"
     }

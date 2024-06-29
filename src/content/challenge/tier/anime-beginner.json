@@ -2,7 +2,11 @@
   "name": "Beginner's",
   "url": "https://anilist.co/forum/thread/4448/comment/671691",
   "badge": {
-    "image": "https://i.postimg.cc/VLyPvk56/Tier-Anime-Beginners.png",
+    "image": {
+      "url": "https://i.postimg.cc/VLyPvk56/Tier-Anime-Beginners.png",
+      "height": 720,
+      "width": 520
+    },
     "started": "2021-02-18",
     "completed": "2021-04-03",
     "status": "completed"

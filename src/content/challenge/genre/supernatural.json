@@ -4,21 +4,33 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": "https://i.postimg.cc/VN67Mrqj/Genre-Supernatural-Easy.png",
+      "image": {
+        "url": "https://i.postimg.cc/VN67Mrqj/Genre-Supernatural-Easy.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "completed": "2021-07-05",
       "status": "completed"
     },
     {
       "name": "Normal Mode",
-      "image": "https://i.postimg.cc/tgMBzqk8/Genre-Supernatural-Normal.png",
+      "image": {
+        "url": "https://i.postimg.cc/tgMBzqk8/Genre-Supernatural-Normal.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "completed": "2021-09-25",
       "status": "completed"
     },
     {
       "name": "Hard Mode",
-      "image": "https://i.postimg.cc/Y9Lbn5y0/Genre-Supernatural-Hard.png",
+      "image": {
+        "url": "https://i.postimg.cc/Y9Lbn5y0/Genre-Supernatural-Hard.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "completed": "2022-05-11",
       "status": "completed"

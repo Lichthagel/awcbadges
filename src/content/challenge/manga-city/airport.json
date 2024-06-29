@@ -3,7 +3,11 @@
   "release": "2020-03-07",
   "url": "https://anilist.co/forum/thread/11261/comment/644371",
   "badge": {
-    "image": "https://i.postimg.cc/DZFt6QPh/Manga-City-Airport.png",
+    "image": {
+      "url": "https://i.postimg.cc/DZFt6QPh/Manga-City-Airport.png",
+      "height": 720,
+      "width": 520
+    },
     "started": "2021-02-08",
     "status": "in-progress"
   }

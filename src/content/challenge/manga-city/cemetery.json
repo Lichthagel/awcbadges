@@ -3,7 +3,11 @@
   "release": "2019-10-18",
   "url": "https://anilist.co/forum/thread/9675/comment/644363",
   "badge": {
-    "image": "https://i.postimg.cc/HLGGc1JV/Manga-City-Cemetery.png",
+    "image": {
+      "url": "https://i.postimg.cc/HLGGc1JV/Manga-City-Cemetery.png",
+      "height": 720,
+      "width": 520
+    },
     "started": "2021-02-08",
     "status": "in-progress"
   }

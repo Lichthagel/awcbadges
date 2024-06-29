@@ -5,13 +5,21 @@
   "badge": [
     {
       "name": "Bingo!",
-      "image": "https://i.postimg.cc/JnRRnJ64/Collection-Studio-Kyoto-Animation-Line.png",
+      "image": {
+        "url": "https://i.postimg.cc/JnRRnJ64/Collection-Studio-Kyoto-Animation-Line.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-18",
       "status": "in-progress"
     },
     {
       "name": "Clear the Board!",
-      "image": "https://i.postimg.cc/gJ4m6JQy/Collection-Studio-Kyoto-Animation-Board.png",
+      "image": {
+        "url": "https://i.postimg.cc/gJ4m6JQy/Collection-Studio-Kyoto-Animation-Board.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-18",
       "status": "not-started"
     }

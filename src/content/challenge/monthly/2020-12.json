@@ -5,14 +5,22 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": "https://i.postimg.cc/FRbRzDfP/Monthly-2020-December-Easy.gif",
+      "image": {
+        "url": "https://i.postimg.cc/FRbRzDfP/Monthly-2020-December-Easy.gif",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-12-09",
       "completed": "2021-12-31",
       "status": "completed"
     },
     {
       "name": "Hard Mode",
-      "image": "https://i.postimg.cc/KjZYMBBm/Monthly-2020-December-Hard.gif",
+      "image": {
+        "url": "https://i.postimg.cc/KjZYMBBm/Monthly-2020-December-Hard.gif",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-12-09",
       "completed": "2021-12-31",
       "status": "completed"

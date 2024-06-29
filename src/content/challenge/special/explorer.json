@@ -6,21 +6,33 @@
   "badge": [
     {
       "name": "Field Path",
-      "image": "https://i.postimg.cc/9Q8CgnNp/Special-Explorers-Field.png",
+      "image": {
+        "url": "https://i.postimg.cc/9Q8CgnNp/Special-Explorers-Field.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-04",
       "completed": "2021-10-07",
       "status": "completed"
     },
     {
       "name": "Mountain Path",
-      "image": "https://i.postimg.cc/HksT2g3n/Special-Explorers-Mountain.png",
+      "image": {
+        "url": "https://i.postimg.cc/HksT2g3n/Special-Explorers-Mountain.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-04",
       "completed": "2021-07-17",
       "status": "completed"
     },
     {
       "name": "Ocean Path",
-      "image": "https://i.postimg.cc/5tX1hShM/Special-Explorers-Ocean.png",
+      "image": {
+        "url": "https://i.postimg.cc/5tX1hShM/Special-Explorers-Ocean.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-04",
       "status": "in-progress"
     }

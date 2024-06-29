@@ -3,7 +3,11 @@
   "release": "2020-06-19",
   "url": "https://anilist.co/forum/thread/13560/comment/673105",
   "badge": {
-    "image": "https://i.postimg.cc/90Hf829w/Puzzle-Double-Dip.png",
+    "image": {
+      "url": "https://i.postimg.cc/90Hf829w/Puzzle-Double-Dip.png",
+      "height": 720,
+      "width": 520
+    },
     "started": "2021-02-19",
     "completed": "2021-11-29",
     "status": "completed"

@@ -3,7 +3,11 @@
   "release": "2020-09-25",
   "url": "https://anilist.co/forum/thread/17325/comment/644387",
   "badge": {
-    "image": "https://i.postimg.cc/J4tSpzZs/Manga-City-Office.png",
+    "image": {
+      "url": "https://i.postimg.cc/J4tSpzZs/Manga-City-Office.png",
+      "height": 720,
+      "width": 520
+    },
     "started": "2021-02-08",
     "completed": "2021-11-20",
     "status": "completed"

@@ -1,5 +1,7 @@
 ---
-import type { Badge } from "../models";
+import { Image } from "astro:assets";
+
+import type { Badge, Image as ImageType } from "../models";
 
 type Props = {
   badge: { name?: string } & Badge;
@@ -8,23 +10,39 @@ type Props = {
 };
 
 const { name, badge, size } = Astro.props;
+
+const image: ImageType =
+badge.image === undefined ?
+  {
+    url: "https://awc.moe/static/images/badge-placeholder.png",
+    width: 500,
+    height: 500,
+  } :
+ (typeof badge.image === "string" ?
+    {
+    url: badge.image,
+    } :
+    badge.image
+  );
 ---
 
 <div
   class="group relative mx-1 mb-2 inline-block align-bottom transition hover:scale-105 lg:mb-4"
 >
-  <img
+  <Image
     alt={name}
     class:list={[
-      "transition group-hover:saturate-100 group-hover:opacity-100",
+      "transition group-hover:saturate-100 group-hover:opacity-100 object-contain",
       {
-        "h-28 lg:h-40": size === "small",
-        "h-36 lg:h-48": size === "large",
+        "w-auto h-28 lg:h-40": size === "small",
+        "w-auto h-36 lg:h-48": size === "large",
         "saturate-0 opacity-50": badge.status !== "completed",
       },
     ]}
+    height={image.height ?? 500}
     loading="lazy"
-    src={badge.image ?? "https://awc.moe/static/images/badge-placeholder.png"}
+    src={image.url}
+    width={image.width ?? 500}
   />
 
   {

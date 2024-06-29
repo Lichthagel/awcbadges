@@ -5,13 +5,21 @@
   "badge": [
     {
       "name": "Bingo!",
-      "image": "https://i.postimg.cc/W4L2Bx0Z/Collection-Studio-Studio-Ghibli-Line.png",
+      "image": {
+        "url": "https://i.postimg.cc/W4L2Bx0Z/Collection-Studio-Studio-Ghibli-Line.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-18",
       "status": "in-progress"
     },
     {
       "name": "Clear the Board!",
-      "image": "https://i.postimg.cc/fbcwD5vr/Collection-Studio-Studio-Ghibli-Board.png",
+      "image": {
+        "url": "https://i.postimg.cc/fbcwD5vr/Collection-Studio-Studio-Ghibli-Board.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-18",
       "status": "not-started"
     }

@@ -4,20 +4,32 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": "https://i.postimg.cc/pXz3XFCr/Genre-Sci-Fi-Easy.png",
+      "image": {
+        "url": "https://i.postimg.cc/pXz3XFCr/Genre-Sci-Fi-Easy.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "completed": "2021-11-03",
       "status": "completed"
     },
     {
       "name": "Normal Mode",
-      "image": "https://i.postimg.cc/CKL2N6gn/Genre-Sci-Fi-Normal.png",
+      "image": {
+        "url": "https://i.postimg.cc/CKL2N6gn/Genre-Sci-Fi-Normal.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "status": "in-progress"
     },
     {
       "name": "Hard Mode",
-      "image": "https://i.postimg.cc/261Kpb3z/Genre-Sci-Fi-Hard.png",
+      "image": {
+        "url": "https://i.postimg.cc/261Kpb3z/Genre-Sci-Fi-Hard.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "status": "not-started"
     },

@@ -3,7 +3,11 @@
   "release": "2020-10-09",
   "url": "https://anilist.co/forum/thread/17846/comment/671903",
   "badge": {
-    "image": "https://i.postimg.cc/k4t8s0Np/Collection-Franchise-Higurashi.png",
+    "image": {
+      "url": "https://i.postimg.cc/k4t8s0Np/Collection-Franchise-Higurashi.png",
+      "height": 720,
+      "width": 520
+    },
     "started": "2021-02-18",
     "status": "in-progress"
   }

@@ -4,21 +4,33 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": "https://i.postimg.cc/mk0VW8Jj/Genre-Mystery-Easy.png",
+      "image": {
+        "url": "https://i.postimg.cc/mk0VW8Jj/Genre-Mystery-Easy.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "completed": "2021-05-28",
       "status": "completed"
     },
     {
       "name": "Normal Mode",
-      "image": "https://i.postimg.cc/WpK5Z1zZ/Genre-Mystery-Normal.png",
+      "image": {
+        "url": "https://i.postimg.cc/WpK5Z1zZ/Genre-Mystery-Normal.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "completed": "2022-04-09",
       "status": "completed"
     },
     {
       "name": "Hard Mode",
-      "image": "https://i.postimg.cc/t4GDrvhC/Genre-Mystery-Hard.png",
+      "image": {
+        "url": "https://i.postimg.cc/t4GDrvhC/Genre-Mystery-Hard.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "completed": "2023-07-02",
       "status": "completed"

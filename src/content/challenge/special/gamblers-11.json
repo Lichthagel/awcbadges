@@ -3,7 +3,11 @@
   "release": "2018-12-28",
   "url": "https://anilist.co/forum/thread/6171/comment/1272241",
   "badge": {
-    "image": "https://i.postimg.cc/44jTkGWm/Special-Gamblers.png",
+    "image": {
+      "url": "https://i.postimg.cc/44jTkGWm/Special-Gamblers.png",
+      "height": 720,
+      "width": 520
+    },
     "started": "2021-09-24",
     "status": "on-hold"
   }

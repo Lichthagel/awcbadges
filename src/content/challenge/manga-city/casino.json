@@ -3,7 +3,11 @@
   "release": "2020-05-16",
   "url": "https://anilist.co/forum/thread/12658/comment/644377",
   "badge": {
-    "image": "https://i.postimg.cc/HnkFDpNP/Manga-City-Casino.png",
+    "image": {
+      "url": "https://i.postimg.cc/HnkFDpNP/Manga-City-Casino.png",
+      "height": 720,
+      "width": 520
+    },
     "started": "2021-02-08",
     "status": "in-progress"
   }

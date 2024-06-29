@@ -4,20 +4,32 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": "https://i.postimg.cc/hjt2LJVL/Genre-Music-Easy.png",
+      "image": {
+        "url": "https://i.postimg.cc/hjt2LJVL/Genre-Music-Easy.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "completed": "2022-01-09",
       "status": "completed"
     },
     {
       "name": "Normal Mode",
-      "image": "https://i.postimg.cc/DZpBB2ct/Genre-Music-Normal.png",
+      "image": {
+        "url": "https://i.postimg.cc/DZpBB2ct/Genre-Music-Normal.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "status": "in-progress"
     },
     {
       "name": "Hard Mode",
-      "image": "https://i.postimg.cc/GtBzfZ79/Genre-Music-Hard.png",
+      "image": {
+        "url": "https://i.postimg.cc/GtBzfZ79/Genre-Music-Hard.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "status": "not-started"
     },

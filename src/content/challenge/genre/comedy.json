@@ -4,21 +4,33 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": "https://i.postimg.cc/NFxk9Bzy/Genre-Comedy-Easy.png",
+      "image": {
+        "url": "https://i.postimg.cc/NFxk9Bzy/Genre-Comedy-Easy.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "completed": "2021-06-20",
       "status": "completed"
     },
     {
       "name": "Normal Mode",
-      "image": "https://i.postimg.cc/GhcQ0T4v/Genre-Comedy-Normal.png",
+      "image": {
+        "url": "https://i.postimg.cc/GhcQ0T4v/Genre-Comedy-Normal.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "completed": "2021-11-13",
       "status": "completed"
     },
     {
       "name": "Hard Mode",
-      "image": "https://i.postimg.cc/4NB1X4cq/Genre-Comedy-Hard.png",
+      "image": {
+        "url": "https://i.postimg.cc/4NB1X4cq/Genre-Comedy-Hard.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "completed": "2022-07-10",
       "status": "completed"

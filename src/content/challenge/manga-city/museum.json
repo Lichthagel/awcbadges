@@ -3,7 +3,11 @@
   "release": "2019-06-14",
   "url": "https://anilist.co/forum/thread/7915/comment/644340",
   "badge": {
-    "image": "https://i.postimg.cc/fTLQ1KnT/Manga-City-Museum.png",
+    "image": {
+      "url": "https://i.postimg.cc/fTLQ1KnT/Manga-City-Museum.png",
+      "height": 720,
+      "width": 520
+    },
     "started": "2021-02-08",
     "status": "in-progress"
   }

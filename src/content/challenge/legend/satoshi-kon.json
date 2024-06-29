@@ -3,7 +3,11 @@
   "release": "2019-05-17",
   "url": "https://anilist.co/forum/thread/7567/comment/671910",
   "badge": {
-    "image": "https://i.postimg.cc/YqcmCcZ6/Collection-Legend-Satoshi-Kon.png",
+    "image": {
+      "url": "https://i.postimg.cc/YqcmCcZ6/Collection-Legend-Satoshi-Kon.png",
+      "height": 720,
+      "width": 520
+    },
     "started": "2021-02-19",
     "status": "in-progress"
   }

@@ -2,7 +2,11 @@
   "name": "Advanced",
   "url": "https://anilist.co/forum/thread/8462/comment/1309828",
   "badge": {
-    "image": "https://i.postimg.cc/DZvJQs94/Tier-Anime-Advanced.png",
+    "image": {
+      "url": "https://i.postimg.cc/DZvJQs94/Tier-Anime-Advanced.png",
+      "height": 720,
+      "width": 520
+    },
     "started": "2022-10-10",
     "status": "in-progress"
   }

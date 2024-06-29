@@ -2,7 +2,11 @@
   "name": "Intermediate",
   "url": "https://anilist.co/forum/thread/5027/comment/806537",
   "badge": {
-    "image": "https://i.postimg.cc/L5mT1nTx/Tier-Anime-Intermediate.png",
+    "image": {
+      "url": "https://i.postimg.cc/L5mT1nTx/Tier-Anime-Intermediate.png",
+      "height": 720,
+      "width": 520
+    },
     "started": "2021-04-07",
     "completed": "2021-10-10",
     "status": "completed"

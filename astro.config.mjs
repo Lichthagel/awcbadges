@@ -13,4 +13,7 @@ export default defineConfig({
     icon(),
   ],
   site: "https://badges.lichthagel.de",
+  image: {
+    domains: ["i.postimg.cc", "awc.moe"],
+  },
 });

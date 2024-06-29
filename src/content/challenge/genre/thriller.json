@@ -5,21 +5,33 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": "https://i.postimg.cc/tgXkb1SK/Genre-Psych-Thriller-Easy.png",
+      "image": {
+        "url": "https://i.postimg.cc/tgXkb1SK/Genre-Psych-Thriller-Easy.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "completed": "2021-08-01",
       "status": "completed"
     },
     {
       "name": "Normal Mode",
-      "image": "https://i.postimg.cc/GpqQmc6H/Genre-Psych-Thriller-Normal.png",
+      "image": {
+        "url": "https://i.postimg.cc/GpqQmc6H/Genre-Psych-Thriller-Normal.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "completed": "2021-12-14",
       "status": "completed"
     },
     {
       "name": "Hard Mode",
-      "image": "https://i.postimg.cc/50ymHhMp/Genre-Psych-Thriller-Hard.png",
+      "image": {
+        "url": "https://i.postimg.cc/50ymHhMp/Genre-Psych-Thriller-Hard.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "status": "in-progress"
     },

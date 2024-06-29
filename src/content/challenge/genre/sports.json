@@ -4,20 +4,32 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": "https://i.postimg.cc/zXZPMfNr/Genre-Sports-Easy.png",
+      "image": {
+        "url": "https://i.postimg.cc/zXZPMfNr/Genre-Sports-Easy.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "completed": "2022-07-15",
       "status": "completed"
     },
     {
       "name": "Normal Mode",
-      "image": "https://i.postimg.cc/gkVBPPc6/Genre-Sports-Normal.png",
+      "image": {
+        "url": "https://i.postimg.cc/gkVBPPc6/Genre-Sports-Normal.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "status": "in-progress"
     },
     {
       "name": "Hard Mode",
-      "image": "https://i.postimg.cc/cLdkx56k/Genre-Sports-Hard.png",
+      "image": {
+        "url": "https://i.postimg.cc/cLdkx56k/Genre-Sports-Hard.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "status": "not-started"
     },

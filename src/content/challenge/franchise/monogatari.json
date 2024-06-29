@@ -3,7 +3,11 @@
   "release": "2019-05-17",
   "url": "https://anilist.co/forum/thread/7566/comment/637676",
   "badge": {
-    "image": "https://i.postimg.cc/h4zMZwPg/Collection-Franchise-Monogatari.png",
+    "image": {
+      "url": "https://i.postimg.cc/h4zMZwPg/Collection-Franchise-Monogatari.png",
+      "height": 720,
+      "width": 520
+    },
     "started": "2021-02-05",
     "completed": "2021-02-05",
     "status": "completed"

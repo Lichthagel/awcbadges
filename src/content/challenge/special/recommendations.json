@@ -3,7 +3,11 @@
   "release": "2020-07-10",
   "url": "https://anilist.co/forum/thread/14236/comment/741395",
   "badge": {
-    "image": "https://i.postimg.cc/rFCcSb9s/Special-Recommendations.png",
+    "image": {
+      "url": "https://i.postimg.cc/rFCcSb9s/Special-Recommendations.png",
+      "height": 720,
+      "width": 520
+    },
     "started": "2021-03-16",
     "status": "on-hold"
   }

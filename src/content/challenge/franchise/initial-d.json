@@ -3,7 +3,11 @@
   "release": "2020-05-29",
   "url": "https://anilist.co/forum/thread/12963/comment/671899",
   "badge": {
-    "image": "https://i.postimg.cc/YqBNnCsf/Collection-Franchise-Initial-D.png",
+    "image": {
+      "url": "https://i.postimg.cc/YqBNnCsf/Collection-Franchise-Initial-D.png",
+      "height": 720,
+      "width": 520
+    },
     "started": "2021-02-18",
     "completed": "2023-07-29",
     "status": "completed"

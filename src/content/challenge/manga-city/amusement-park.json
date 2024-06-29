@@ -3,7 +3,11 @@
   "release": "2020-11-13",
   "url": "https://anilist.co/forum/thread/19440/comment/674317",
   "badge": {
-    "image": "https://i.postimg.cc/TPjsKLM4/Manga-City-Amusement-Park.png",
+    "image": {
+      "url": "https://i.postimg.cc/TPjsKLM4/Manga-City-Amusement-Park.png",
+      "height": 720,
+      "width": 520
+    },
     "started": "2021-02-08",
     "completed": "2021-11-25",
     "status": "completed"

@@ -6,14 +6,22 @@
   "badge": [
     {
       "name": "Voyager Path",
-      "image": "https://i.postimg.cc/cJPZ08Wt/Special-Space-Adventurers-Voyager.png",
+      "image": {
+        "url": "https://i.postimg.cc/cJPZ08Wt/Special-Space-Adventurers-Voyager.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-02-20",
       "completed": "2021-03-11",
       "status": "completed"
     },
     {
       "name": "Invader Path",
-      "image": "https://i.postimg.cc/rF98xm17/Special-Space-Adventurers-Invader.png",
+      "image": {
+        "url": "https://i.postimg.cc/rF98xm17/Special-Space-Adventurers-Invader.png",
+        "height": 720,
+        "width": 520
+      },
       "started": "2021-03-15",
       "status": "in-progress"
     }

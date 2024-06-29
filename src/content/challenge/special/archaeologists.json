@@ -3,7 +3,11 @@
   "release": "2019-09-13",
   "url": "https://anilist.co/forum/thread/9282/comment/671704",
   "badge": {
-    "image": "https://i.postimg.cc/c4YGdzzT/Special-Archaeologists.png",
+    "image": {
+      "url": "https://i.postimg.cc/c4YGdzzT/Special-Archaeologists.png",
+      "height": 720,
+      "width": 520
+    },
     "started": "2021-02-18",
     "status": "on-hold"
   }
