@@ -22,13 +22,13 @@ importers:
         version: 1.8.1(tailwindcss@3.4.4)
       '@fontsource-variable/gabarito':
         specifier: ^5.0.2
-        version: 5.0.4
+        version: 5.0.5
       '@iconify-json/lucide':
         specifier: ^1.1.165
         version: 1.1.198
       '@lichthagel/eslint-config':
         specifier: github:Lichthagel/eslint-config
-        version: https://codeload.github.com/Lichthagel/eslint-config/tar.gz/155b33f29dd07dd3c4a8729d5b1101a0f16feeb0(eslint-plugin-n@17.9.0(eslint@9.6.0))(eslint-plugin-svelte@2.41.0(eslint@9.6.0)(svelte@4.2.18))(eslint@9.6.0)(svelte-eslint-parser@0.39.2(svelte@4.2.18))(svelte@4.2.18)(typescript@5.4.5)
+        version: https://codeload.github.com/Lichthagel/eslint-config/tar.gz/f6651992ed5a5a5c6f82b3f4ffd08b2898839d12(eslint-plugin-n@17.9.0(eslint@9.6.0))(eslint-plugin-svelte@2.41.0(eslint@9.6.0)(svelte@4.2.18))(eslint@9.6.0)(svelte-eslint-parser@0.39.2(svelte@4.2.18))(svelte@4.2.18)(typescript@5.4.5)
       '@typescript-eslint/parser':
         specifier: ^7.0.1
         version: 7.15.0(eslint@9.6.0)(typescript@5.4.5)
@@ -416,8 +416,8 @@ packages:
     resolution: {integrity: sha512-BsWiH1yFGjXXS2yvrf5LyuoSIIbPrGUWob917o+BTKuZ7qJdxX8aJLRxs1fS9n6r7vESrq1OUqb68dANcFXuQQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@fontsource-variable/gabarito@5.0.4':
-    resolution: {integrity: sha512-fqa65zhyP+l4Rs0zhavgt5kkOQBGh5lXl2xxHpkG4GtrXwXet1vv+ceD/teA5xn2lKo8O0uOYrmn0r8wjb0wkw==}
+  '@fontsource-variable/gabarito@5.0.5':
+    resolution: {integrity: sha512-u33uCiy2sz5D9X99APo3yt1H6DN0SGuRgZcMXbvj7ZkPDf8BrGPmNT6gFAhEIoJs/Gt2G1vBhz2SdREeq62Lew==}
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -571,8 +571,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@lichthagel/eslint-config@https://codeload.github.com/Lichthagel/eslint-config/tar.gz/155b33f29dd07dd3c4a8729d5b1101a0f16feeb0':
-    resolution: {tarball: https://codeload.github.com/Lichthagel/eslint-config/tar.gz/155b33f29dd07dd3c4a8729d5b1101a0f16feeb0}
+  '@lichthagel/eslint-config@https://codeload.github.com/Lichthagel/eslint-config/tar.gz/f6651992ed5a5a5c6f82b3f4ffd08b2898839d12':
+    resolution: {tarball: https://codeload.github.com/Lichthagel/eslint-config/tar.gz/f6651992ed5a5a5c6f82b3f4ffd08b2898839d12}
     version: 0.0.0
     engines: {node: '>=16.0.0'}
     peerDependencies:
@@ -3236,7 +3236,7 @@ snapshots:
 
   '@eslint/object-schema@2.1.4': {}
 
-  '@fontsource-variable/gabarito@5.0.4': {}
+  '@fontsource-variable/gabarito@5.0.5': {}
 
   '@humanwhocodes/module-importer@1.0.1': {}
 
@@ -3361,7 +3361,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  '@lichthagel/eslint-config@https://codeload.github.com/Lichthagel/eslint-config/tar.gz/155b33f29dd07dd3c4a8729d5b1101a0f16feeb0(eslint-plugin-n@17.9.0(eslint@9.6.0))(eslint-plugin-svelte@2.41.0(eslint@9.6.0)(svelte@4.2.18))(eslint@9.6.0)(svelte-eslint-parser@0.39.2(svelte@4.2.18))(svelte@4.2.18)(typescript@5.4.5)':
+  '@lichthagel/eslint-config@https://codeload.github.com/Lichthagel/eslint-config/tar.gz/f6651992ed5a5a5c6f82b3f4ffd08b2898839d12(eslint-plugin-n@17.9.0(eslint@9.6.0))(eslint-plugin-svelte@2.41.0(eslint@9.6.0)(svelte@4.2.18))(eslint@9.6.0)(svelte-eslint-parser@0.39.2(svelte@4.2.18))(svelte@4.2.18)(typescript@5.4.5)':
     dependencies:
       '@eslint/js': 9.4.0
       '@stylistic/eslint-plugin': 2.1.0(eslint@9.6.0)(typescript@5.4.5)
