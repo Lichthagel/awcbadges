@@ -4,33 +4,21 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": {
-        "url": "https://i.postimg.cc/YCLLTtz1/Genre-Fantasy-Easy.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/KjYVC4gc/Genre-Fantasy-Easy.png",
       "started": "2021-02-20",
       "completed": "2021-09-26",
       "status": "completed"
     },
     {
       "name": "Normal Mode",
-      "image": {
-        "url": "https://i.postimg.cc/5tcQVDsD/Genre-Fantasy-Normal.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/Xqmb89D6/Genre-Fantasy-Normal.png",
       "started": "2021-02-20",
       "completed": "2022-10-16",
       "status": "completed"
     },
     {
       "name": "Hard Mode",
-      "image": {
-        "url": "https://i.postimg.cc/YS1Gq8V0/Genre-Fantasy-Hard.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/t4T67xLt/Genre-Fantasy-Hard.png",
       "started": "2021-02-20",
       "status": "in-progress"
     },

@@ -4,33 +4,21 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": {
-        "url": "https://i.postimg.cc/Qtvnj8Wc/Genre-Slice-Of-Life-Easy.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/bNjhvWwH/Genre-Slice-Of-Life-Easy.png",
       "started": "2021-02-20",
       "completed": "2021-07-05",
       "status": "completed"
     },
     {
       "name": "Normal Mode",
-      "image": {
-        "url": "https://i.postimg.cc/L5fQXczw/Genre-Slice-Of-Life-Normal.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/W3PnZGFK/Genre-Slice-Of-Life-Normal.png",
       "started": "2021-02-20",
       "completed": "2021-11-03",
       "status": "completed"
     },
     {
       "name": "Hard Mode",
-      "image": {
-        "url": "https://i.postimg.cc/SQzvDMwd/Genre-Slice-Of-Life-Hard.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/XqqyBq8m/Genre-Slice-Of-Life-Hard.png",
       "started": "2021-02-20",
       "completed": "2022-06-26",
       "status": "completed"

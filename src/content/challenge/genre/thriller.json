@@ -5,38 +5,27 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": {
-        "url": "https://i.postimg.cc/tgXkb1SK/Genre-Psych-Thriller-Easy.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/DyqfqDf5/Genre-Thriller-Easy.png",
       "started": "2021-02-20",
       "completed": "2021-08-01",
       "status": "completed"
     },
     {
       "name": "Normal Mode",
-      "image": {
-        "url": "https://i.postimg.cc/GpqQmc6H/Genre-Psych-Thriller-Normal.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/SxRMDkXk/Genre-Thriller-Normal.png",
       "started": "2021-02-20",
       "completed": "2021-12-14",
       "status": "completed"
     },
     {
       "name": "Hard Mode",
-      "image": {
-        "url": "https://i.postimg.cc/50ymHhMp/Genre-Psych-Thriller-Hard.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/pTLbnGGG/Genre-Thriller-Hard.png",
       "started": "2021-02-20",
       "status": "in-progress"
     },
     {
       "name": "Mastery",
+      "image": "https://i.postimg.cc/bJmjR6NH/AWC-Genre-Thriller-Mastery-Static.png",
       "status": "hidden"
     }
   ]

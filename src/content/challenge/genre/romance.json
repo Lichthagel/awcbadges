@@ -4,33 +4,21 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": {
-        "url": "https://i.postimg.cc/zvRS7Tvg/Genre-Romance-Easy.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/sDQYHGJ2/Genre-Romance-Easy.png",
       "started": "2021-02-20",
       "completed": "2021-06-26",
       "status": "completed"
     },
     {
       "name": "Normal Mode",
-      "image": {
-        "url": "https://i.postimg.cc/2jqPMJB4/Genre-Romance-Normal.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/Bt9XVbq8/Genre-Romance-Normal.png",
       "started": "2021-02-20",
       "completed": "2022-04-02",
       "status": "completed"
     },
     {
       "name": "Hard Mode",
-      "image": {
-        "url": "https://i.postimg.cc/qB99TL8W/Genre-Romance-Hard.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/2yFVgm32/Genre-Romance-Hard.png",
       "started": "2021-02-20",
       "completed": "2023-06-23",
       "status": "completed"

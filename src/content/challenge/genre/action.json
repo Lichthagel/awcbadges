@@ -4,33 +4,21 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": {
-        "url": "https://i.postimg.cc/fLGrjzCB/Genre-Action-Easy.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/G2PHWyKw/Genre-Action-Easy.png",
       "started": "2021-02-20",
       "completed": "2021-07-13",
       "status": "completed"
     },
     {
       "name": "Normal Mode",
-      "image": {
-        "url": "https://i.postimg.cc/RVzYW0N0/Genre-Action-Normal.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/cHcL9N1d/Genre-Action-Normal.png",
       "started": "2021-02-20",
       "completed": "2022-04-17",
       "status": "completed"
     },
     {
       "name": "Hard Mode",
-      "image": {
-        "url": "https://i.postimg.cc/kXFpKdbv/Genre-Action-Hard.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/yxbBt1MC/Genre-Action-Hard.png",
       "started": "2021-02-20",
       "completed": "2023-08-02",
       "status": "completed"

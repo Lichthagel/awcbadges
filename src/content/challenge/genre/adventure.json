@@ -4,33 +4,21 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": {
-        "url": "https://i.postimg.cc/xTR6qyws/Genre-Adventure-Easy.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/hjCf4qkp/Genre-Adventure-Easy.png",
       "started": "2021-02-20",
       "completed": "2021-12-16",
       "status": "completed"
     },
     {
       "name": "Normal Mode",
-      "image": {
-        "url": "https://i.postimg.cc/wBSVnWNB/Genre-Adventure-Normal.png",
-        "height": 720,
-        "width": 520
-      },
+      "image":"https://i.postimg.cc/xTNcQht3/Genre-Adventure-Normal.png",
       "started": "2021-02-20",
       "completed": "2023-03-18",
       "status": "completed"
     },
     {
       "name": "Hard Mode",
-      "image": {
-        "url": "https://i.postimg.cc/NFtxj5pq/Genre-Adventure-Hard.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/RCyZgG46/Genre-Adventure-Hard.png",
       "started": "2021-02-20",
       "status": "in-progress"
     },

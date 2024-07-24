@@ -4,33 +4,21 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": {
-        "url": "https://i.postimg.cc/bvbbSqGz/Genre-Drama-Easy.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/SQz70JkG/Genre-Drama-Easy.png",
       "started": "2021-02-20",
       "completed": "2021-04-07",
       "status": "completed"
     },
     {
       "name": "Normal Mode",
-      "image": {
-        "url": "https://i.postimg.cc/Qt37pv5c/Genre-Drama-Normal.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/sxDrhtjj/Genre-Drama-Normal.png",
       "started": "2021-02-20",
       "completed": "2021-07-16",
       "status": "completed"
     },
     {
       "name": "Hard Mode",
-      "image": {
-        "url": "https://i.postimg.cc/4y8hRd01/Genre-Drama-Hard.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/FKqJ0SF0/Genre-Drama-Hard.png",
       "started": "2021-02-20",
       "completed": "2021-10-14",
       "status": "completed"

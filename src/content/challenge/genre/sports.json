@@ -4,37 +4,26 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": {
-        "url": "https://i.postimg.cc/zXZPMfNr/Genre-Sports-Easy.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/FsjD9nYS/Genre-Sports-Easy.png",
       "started": "2021-02-20",
       "completed": "2022-07-15",
       "status": "completed"
     },
     {
       "name": "Normal Mode",
-      "image": {
-        "url": "https://i.postimg.cc/gkVBPPc6/Genre-Sports-Normal.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/fT3ggpfm/Genre-Sports-Normal.png",
       "started": "2021-02-20",
       "status": "in-progress"
     },
     {
       "name": "Hard Mode",
-      "image": {
-        "url": "https://i.postimg.cc/cLdkx56k/Genre-Sports-Hard.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/kX4gCL11/Genre-Sports-Hard.png",
       "started": "2021-02-20",
       "status": "not-started"
     },
     {
       "name": "Mastery",
+      "image": "https://i.postimg.cc/9fjVXRnT/AWC-Genre-Sports-Mastery-Static.png",
       "status": "hidden"
     }
   ]
