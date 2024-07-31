@@ -5,16 +5,16 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": "https://i.postimg.cc/GmdXkMRg/Monthly-2024-July-Easy-Static.png",
+      "image": "https://i.postimg.cc/JhYn34y6/Monthly-2024-July-Easy-Animated.png",
       "started": "2024-07-01",
       "completed": "2024-07-30",
-      "status": "submitted"
+      "status": "completed"
     },
     {
       "name": "Hard Mode",
       "image": "https://i.postimg.cc/901rsF47/Monthly-2024-July-Hard-Static.png",
       "started": "2024-07-01",
-      "status": "in-progress"
+      "status": "incomplete"
     }
   ]
 }
