@@ -1,6 +1,4 @@
 ---
-import { Image } from "astro:assets";
-
 import type { Badge, Image as ImageType } from "../models";
 
 type Props = {
@@ -29,7 +27,7 @@ badge.image === undefined ?
 <div
   class="group relative mx-1 mb-2 inline-block align-bottom transition hover:scale-105 lg:mb-4"
 >
-  <Image
+  <img
     alt={name}
     class:list={[
       "transition group-hover:saturate-100 group-hover:opacity-100 object-contain",
