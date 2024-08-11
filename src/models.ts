@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { reference, z } from "astro:content";
 
 const zThreadCommentUrl = z
