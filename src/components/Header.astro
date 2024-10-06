@@ -64,9 +64,9 @@ const recentlyCompleted = badges
 const recentlyStarted = badges
   .filter(
     (badge: BadgeExt<Badge>): badge is BadgeExt<BadgeOngoing> => badge.status === "in-progress" ||
-    badge.status === "on-hold" ||
-    badge.status === "submitted" ||
-    badge.status === "completed",
+      badge.status === "on-hold" ||
+      badge.status === "submitted" ||
+      badge.status === "completed",
   )
   .sort((a, b) => b.started.valueOf() - a.started.valueOf())
   .slice(0, 5)
