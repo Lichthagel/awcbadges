@@ -16,63 +16,63 @@ if (!challenge) {
 }
 
 const show = (() => Array.isArray(challenge.data.badge) ?
-    challenge.data.badge.some(
-        (badge) => badge.status !== "incomplete" && badge.status !== "hidden",
-      ) :
-    challenge.data.badge.status !== "incomplete" &&
-    challenge.data.badge.status !== "hidden")();
+  challenge.data.badge.some(
+    (badge) => badge.status !== "incomplete" && badge.status !== "hidden",
+  ) :
+  challenge.data.badge.status !== "incomplete" &&
+  challenge.data.badge.status !== "hidden")();
 ---
 
 {
   show &&
   (Array.isArray(challenge.data.badge) &&
     challenge.data.visibility !== "only-focus" ?
-(
-      <div class="m-1 mt-6 inline-block rounded bg-ctp-mantle p-1 shadow">
-        {challenge.data.badge
-          .filter(
-            (badge) => badge.status !== "incomplete" && badge.status !== "hidden",
-          )
-          .map((badge) => (
-            <a
-              href={badge.url?.full ?? challenge.data.url.full}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <BadgeComponent
-                badge={badge}
-                name={badge.name}
-                size={
-                  badge.focus || challenge.data.visibility === "all" ?
-                    "large" :
-                    "small"
-                }
-              />
-            </a>
-          ))}
+      (
+        <div class="m-1 mt-6 inline-block rounded bg-ctp-mantle p-1 shadow">
+          {challenge.data.badge
+            .filter(
+              (badge) => badge.status !== "incomplete" && badge.status !== "hidden",
+            )
+            .map((badge) => (
+              <a
+                href={badge.url?.full ?? challenge.data.url.full}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <BadgeComponent
+                  badge={badge}
+                  name={badge.name}
+                  size={
+                    badge.focus || challenge.data.visibility === "all" ?
+                      "large" :
+                      "small"
+                  }
+                />
+              </a>
+            ))}
 
-        <h4 class="ml-auto mr-1 w-max font-bold">{challenge.data.name}</h4>
-      </div>
-    ) :
-(
-      <div class="mb-1 mt-6 inline-block rounded py-1">
-        <a
-          href={challenge.data.url.full}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <BadgeComponent
-            badge={
-              Array.isArray(challenge.data.badge) ?
-                challenge.data.badge.find((badge) => badge.focus)! :
-                challenge.data.badge
-            }
-            name={challenge.data.name}
-            size="large"
-          />
+          <h4 class="ml-auto mr-1 w-max font-bold">{challenge.data.name}</h4>
+        </div>
+      ) :
+      (
+        <div class="mb-1 mt-6 inline-block rounded py-1">
+          <a
+            href={challenge.data.url.full}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <BadgeComponent
+              badge={
+                Array.isArray(challenge.data.badge) ?
+                  challenge.data.badge.find((badge) => badge.focus)! :
+                  challenge.data.badge
+              }
+              name={challenge.data.name}
+              size="large"
+            />
 
-          <h4 class="mx-1 font-bold">{challenge.data.name}</h4>
-        </a>
-      </div>
-    ))
+            <h4 class="mx-1 font-bold">{challenge.data.name}</h4>
+          </a>
+        </div>
+      ))
 }

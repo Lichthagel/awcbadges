@@ -31,13 +31,6 @@ export default [
     },
   },
   {
-    files: ["**/*.astro"],
-    rules: {
-      "@stylistic/indent": "off",
-      "@stylistic/jsx-indent": "off",
-    },
-  },
-  {
     ignores: [
       "dist/**/*",
       "node_modules/**/*",
