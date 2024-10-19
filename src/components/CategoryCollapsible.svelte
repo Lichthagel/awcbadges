@@ -1,9 +1,19 @@
 <script lang="ts">
+  import type { Snippet } from "svelte";
+
   import { slide } from "svelte/transition";
 
-  export let title: string;
+  type Props = {
+    children: Snippet;
+    title: string;
+  };
 
-  let isOpen = false;
+  const {
+    title,
+    children,
+  } = $props() as Props;
+
+  let isOpen = $state(false);
 
   const toggle = () => {
     isOpen = !isOpen;
@@ -13,13 +23,13 @@
 <div>
   <button
     class="text-ctp-pink mx-auto my-5 w-max"
-    on:click={() => toggle()}
+    onclick={() => toggle()}
     type="button"
   >
     <span
       class="inline-block transition-transform w-8 h-8 i-lucide-chevron-right"
       class:rotate-90={isOpen}
-    />
+    ></span>
     <span class="text-3xl lowercase align-middle">{title}</span>
   </button>
   {#if isOpen}
@@ -27,7 +37,7 @@
       class="overflow-x-scroll whitespace-nowrap lg:whitespace-normal"
       transition:slide={{ duration: 500 }}
     >
-      <slot />
+      {@render children()}
     </div>
   {/if}
 </div>

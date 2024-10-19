@@ -2,8 +2,8 @@
   const header =
     "<center>img70%(banner)\n\nChallenge Start Date: %START% // Challenge Finish Date: YYYY-MM-DD\n\nLegend: [✅] = Completed / [▶️] = Current / [❌️] = Not Completed</center>\n\n<hr>";
 
-  let input = "";
-  let output = "";
+  let input = $state<string>("");
+  let output = $state<string>("");
 
   const onInput = () => {
     let text = input;
@@ -27,12 +27,12 @@
   <textarea
     bind:value={input}
     class="h-[99vh] w-[45%] resize-none bg-ctp-crust"
-    on:input={onInput}
+    oninput={onInput}
     rows="50"
-  />
+  ></textarea>
   <textarea
     bind:value={output}
     class="h-[99vh] w-[45%] resize-none bg-ctp-crust"
     rows="50"
-  />
+  ></textarea>
 </div>
