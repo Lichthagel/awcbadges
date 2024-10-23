@@ -9,18 +9,18 @@ type Props = {
 
 const { name, badge, size } = Astro.props;
 
-const image: ImageType =
-badge.image === undefined ?
-    {
+const image: ImageType
+= badge.image === undefined
+  ? {
       url: "https://awc.moe/static/images/badge-placeholder.png",
       width: 500,
       height: 500,
-    } :
-    (typeof badge.image === "string" ?
-        {
+    }
+  : (typeof badge.image === "string"
+      ? {
           url: badge.image,
-        } :
-      badge.image
+        }
+      : badge.image
     );
 ---
 

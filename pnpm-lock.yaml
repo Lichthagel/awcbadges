@@ -27,8 +27,8 @@ importers:
         specifier: ^1.1.165
         version: 1.2.10
       '@lichthagel/eslint-config':
-        specifier: github:Lichthagel/eslint-config
-        version: https://codeload.github.com/Lichthagel/eslint-config/tar.gz/8099fafc20aab6408fef0f54fba7c6c51d50c1ab(astro-eslint-parser@1.0.3(typescript@5.4.5))(eslint-plugin-n@17.11.1(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-svelte@2.45.1(eslint@9.13.0(jiti@1.21.6))(svelte@5.0.2))(eslint@9.13.0(jiti@1.21.6))(svelte-eslint-parser@0.42.0(svelte@5.0.2))(svelte@5.0.2)(typescript@5.4.5)
+        specifier: ^1.0.0
+        version: 1.0.0(astro-eslint-parser@1.0.3(typescript@5.4.5))(eslint-plugin-n@17.11.1(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-svelte@2.45.1(eslint@9.13.0(jiti@1.21.6))(svelte@5.0.2))(eslint@9.13.0(jiti@1.21.6))(svelte-eslint-parser@0.42.0(svelte@5.0.2))(svelte@5.0.2)(typescript@5.4.5)
       '@typescript-eslint/parser':
         specifier: ^8.0.0
         version: 8.10.0(eslint@9.13.0(jiti@1.21.6))(typescript@5.4.5)
@@ -392,10 +392,6 @@ packages:
     resolution: {integrity: sha512-4Bfj15dVJdoy3RfZmmo86RK1Fwzn6SstsvK9JS+BaVKqC6QQQQyXekNaC+g+LKNgkQ+2VhGAzm6hO40AhMR3zQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@eslint/js@9.12.0':
-    resolution: {integrity: sha512-eohesHH8WFRUprDNyEREgqP6beG6htMeUYeCpkEgBCieCMme5r9zFWjzAJp//9S+Kub4rqE+jXe9Cp1a7IYIIA==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-
   '@eslint/js@9.13.0':
     resolution: {integrity: sha512-IFLyoY4d72Z5y/6o/BazFBezupzI/taV8sGumxTAVw3lXG9A6md1Dc34T9s1FoD/an9pJH8RHbAxsaEbBed9lA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -563,9 +559,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@lichthagel/eslint-config@https://codeload.github.com/Lichthagel/eslint-config/tar.gz/8099fafc20aab6408fef0f54fba7c6c51d50c1ab':
-    resolution: {tarball: https://codeload.github.com/Lichthagel/eslint-config/tar.gz/8099fafc20aab6408fef0f54fba7c6c51d50c1ab}
-    version: 0.0.0
+  '@lichthagel/eslint-config@1.0.0':
+    resolution: {integrity: sha512-vyt08CHGPtwTXquFpT1Q0y8ABQemPFNakV850wQPn+mGGkUBee1P7MiEAZP0SULc38NBLh3f1/ajl6ukcQRejA==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       eslint: '>=8.40.0'
@@ -1223,8 +1218,8 @@ packages:
     peerDependencies:
       eslint: '>=8.23.0'
 
-  eslint-plugin-perfectionist@3.8.0:
-    resolution: {integrity: sha512-BYJWbQVOjvIGK9V1xUfn790HuvkePjxti8epOi1H6sdzo0N4RehBmQ8coHPbgA/f12BUG1NIoDtQhI9mUm+o2A==}
+  eslint-plugin-perfectionist@3.9.1:
+    resolution: {integrity: sha512-9WRzf6XaAxF4Oi5t/3TqKP5zUjERhasHmLFHin2Yw6ZAp/EP/EVA2dr3BhQrrHWCm5SzTMZf0FcjDnBkO2xFkA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       astro-eslint-parser: ^1.0.2
@@ -1440,10 +1435,6 @@ packages:
 
   globals@14.0.0:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
-    engines: {node: '>=18'}
-
-  globals@15.10.0:
-    resolution: {integrity: sha512-tqFIbz83w4Y5TCbtgjZjApohbuh7K9BxGYFm7ifwDR240tvdb7P9x+/9VvUKlmkPoiknoJtanI8UOrqxS3a7lQ==}
     engines: {node: '>=18'}
 
   globals@15.11.0:
@@ -3136,8 +3127,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@eslint/js@9.12.0': {}
-
   '@eslint/js@9.13.0': {}
 
   '@eslint/object-schema@2.1.4': {}
@@ -3278,14 +3267,14 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@lichthagel/eslint-config@https://codeload.github.com/Lichthagel/eslint-config/tar.gz/8099fafc20aab6408fef0f54fba7c6c51d50c1ab(astro-eslint-parser@1.0.3(typescript@5.4.5))(eslint-plugin-n@17.11.1(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-svelte@2.45.1(eslint@9.13.0(jiti@1.21.6))(svelte@5.0.2))(eslint@9.13.0(jiti@1.21.6))(svelte-eslint-parser@0.42.0(svelte@5.0.2))(svelte@5.0.2)(typescript@5.4.5)':
+  '@lichthagel/eslint-config@1.0.0(astro-eslint-parser@1.0.3(typescript@5.4.5))(eslint-plugin-n@17.11.1(eslint@9.13.0(jiti@1.21.6)))(eslint-plugin-svelte@2.45.1(eslint@9.13.0(jiti@1.21.6))(svelte@5.0.2))(eslint@9.13.0(jiti@1.21.6))(svelte-eslint-parser@0.42.0(svelte@5.0.2))(svelte@5.0.2)(typescript@5.4.5)':
     dependencies:
-      '@eslint/js': 9.12.0
+      '@eslint/js': 9.13.0
       '@stylistic/eslint-plugin': 2.9.0(eslint@9.13.0(jiti@1.21.6))(typescript@5.4.5)
       eslint: 9.13.0(jiti@1.21.6)
-      eslint-plugin-perfectionist: 3.8.0(astro-eslint-parser@1.0.3(typescript@5.4.5))(eslint@9.13.0(jiti@1.21.6))(svelte-eslint-parser@0.42.0(svelte@5.0.2))(svelte@5.0.2)(typescript@5.4.5)
+      eslint-plugin-perfectionist: 3.9.1(astro-eslint-parser@1.0.3(typescript@5.4.5))(eslint@9.13.0(jiti@1.21.6))(svelte-eslint-parser@0.42.0(svelte@5.0.2))(svelte@5.0.2)(typescript@5.4.5)
       eslint-plugin-unicorn: 56.0.0(eslint@9.13.0(jiti@1.21.6))
-      globals: 15.10.0
+      globals: 15.11.0
       typescript-eslint: 8.10.0(eslint@9.13.0(jiti@1.21.6))(typescript@5.4.5)
     optionalDependencies:
       eslint-plugin-n: 17.11.1(eslint@9.13.0(jiti@1.21.6))
@@ -4027,7 +4016,7 @@ snapshots:
       minimatch: 9.0.5
       semver: 7.6.3
 
-  eslint-plugin-perfectionist@3.8.0(astro-eslint-parser@1.0.3(typescript@5.4.5))(eslint@9.13.0(jiti@1.21.6))(svelte-eslint-parser@0.42.0(svelte@5.0.2))(svelte@5.0.2)(typescript@5.4.5):
+  eslint-plugin-perfectionist@3.9.1(astro-eslint-parser@1.0.3(typescript@5.4.5))(eslint@9.13.0(jiti@1.21.6))(svelte-eslint-parser@0.42.0(svelte@5.0.2))(svelte@5.0.2)(typescript@5.4.5):
     dependencies:
       '@typescript-eslint/types': 8.10.0
       '@typescript-eslint/utils': 8.10.0(eslint@9.13.0(jiti@1.21.6))(typescript@5.4.5)
@@ -4070,7 +4059,7 @@ snapshots:
       core-js-compat: 3.38.1
       eslint: 9.13.0(jiti@1.21.6)
       esquery: 1.6.0
-      globals: 15.10.0
+      globals: 15.11.0
       indent-string: 4.0.0
       is-builtin-module: 3.2.1
       jsesc: 3.0.2
@@ -4292,8 +4281,6 @@ snapshots:
   globals@11.12.0: {}
 
   globals@14.0.0: {}
-
-  globals@15.10.0: {}
 
   globals@15.11.0: {}
 

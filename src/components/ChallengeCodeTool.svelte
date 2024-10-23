@@ -1,6 +1,6 @@
 <script lang="ts">
-  const header =
-    "<center>img70%(banner)\n\nChallenge Start Date: %START% // Challenge Finish Date: YYYY-MM-DD\n\nLegend: [✅] = Completed / [▶️] = Current / [❌️] = Not Completed</center>\n\n<hr>";
+  const header
+    = "<center>img70%(banner)\n\nChallenge Start Date: %START% // Challenge Finish Date: YYYY-MM-DD\n\nLegend: [✅] = Completed / [▶️] = Current / [❌️] = Not Completed</center>\n\n<hr>";
 
   let input = $state<string>("");
   let output = $state<string>("");

@@ -17,7 +17,7 @@
     "@egoist/tailwindcss-icons": "^1.8.1",
     "@fontsource-variable/gabarito": "^5.0.2",
     "@iconify-json/lucide": "^1.1.165",
-    "@lichthagel/eslint-config": "github:Lichthagel/eslint-config",
+    "@lichthagel/eslint-config": "^1.0.0",
     "@typescript-eslint/parser": "^8.0.0",
     "astro": "^4.4.0",
     "date-fns": "^4.0.0",
