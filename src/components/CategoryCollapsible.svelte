@@ -11,7 +11,7 @@
   const {
     title,
     children,
-  } = $props() as Props;
+  }: Props = $props();
 
   let isOpen = $state(false);
 
