@@ -1,0 +1,12 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": ["/src/content/category/**/*.json"],
+      "url": "./.astro/collections/category.schema.json"
+    },
+    {
+      "fileMatch": ["/src/content/challenge/**/*.json"],
+      "url": "./.astro/collections/challenge.schema.json"
+    }
+  ]
+}
