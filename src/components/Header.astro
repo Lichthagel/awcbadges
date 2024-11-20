@@ -10,12 +10,12 @@ const allCategories = await getCollection("category");
 
 const allChallenges = await getCollection("challenge");
 
-type BadgeExt<T> = {
+type BadgeExt<T> = T & {
   badgeName?: string;
   challengeName: string;
   id: CollectionEntry<"challenge">["id"];
   url: string;
-} & T;
+};
 
 const badges = allChallenges
   .flatMap<BadgeExt<Badge>>((challenge) => {

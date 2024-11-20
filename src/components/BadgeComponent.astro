@@ -2,7 +2,7 @@
 import type { Badge, Image as ImageType } from "../models";
 
 type Props = {
-  badge: { name?: string } & Badge;
+  badge: Badge & { name?: string };
   name: string;
   size: "large" | "small";
 };
