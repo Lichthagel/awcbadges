@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@astrojs/svelte':
         specifier: ^6.0.0
-        version: 6.0.2(@types/node@20.12.7)(astro@4.16.14(@types/node@20.12.7)(rollup@4.27.3)(typescript@5.4.5))(svelte@5.2.8)(typescript@5.4.5)
+        version: 6.0.2(@types/node@20.12.7)(astro@4.16.15(@types/node@20.12.7)(rollup@4.27.3)(typescript@5.4.5))(svelte@5.2.8)(typescript@5.4.5)
       '@astrojs/tailwind':
         specifier: ^5.1.0
-        version: 5.1.2(astro@4.16.14(@types/node@20.12.7)(rollup@4.27.3)(typescript@5.4.5))(tailwindcss@3.4.15)
+        version: 5.1.2(astro@4.16.15(@types/node@20.12.7)(rollup@4.27.3)(typescript@5.4.5))(tailwindcss@3.4.15)
       '@catppuccin/tailwindcss':
         specifier: ^0.1.6
         version: 0.1.6(tailwindcss@3.4.15)
@@ -34,7 +34,7 @@ importers:
         version: 8.16.0(eslint@9.15.0(jiti@1.21.6))(typescript@5.4.5)
       astro:
         specifier: ^4.13.0
-        version: 4.16.14(@types/node@20.12.7)(rollup@4.27.3)(typescript@5.4.5)
+        version: 4.16.15(@types/node@20.12.7)(rollup@4.27.3)(typescript@5.4.5)
       date-fns:
         specifier: ^4.0.0
         version: 4.1.0
@@ -914,8 +914,8 @@ packages:
     resolution: {integrity: sha512-AGsGgcg7Jg9UpyCDgvl/EkdYpe1oMkFdmC2Zl+KWneoieLCtQIFjmcY8yt41gcNx4mby0w8BBJQcBmPuf8UAoQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@4.16.14:
-    resolution: {integrity: sha512-2IuLkIp4idyspugq+F52rHZyNqHHi2AdQzuKp3SGytg/YAm50dNeWhP/7l+enjgWZLloLq5xsH5gVQpoDFoyFg==}
+  astro@4.16.15:
+    resolution: {integrity: sha512-usybZ7nEUiwYKT7r47l4VbkqjKfaE+BgWV/ed4PT3mE3vFRTBWFsXLnkzrN7awfN6+/ekZTAcE+MAkdA551Umw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -1734,6 +1734,9 @@ packages:
 
   magic-string@0.30.13:
     resolution: {integrity: sha512-8rYBO+MsWkgjDSOvLomYnzhdwEG51olQ4zL5KXnNJWV5MNmrb4rTZdrtkhxjnD/QyZUqR/Z/XDsUs/4ej2nx0g==}
+
+  magic-string@0.30.14:
+    resolution: {integrity: sha512-5c99P1WKTed11ZC0HMJOj6CDIue6F8ySu+bJL+85q1zBEIY8IklrJ1eiKC2NDRh3Ct3FcvmJPyQHb9erXMTJNw==}
 
   magicast@0.3.5:
     resolution: {integrity: sha512-L0WhttDl+2BOsybvEOLK7fW3UA0OQ0IQ2d6Zl2x/a6vVRs3bAY0ECOSHHeL5jD+SbOpOCUEi0y1DgHEn9Qn1AQ==}
@@ -2586,8 +2589,8 @@ packages:
     resolution: {integrity: sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==}
     engines: {node: '>=8'}
 
-  type-fest@4.27.0:
-    resolution: {integrity: sha512-3IMSWgP7C5KSQqmo1wjhKrwsvXAtF33jO3QY+Uy++ia7hqvgSK6iXbbg5PbDBc1P2ZbNEDgejOrN4YooXvhwCw==}
+  type-fest@4.28.1:
+    resolution: {integrity: sha512-LO/+yb3mf46YqfUC7QkkoAlpa7CTYh//V1Xy9+NQ+pKqDqXIq0NTfPfQRwFfCt+if4Qkwb9gzZfsl6E5TkXZGw==}
     engines: {node: '>=16'}
 
   typescript-eslint@8.16.0:
@@ -2836,10 +2839,10 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/svelte@6.0.2(@types/node@20.12.7)(astro@4.16.14(@types/node@20.12.7)(rollup@4.27.3)(typescript@5.4.5))(svelte@5.2.8)(typescript@5.4.5)':
+  '@astrojs/svelte@6.0.2(@types/node@20.12.7)(astro@4.16.15(@types/node@20.12.7)(rollup@4.27.3)(typescript@5.4.5))(svelte@5.2.8)(typescript@5.4.5)':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 4.0.1(svelte@5.2.8)(vite@5.4.11(@types/node@20.12.7))
-      astro: 4.16.14(@types/node@20.12.7)(rollup@4.27.3)(typescript@5.4.5)
+      astro: 4.16.15(@types/node@20.12.7)(rollup@4.27.3)(typescript@5.4.5)
       svelte: 5.2.8
       svelte2tsx: 0.7.26(svelte@5.2.8)(typescript@5.4.5)
       typescript: 5.4.5
@@ -2855,9 +2858,9 @@ snapshots:
       - supports-color
       - terser
 
-  '@astrojs/tailwind@5.1.2(astro@4.16.14(@types/node@20.12.7)(rollup@4.27.3)(typescript@5.4.5))(tailwindcss@3.4.15)':
+  '@astrojs/tailwind@5.1.2(astro@4.16.15(@types/node@20.12.7)(rollup@4.27.3)(typescript@5.4.5))(tailwindcss@3.4.15)':
     dependencies:
-      astro: 4.16.14(@types/node@20.12.7)(rollup@4.27.3)(typescript@5.4.5)
+      astro: 4.16.15(@types/node@20.12.7)(rollup@4.27.3)(typescript@5.4.5)
       autoprefixer: 10.4.20(postcss@8.4.47)
       postcss: 8.4.47
       postcss-load-config: 4.0.2(postcss@8.4.47)
@@ -3624,7 +3627,7 @@ snapshots:
       - supports-color
       - typescript
 
-  astro@4.16.14(@types/node@20.12.7)(rollup@4.27.3)(typescript@5.4.5):
+  astro@4.16.15(@types/node@20.12.7)(rollup@4.27.3)(typescript@5.4.5):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -3663,7 +3666,7 @@ snapshots:
       http-cache-semantics: 4.1.1
       js-yaml: 4.1.0
       kleur: 4.1.5
-      magic-string: 0.30.13
+      magic-string: 0.30.14
       magicast: 0.3.5
       micromatch: 4.0.8
       mrmime: 2.0.0
@@ -3735,7 +3738,7 @@ snapshots:
       chalk: 5.3.0
       cli-boxes: 3.0.0
       string-width: 7.2.0
-      type-fest: 4.27.0
+      type-fest: 4.28.1
       widest-line: 5.0.0
       wrap-ansi: 9.0.0
 
@@ -4562,6 +4565,10 @@ snapshots:
       yallist: 3.1.1
 
   magic-string@0.30.13:
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.5.0
+
+  magic-string@0.30.14:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
 
@@ -5647,7 +5654,7 @@ snapshots:
 
   type-fest@0.8.1: {}
 
-  type-fest@4.27.0: {}
+  type-fest@4.28.1: {}
 
   typescript-eslint@8.16.0(eslint@9.15.0(jiti@1.21.6))(typescript@5.4.5):
     dependencies:
