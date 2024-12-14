@@ -3,6 +3,9 @@
   "extends": ["config:recommended", ":disableDigestUpdates"],
   "baseBranches": ["main"],
   "labels": ["dependencies"],
+  "lockFileMaintenance": {
+    "enabled": true
+  },
   "packageRules": [
     {
       "description": "Group linter upgrades together",
