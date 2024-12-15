@@ -17,8 +17,8 @@ if (!challenge) {
 
 const show = (() => Array.isArray(challenge.data.badge)
   ? challenge.data.badge.some(
-    (badge) => badge.status !== "incomplete" && badge.status !== "hidden",
-  )
+      (badge) => badge.status !== "incomplete" && badge.status !== "hidden",
+    )
   : challenge.data.badge.status !== "incomplete"
     && challenge.data.badge.status !== "hidden")();
 ---
