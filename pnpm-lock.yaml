@@ -28,7 +28,7 @@ importers:
         version: 1.2.20
       '@lichthagel/eslint-config':
         specifier: ^1.0.0
-        version: 1.0.9(eslint-plugin-n@17.15.1(eslint@9.17.0(jiti@1.21.7)))(eslint-plugin-svelte@2.46.1(eslint@9.17.0(jiti@1.21.7))(svelte@5.16.0))(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)
+        version: 1.0.10(eslint-plugin-n@17.15.1(eslint@9.17.0(jiti@1.21.7)))(eslint-plugin-svelte@2.46.1(eslint@9.17.0(jiti@1.21.7))(svelte@5.16.0))(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)
       '@typescript-eslint/parser':
         specifier: ^8.0.0
         version: 8.19.0(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)
@@ -640,8 +640,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@lichthagel/eslint-config@1.0.9':
-    resolution: {integrity: sha512-vsgWPGDPbabaKiUVUeni/bwTKIQyVwUrlvVcQhruLoZWyMlIPTGzKUGxinPW/N72/o9znTAhde6NyTOdU2cXiQ==}
+  '@lichthagel/eslint-config@1.0.10':
+    resolution: {integrity: sha512-qswjqxd+dz9OR9yXPM3u6sU/fn9jS+yVlMwhvvN+MyWxJP07MQzPKDxkioKgQ5JF8vY1z1bOakZyshwh4vWczQ==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       eslint: '>=8.40.0'
@@ -900,13 +900,6 @@ packages:
     resolution: {integrity: sha512-WW9PpDaLIFW9LCbucMSdYUuGeFUz1OkWYS/5fwZwTA+l2RwlWFdJvReQqMUMBw4yJWJOfqd7An9uwut2Oj8sLw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
-      typescript: '>=4.8.4 <5.8.0'
-
-  '@typescript-eslint/utils@8.18.2':
-    resolution: {integrity: sha512-Cr4A0H7DtVIPkauj4sTSXVl+VBWewE9/o40KcF3TV9aqDEOWoXF3/+oRXNby3DYzZeCATvbdksYsGZzplwnK/Q==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-    peerDependencies:
-      eslint: ^8.57.0 || ^9.0.0
       typescript: '>=4.8.4 <5.8.0'
 
   '@typescript-eslint/utils@8.19.0':
@@ -3289,7 +3282,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@lichthagel/eslint-config@1.0.9(eslint-plugin-n@17.15.1(eslint@9.17.0(jiti@1.21.7)))(eslint-plugin-svelte@2.46.1(eslint@9.17.0(jiti@1.21.7))(svelte@5.16.0))(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)':
+  '@lichthagel/eslint-config@1.0.10(eslint-plugin-n@17.15.1(eslint@9.17.0(jiti@1.21.7)))(eslint-plugin-svelte@2.46.1(eslint@9.17.0(jiti@1.21.7))(svelte@5.16.0))(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)':
     dependencies:
       '@eslint/js': 9.17.0
       '@stylistic/eslint-plugin': 2.12.1(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)
@@ -3418,7 +3411,7 @@ snapshots:
 
   '@stylistic/eslint-plugin@2.12.1(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)':
     dependencies:
-      '@typescript-eslint/utils': 8.18.2(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)
+      '@typescript-eslint/utils': 8.19.0(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)
       eslint: 9.17.0(jiti@1.21.7)
       eslint-visitor-keys: 4.2.0
       espree: 10.3.0
@@ -3556,17 +3549,6 @@ snapshots:
       minimatch: 9.0.5
       semver: 7.6.3
       ts-api-utils: 1.4.3(typescript@5.7.2)
-      typescript: 5.7.2
-    transitivePeerDependencies:
-      - supports-color
-
-  '@typescript-eslint/utils@8.18.2(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)':
-    dependencies:
-      '@eslint-community/eslint-utils': 4.4.1(eslint@9.17.0(jiti@1.21.7))
-      '@typescript-eslint/scope-manager': 8.18.2
-      '@typescript-eslint/types': 8.18.2
-      '@typescript-eslint/typescript-estree': 8.18.2(typescript@5.7.2)
-      eslint: 9.17.0(jiti@1.21.7)
       typescript: 5.7.2
     transitivePeerDependencies:
       - supports-color
@@ -4092,8 +4074,8 @@ snapshots:
 
   eslint-plugin-perfectionist@4.4.0(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2):
     dependencies:
-      '@typescript-eslint/types': 8.18.2
-      '@typescript-eslint/utils': 8.18.2(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)
+      '@typescript-eslint/types': 8.19.0
+      '@typescript-eslint/utils': 8.19.0(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)
       eslint: 9.17.0(jiti@1.21.7)
       natural-orderby: 5.0.0
     transitivePeerDependencies:
