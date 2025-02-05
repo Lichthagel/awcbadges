@@ -28,7 +28,7 @@ importers:
         version: 1.2.25
       '@lichthagel/eslint-config':
         specifier: ^1.0.0
-        version: 1.0.15(eslint-plugin-n@17.15.1(eslint@9.19.0(jiti@1.21.7)))(eslint-plugin-svelte@2.46.1(eslint@9.19.0(jiti@1.21.7))(svelte@5.19.7))(eslint@9.19.0(jiti@1.21.7))(typescript@5.7.3)
+        version: 1.0.16(eslint-plugin-n@17.15.1(eslint@9.19.0(jiti@1.21.7)))(eslint-plugin-svelte@2.46.1(eslint@9.19.0(jiti@1.21.7))(svelte@5.19.7))(eslint@9.19.0(jiti@1.21.7))(typescript@5.7.3)
       '@typescript-eslint/parser':
         specifier: ^8.0.0
         version: 8.23.0(eslint@9.19.0(jiti@1.21.7))(typescript@5.7.3)
@@ -502,8 +502,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@lichthagel/eslint-config@1.0.15':
-    resolution: {integrity: sha512-nwUHKz1z8M7IobuO9F4dJRWN+WQmnw2KVNkjYSsTmw3/Php9q/HhXizrZgcj8BCOvBI9X4Bs9Pd5SSZt/BYc2g==}
+  '@lichthagel/eslint-config@1.0.16':
+    resolution: {integrity: sha512-ZIb2M1NVf/+AigaqqRNjNWvqMA7RVUClrc95y5H9vold6TmP6Bti5MDqV1rgx4LZP0OPDBUV9F/6/rbWIMipug==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       eslint: '>=8.40.0'
@@ -1157,8 +1157,8 @@ packages:
     peerDependencies:
       eslint: '>=8.23.0'
 
-  eslint-plugin-perfectionist@4.7.0:
-    resolution: {integrity: sha512-e2ODzm2SsAztFWY3ZRJd1K702vyl8Sapacjc3JluOW294CfA3+jfjin+UxjcrK48EvlNIMOp+JJB9N54YR2LRw==}
+  eslint-plugin-perfectionist@4.8.0:
+    resolution: {integrity: sha512-ZF04IAPGItYMlj9xjgvvl/QpksZf79g0dkxbNcuxDjbcUSZ4CwucJ7h5Yzt5JuHe+i6igQbUYEp40j4ndfbvWQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       eslint: '>=8.0.0'
@@ -3060,12 +3060,12 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@lichthagel/eslint-config@1.0.15(eslint-plugin-n@17.15.1(eslint@9.19.0(jiti@1.21.7)))(eslint-plugin-svelte@2.46.1(eslint@9.19.0(jiti@1.21.7))(svelte@5.19.7))(eslint@9.19.0(jiti@1.21.7))(typescript@5.7.3)':
+  '@lichthagel/eslint-config@1.0.16(eslint-plugin-n@17.15.1(eslint@9.19.0(jiti@1.21.7)))(eslint-plugin-svelte@2.46.1(eslint@9.19.0(jiti@1.21.7))(svelte@5.19.7))(eslint@9.19.0(jiti@1.21.7))(typescript@5.7.3)':
     dependencies:
       '@eslint/js': 9.19.0
       '@stylistic/eslint-plugin': 3.0.1(eslint@9.19.0(jiti@1.21.7))(typescript@5.7.3)
       eslint: 9.19.0(jiti@1.21.7)
-      eslint-plugin-perfectionist: 4.7.0(eslint@9.19.0(jiti@1.21.7))(typescript@5.7.3)
+      eslint-plugin-perfectionist: 4.8.0(eslint@9.19.0(jiti@1.21.7))(typescript@5.7.3)
       eslint-plugin-unicorn: 56.0.1(eslint@9.19.0(jiti@1.21.7))
       globals: 15.14.0
       typescript-eslint: 8.23.0(eslint@9.19.0(jiti@1.21.7))(typescript@5.7.3)
@@ -3801,7 +3801,7 @@ snapshots:
       minimatch: 9.0.5
       semver: 7.7.0
 
-  eslint-plugin-perfectionist@4.7.0(eslint@9.19.0(jiti@1.21.7))(typescript@5.7.3):
+  eslint-plugin-perfectionist@4.8.0(eslint@9.19.0(jiti@1.21.7))(typescript@5.7.3):
     dependencies:
       '@typescript-eslint/types': 8.23.0
       '@typescript-eslint/utils': 8.23.0(eslint@9.19.0(jiti@1.21.7))(typescript@5.7.3)
@@ -3847,7 +3847,7 @@ snapshots:
       read-pkg-up: 7.0.1
       regexp-tree: 0.1.27
       regjsparser: 0.10.0
-      semver: 7.7.0
+      semver: 7.7.1
       strip-indent: 3.0.0
 
   eslint-scope@7.2.2:
