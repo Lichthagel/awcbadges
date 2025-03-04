@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@astrojs/svelte':
         specifier: ^7.0.0
-        version: 7.0.5(astro@5.4.1(jiti@1.21.7)(rollup@4.34.9)(typescript@5.7.3)(yaml@2.7.0))(jiti@1.21.7)(svelte@5.22.1)(typescript@5.7.3)(yaml@2.7.0)
+        version: 7.0.5(astro@5.4.2(jiti@1.21.7)(rollup@4.34.9)(typescript@5.7.3)(yaml@2.7.0))(jiti@1.21.7)(svelte@5.22.1)(typescript@5.7.3)(yaml@2.7.0)
       '@astrojs/tailwind':
         specifier: ^5.1.0
-        version: 5.1.5(astro@5.4.1(jiti@1.21.7)(rollup@4.34.9)(typescript@5.7.3)(yaml@2.7.0))(tailwindcss@3.4.17)
+        version: 5.1.5(astro@5.4.2(jiti@1.21.7)(rollup@4.34.9)(typescript@5.7.3)(yaml@2.7.0))(tailwindcss@3.4.17)
       '@catppuccin/tailwindcss':
         specifier: ^0.1.6
         version: 0.1.6(tailwindcss@3.4.17)
@@ -34,7 +34,7 @@ importers:
         version: 8.26.0(eslint@9.21.0(jiti@1.21.7))(typescript@5.7.3)
       astro:
         specifier: ^5.0.0
-        version: 5.4.1(jiti@1.21.7)(rollup@4.34.9)(typescript@5.7.3)(yaml@2.7.0)
+        version: 5.4.2(jiti@1.21.7)(rollup@4.34.9)(typescript@5.7.3)(yaml@2.7.0)
       date-fns:
         specifier: ^4.0.0
         version: 4.1.0
@@ -859,8 +859,8 @@ packages:
     resolution: {integrity: sha512-3oqANMjrvJ+IE5pwlUWsH/4UztmYf/GTL0HPUkWnYBNAHiGVGrOh2EbegxS5niAwlO0w9dRYk0CkCPlJcu8c3Q==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@5.4.1:
-    resolution: {integrity: sha512-z9BiBz8pV7pZVn1evZv/9bJil3A9UZNyEjDFH3IjD87ioz95HHGLgbjRbbqF1EwSy8JOLKlMNyuQPqjrX8xqWw==}
+  astro@5.4.2:
+    resolution: {integrity: sha512-9Z3fAniIRJaK/o43OroZA1wHUIU+qHiOR9ovlVT/2XQaN25QRXScIsKWlFp0G/zrx5OuuoJ+QnaoHHW061u26A==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2428,6 +2428,10 @@ packages:
     resolution: {integrity: sha512-3T/PUdKTCnkUmhQU6FFJEHsLwadsRegktX3TNHk+2JJB9HlA8gp1/VXblXVDI93kSnXF2rdPx0GMbHtJIV2LPg==}
     engines: {node: '>=16'}
 
+  type-fest@4.37.0:
+    resolution: {integrity: sha512-S/5/0kFftkq27FPNye0XM1e2NsnoD/3FS+pBmbjmmtLT6I+i344KoOf7pvXreaFsDamWeaJX55nczA1m5PsBDg==}
+    engines: {node: '>=16'}
+
   typescript-eslint@8.26.0:
     resolution: {integrity: sha512-PtVz9nAnuNJuAVeUFvwztjuUgSnJInODAUx47VDwWPXzd5vismPOtPtt83tzNXyOjVQbPRp786D6WFW/M2koIA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -2752,10 +2756,10 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/svelte@7.0.5(astro@5.4.1(jiti@1.21.7)(rollup@4.34.9)(typescript@5.7.3)(yaml@2.7.0))(jiti@1.21.7)(svelte@5.22.1)(typescript@5.7.3)(yaml@2.7.0)':
+  '@astrojs/svelte@7.0.5(astro@5.4.2(jiti@1.21.7)(rollup@4.34.9)(typescript@5.7.3)(yaml@2.7.0))(jiti@1.21.7)(svelte@5.22.1)(typescript@5.7.3)(yaml@2.7.0)':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 5.0.3(svelte@5.22.1)(vite@6.2.0(jiti@1.21.7)(yaml@2.7.0))
-      astro: 5.4.1(jiti@1.21.7)(rollup@4.34.9)(typescript@5.7.3)(yaml@2.7.0)
+      astro: 5.4.2(jiti@1.21.7)(rollup@4.34.9)(typescript@5.7.3)(yaml@2.7.0)
       svelte: 5.22.1
       svelte2tsx: 0.7.34(svelte@5.22.1)(typescript@5.7.3)
       typescript: 5.7.3
@@ -2774,9 +2778,9 @@ snapshots:
       - tsx
       - yaml
 
-  '@astrojs/tailwind@5.1.5(astro@5.4.1(jiti@1.21.7)(rollup@4.34.9)(typescript@5.7.3)(yaml@2.7.0))(tailwindcss@3.4.17)':
+  '@astrojs/tailwind@5.1.5(astro@5.4.2(jiti@1.21.7)(rollup@4.34.9)(typescript@5.7.3)(yaml@2.7.0))(tailwindcss@3.4.17)':
     dependencies:
-      astro: 5.4.1(jiti@1.21.7)(rollup@4.34.9)(typescript@5.7.3)(yaml@2.7.0)
+      astro: 5.4.2(jiti@1.21.7)(rollup@4.34.9)(typescript@5.7.3)(yaml@2.7.0)
       autoprefixer: 10.4.20(postcss@8.5.3)
       postcss: 8.5.3
       postcss-load-config: 4.0.2(postcss@8.5.3)
@@ -3463,7 +3467,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@5.4.1(jiti@1.21.7)(rollup@4.34.9)(typescript@5.7.3)(yaml@2.7.0):
+  astro@5.4.2(jiti@1.21.7)(rollup@4.34.9)(typescript@5.7.3)(yaml@2.7.0):
     dependencies:
       '@astrojs/compiler': 2.10.4
       '@astrojs/internal-helpers': 0.6.0
@@ -3592,7 +3596,7 @@ snapshots:
       chalk: 5.4.1
       cli-boxes: 3.0.0
       string-width: 7.2.0
-      type-fest: 4.36.0
+      type-fest: 4.37.0
       widest-line: 5.0.0
       wrap-ansi: 9.0.0
 
@@ -5410,6 +5414,8 @@ snapshots:
       prelude-ls: 1.2.1
 
   type-fest@4.36.0: {}
+
+  type-fest@4.37.0: {}
 
   typescript-eslint@8.26.0(eslint@9.21.0(jiti@1.21.7))(typescript@5.7.3):
     dependencies:
