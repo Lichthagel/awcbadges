@@ -25,7 +25,7 @@ importers:
         version: 5.2.5
       '@iconify-json/lucide':
         specifier: ^1.1.165
-        version: 1.2.28
+        version: 1.2.29
       '@lichthagel/eslint-config':
         specifier: ^1.0.0
         version: 1.0.22(eslint-plugin-n@17.16.2(eslint@9.22.0(jiti@1.21.7)))(eslint-plugin-svelte@3.1.0(eslint@9.22.0(jiti@1.21.7))(svelte@5.22.6))(eslint@9.22.0(jiti@1.21.7))(typescript@5.7.3)
@@ -374,8 +374,8 @@ packages:
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
 
-  '@iconify-json/lucide@1.2.28':
-    resolution: {integrity: sha512-SPeAoh1YKhALpNSto/FBspf3GZ0eAr3ka/OI7cJJ5HljLzycIITv0s4Rd2+sRVzFtD1I991mJJmYohQeOSZ+Og==}
+  '@iconify-json/lucide@1.2.29':
+    resolution: {integrity: sha512-bMrbX2zNnm+i601Yd5i7EClpOS4dWCe3q2B9k+f3RUFLOknQP1oj3D9upEN7ATbCJ/AmkKnFW5ND17ppX/Be8Q==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -2979,7 +2979,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.2': {}
 
-  '@iconify-json/lucide@1.2.28':
+  '@iconify-json/lucide@1.2.29':
     dependencies:
       '@iconify/types': 2.0.0
 
