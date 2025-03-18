@@ -28,7 +28,7 @@ importers:
         version: 1.2.30
       '@lichthagel/eslint-config':
         specifier: ^1.0.0
-        version: 1.0.23(eslint-plugin-n@17.16.2(eslint@9.22.0(jiti@1.21.7)))(eslint-plugin-svelte@3.1.0(eslint@9.22.0(jiti@1.21.7))(svelte@5.23.0))(eslint@9.22.0(jiti@1.21.7))(typescript@5.8.2)
+        version: 1.0.23(eslint-plugin-n@17.16.2(eslint@9.22.0(jiti@1.21.7)))(eslint-plugin-svelte@3.3.0(eslint@9.22.0(jiti@1.21.7))(svelte@5.23.0))(eslint@9.22.0(jiti@1.21.7))(typescript@5.8.2)
       '@typescript-eslint/parser':
         specifier: ^8.0.0
         version: 8.26.1(eslint@9.22.0(jiti@1.21.7))(typescript@5.8.2)
@@ -49,7 +49,7 @@ importers:
         version: 17.16.2(eslint@9.22.0(jiti@1.21.7))
       eslint-plugin-svelte:
         specifier: ^3.0.0
-        version: 3.1.0(eslint@9.22.0(jiti@1.21.7))(svelte@5.23.0)
+        version: 3.3.0(eslint@9.22.0(jiti@1.21.7))(svelte@5.23.0)
       prettier:
         specifier: ^3.2.5
         version: 3.5.3
@@ -314,6 +314,12 @@ packages:
 
   '@eslint-community/eslint-utils@4.5.0':
     resolution: {integrity: sha512-RoV8Xs9eNwiDvhv7M+xcL4PWyRyIXRY/FLp3buU4h1EYfdF7unWUy3dOjPqb3C7rMUewIcqwW850PgS8h1o1yg==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
+
+  '@eslint-community/eslint-utils@4.5.1':
+    resolution: {integrity: sha512-soEIOALTfTK6EjmKMMoLugwaP0rzkad90iIWd1hMO9ARkSAyjfMfkRRhLvD5qH7vvM0Cg72pieUfR6yh6XxC4w==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
@@ -1163,8 +1169,8 @@ packages:
     peerDependencies:
       eslint: '>=8.45.0'
 
-  eslint-plugin-svelte@3.1.0:
-    resolution: {integrity: sha512-hSQyLDkuuHPJby1ixZfUVrfLON42mT0Odf18MbwAgFUPuyIwJlhy3acUY1/bxt+Njucq/dQxR543zYDqkBNLmw==}
+  eslint-plugin-svelte@3.3.0:
+    resolution: {integrity: sha512-pgGY5mT/ftZjG6xO4HltcQvne3rWUjStVDlvEZCR5cQKmZADbQp9kDmUc+fhIo1oO2HlXP25A+g4pkaoiBCxqg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.1 || ^9.0.0
@@ -2836,6 +2842,11 @@ snapshots:
       eslint: 9.22.0(jiti@1.21.7)
       eslint-visitor-keys: 3.4.3
 
+  '@eslint-community/eslint-utils@4.5.1(eslint@9.22.0(jiti@1.21.7))':
+    dependencies:
+      eslint: 9.22.0(jiti@1.21.7)
+      eslint-visitor-keys: 3.4.3
+
   '@eslint-community/regexpp@4.12.1': {}
 
   '@eslint/config-array@0.19.2':
@@ -3010,7 +3021,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@lichthagel/eslint-config@1.0.23(eslint-plugin-n@17.16.2(eslint@9.22.0(jiti@1.21.7)))(eslint-plugin-svelte@3.1.0(eslint@9.22.0(jiti@1.21.7))(svelte@5.23.0))(eslint@9.22.0(jiti@1.21.7))(typescript@5.8.2)':
+  '@lichthagel/eslint-config@1.0.23(eslint-plugin-n@17.16.2(eslint@9.22.0(jiti@1.21.7)))(eslint-plugin-svelte@3.3.0(eslint@9.22.0(jiti@1.21.7))(svelte@5.23.0))(eslint@9.22.0(jiti@1.21.7))(typescript@5.8.2)':
     dependencies:
       '@eslint/js': 9.22.0
       '@stylistic/eslint-plugin': 4.2.0(eslint@9.22.0(jiti@1.21.7))(typescript@5.8.2)
@@ -3021,7 +3032,7 @@ snapshots:
       typescript-eslint: 8.26.1(eslint@9.22.0(jiti@1.21.7))(typescript@5.8.2)
     optionalDependencies:
       eslint-plugin-n: 17.16.2(eslint@9.22.0(jiti@1.21.7))
-      eslint-plugin-svelte: 3.1.0(eslint@9.22.0(jiti@1.21.7))(svelte@5.23.0)
+      eslint-plugin-svelte: 3.3.0(eslint@9.22.0(jiti@1.21.7))(svelte@5.23.0)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -3274,7 +3285,7 @@ snapshots:
 
   '@typescript-eslint/utils@8.26.1(eslint@9.22.0(jiti@1.21.7))(typescript@5.8.2)':
     dependencies:
-      '@eslint-community/eslint-utils': 4.5.0(eslint@9.22.0(jiti@1.21.7))
+      '@eslint-community/eslint-utils': 4.5.1(eslint@9.22.0(jiti@1.21.7))
       '@typescript-eslint/scope-manager': 8.26.1
       '@typescript-eslint/types': 8.26.1
       '@typescript-eslint/typescript-estree': 8.26.1(typescript@5.8.2)
@@ -3754,9 +3765,9 @@ snapshots:
       - supports-color
       - typescript
 
-  eslint-plugin-svelte@3.1.0(eslint@9.22.0(jiti@1.21.7))(svelte@5.23.0):
+  eslint-plugin-svelte@3.3.0(eslint@9.22.0(jiti@1.21.7))(svelte@5.23.0):
     dependencies:
-      '@eslint-community/eslint-utils': 4.5.0(eslint@9.22.0(jiti@1.21.7))
+      '@eslint-community/eslint-utils': 4.5.1(eslint@9.22.0(jiti@1.21.7))
       '@jridgewell/sourcemap-codec': 1.5.0
       eslint: 9.22.0(jiti@1.21.7)
       eslint-compat-utils: 0.6.4(eslint@9.22.0(jiti@1.21.7))
