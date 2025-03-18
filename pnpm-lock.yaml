@@ -28,7 +28,7 @@ importers:
         version: 1.2.30
       '@lichthagel/eslint-config':
         specifier: ^1.0.0
-        version: 1.0.23(eslint-plugin-n@17.16.2(eslint@9.22.0(jiti@1.21.7)))(eslint-plugin-svelte@3.3.0(eslint@9.22.0(jiti@1.21.7))(svelte@5.23.1))(eslint@9.22.0(jiti@1.21.7))(typescript@5.8.2)
+        version: 1.0.23(eslint-plugin-n@17.16.2(eslint@9.22.0(jiti@1.21.7)))(eslint-plugin-svelte@3.3.1(eslint@9.22.0(jiti@1.21.7))(svelte@5.23.1))(eslint@9.22.0(jiti@1.21.7))(typescript@5.8.2)
       '@typescript-eslint/parser':
         specifier: ^8.0.0
         version: 8.26.1(eslint@9.22.0(jiti@1.21.7))(typescript@5.8.2)
@@ -49,7 +49,7 @@ importers:
         version: 17.16.2(eslint@9.22.0(jiti@1.21.7))
       eslint-plugin-svelte:
         specifier: ^3.0.0
-        version: 3.3.0(eslint@9.22.0(jiti@1.21.7))(svelte@5.23.1)
+        version: 3.3.1(eslint@9.22.0(jiti@1.21.7))(svelte@5.23.1)
       prettier:
         specifier: ^3.2.5
         version: 3.5.3
@@ -1169,8 +1169,8 @@ packages:
     peerDependencies:
       eslint: '>=8.45.0'
 
-  eslint-plugin-svelte@3.3.0:
-    resolution: {integrity: sha512-pgGY5mT/ftZjG6xO4HltcQvne3rWUjStVDlvEZCR5cQKmZADbQp9kDmUc+fhIo1oO2HlXP25A+g4pkaoiBCxqg==}
+  eslint-plugin-svelte@3.3.1:
+    resolution: {integrity: sha512-5p3JGBMautDKtQdNmHkp33akcssAqZObV955UREa8v1thDDRG6sCj8gQMztQRRDFJiGsBdWgLWEB5HrdKg5B2w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.1 || ^9.0.0
@@ -1745,8 +1745,8 @@ packages:
   mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
 
-  nanoid@3.3.9:
-    resolution: {integrity: sha512-SppoicMGpZvbF1l3z4x7No3OlIjP7QJvC9XR7AhZr1kL133KHnKPztkKDc+Ir4aJ/1VhTySrtKhrsycmrMQfvg==}
+  nanoid@3.3.10:
+    resolution: {integrity: sha512-vSJJTG+t/dIKAUhUDw/dLdZ9s//5OxcHqLaDWWrW4Cdq7o6tdLIczUkMXt2MBNmk6sJRZBZRXVixs7URY1CmIg==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
@@ -3021,7 +3021,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@lichthagel/eslint-config@1.0.23(eslint-plugin-n@17.16.2(eslint@9.22.0(jiti@1.21.7)))(eslint-plugin-svelte@3.3.0(eslint@9.22.0(jiti@1.21.7))(svelte@5.23.1))(eslint@9.22.0(jiti@1.21.7))(typescript@5.8.2)':
+  '@lichthagel/eslint-config@1.0.23(eslint-plugin-n@17.16.2(eslint@9.22.0(jiti@1.21.7)))(eslint-plugin-svelte@3.3.1(eslint@9.22.0(jiti@1.21.7))(svelte@5.23.1))(eslint@9.22.0(jiti@1.21.7))(typescript@5.8.2)':
     dependencies:
       '@eslint/js': 9.22.0
       '@stylistic/eslint-plugin': 4.2.0(eslint@9.22.0(jiti@1.21.7))(typescript@5.8.2)
@@ -3032,7 +3032,7 @@ snapshots:
       typescript-eslint: 8.26.1(eslint@9.22.0(jiti@1.21.7))(typescript@5.8.2)
     optionalDependencies:
       eslint-plugin-n: 17.16.2(eslint@9.22.0(jiti@1.21.7))
-      eslint-plugin-svelte: 3.3.0(eslint@9.22.0(jiti@1.21.7))(svelte@5.23.1)
+      eslint-plugin-svelte: 3.3.1(eslint@9.22.0(jiti@1.21.7))(svelte@5.23.1)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -3765,7 +3765,7 @@ snapshots:
       - supports-color
       - typescript
 
-  eslint-plugin-svelte@3.3.0(eslint@9.22.0(jiti@1.21.7))(svelte@5.23.1):
+  eslint-plugin-svelte@3.3.1(eslint@9.22.0(jiti@1.21.7))(svelte@5.23.1):
     dependencies:
       '@eslint-community/eslint-utils': 4.5.1(eslint@9.22.0(jiti@1.21.7))
       '@jridgewell/sourcemap-codec': 1.5.0
@@ -4585,7 +4585,7 @@ snapshots:
       object-assign: 4.1.1
       thenify-all: 1.6.0
 
-  nanoid@3.3.9: {}
+  nanoid@3.3.10: {}
 
   natural-compare@1.4.0: {}
 
@@ -4788,7 +4788,7 @@ snapshots:
 
   postcss@8.5.3:
     dependencies:
-      nanoid: 3.3.9
+      nanoid: 3.3.10
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
