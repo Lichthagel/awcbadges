@@ -28,7 +28,7 @@ importers:
         version: 1.2.39
       '@lichthagel/eslint-config':
         specifier: ^1.0.0
-        version: 1.0.25(eslint-plugin-n@17.17.0(eslint@9.25.1(jiti@1.21.7)))(eslint-plugin-svelte@3.5.1(eslint@9.25.1(jiti@1.21.7))(svelte@5.28.2))(eslint@9.25.1(jiti@1.21.7))(typescript@5.8.3)
+        version: 1.0.26(eslint-plugin-n@17.17.0(eslint@9.25.1(jiti@1.21.7)))(eslint-plugin-svelte@3.5.1(eslint@9.25.1(jiti@1.21.7))(svelte@5.28.2))(eslint@9.25.1(jiti@1.21.7))(typescript@5.8.3)
       '@typescript-eslint/parser':
         specifier: ^8.0.0
         version: 8.31.0(eslint@9.25.1(jiti@1.21.7))(typescript@5.8.3)
@@ -619,8 +619,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@lichthagel/eslint-config@1.0.25':
-    resolution: {integrity: sha512-Ta1IFHD60eJKYgRNXpVVO3iTFzUKOucX0Mk+fM1FfRqbh4CBRYrMM5DGTwBYBVhjuOLsUcDRZUD/MXCv6Gac8Q==}
+  '@lichthagel/eslint-config@1.0.26':
+    resolution: {integrity: sha512-Xxt51aS4xrSUgu86idBsQW07lsZkMk+HRVB3sB/fjBTVh9/5EQLBYS3DrAPxkbotJ9JFRmkr5YGuCpwMLB9Ryg==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       eslint: '>=8.40.0'
@@ -1291,8 +1291,8 @@ packages:
     peerDependencies:
       eslint: '>=8.23.0'
 
-  eslint-plugin-perfectionist@4.12.2:
-    resolution: {integrity: sha512-OWh3y2c7oMNEbyk8BmcQgMil13FAMViQbycV04TNztf6YSheOtbagcpwJkc3aZt6lYDyL0zpY/aPjwi7fxT+5A==}
+  eslint-plugin-perfectionist@4.12.3:
+    resolution: {integrity: sha512-V0dmpq6fBbn0BYofHsiRuuY9wgkKMDkdruM0mIRBIJ8XZ8vEaTAZqFsywm40RuWNVnduWBt5HO1ZZ+flE2yqjg==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       eslint: '>=8.45.0'
@@ -2526,6 +2526,10 @@ packages:
     resolution: {integrity: sha512-ABHZ2/tS2JkvH1PEjxFDTUWC8dB5OsIGZP4IFLhR293GqT5Y5qB1WwL2kMPYhQW9DVgVD8Hd7I8gjwPIf5GFkw==}
     engines: {node: '>=16'}
 
+  type-fest@4.40.1:
+    resolution: {integrity: sha512-9YvLNnORDpI+vghLU/Nf+zSv0kL47KbVJ1o3sKgoTefl6i+zebxbiDQWoe/oWWqPhIgQdRZRT1KA9sCPL810SA==}
+    engines: {node: '>=16'}
+
   typescript-eslint@8.31.0:
     resolution: {integrity: sha512-u+93F0sB0An8WEAPtwxVhFby573E8ckdjwUUQUj9QA4v8JAvgtoDdIyYR3XFwFHq2W1KJ1AurwJCO+w+Y1ixyQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -3280,12 +3284,12 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@lichthagel/eslint-config@1.0.25(eslint-plugin-n@17.17.0(eslint@9.25.1(jiti@1.21.7)))(eslint-plugin-svelte@3.5.1(eslint@9.25.1(jiti@1.21.7))(svelte@5.28.2))(eslint@9.25.1(jiti@1.21.7))(typescript@5.8.3)':
+  '@lichthagel/eslint-config@1.0.26(eslint-plugin-n@17.17.0(eslint@9.25.1(jiti@1.21.7)))(eslint-plugin-svelte@3.5.1(eslint@9.25.1(jiti@1.21.7))(svelte@5.28.2))(eslint@9.25.1(jiti@1.21.7))(typescript@5.8.3)':
     dependencies:
       '@eslint/js': 9.25.1
       '@stylistic/eslint-plugin': 4.2.0(eslint@9.25.1(jiti@1.21.7))(typescript@5.8.3)
       eslint: 9.25.1(jiti@1.21.7)
-      eslint-plugin-perfectionist: 4.12.2(eslint@9.25.1(jiti@1.21.7))(typescript@5.8.3)
+      eslint-plugin-perfectionist: 4.12.3(eslint@9.25.1(jiti@1.21.7))(typescript@5.8.3)
       eslint-plugin-unicorn: 58.0.0(eslint@9.25.1(jiti@1.21.7))
       globals: 16.0.0
       typescript-eslint: 8.31.0(eslint@9.25.1(jiti@1.21.7))(typescript@5.8.3)
@@ -4040,7 +4044,7 @@ snapshots:
       minimatch: 9.0.5
       semver: 7.7.1
 
-  eslint-plugin-perfectionist@4.12.2(eslint@9.25.1(jiti@1.21.7))(typescript@5.8.3):
+  eslint-plugin-perfectionist@4.12.3(eslint@9.25.1(jiti@1.21.7))(typescript@5.8.3):
     dependencies:
       '@typescript-eslint/types': 8.31.0
       '@typescript-eslint/utils': 8.31.0(eslint@9.25.1(jiti@1.21.7))(typescript@5.8.3)
@@ -4988,7 +4992,7 @@ snapshots:
     dependencies:
       '@babel/code-frame': 7.26.2
       index-to-position: 1.1.0
-      type-fest: 4.40.0
+      type-fest: 4.40.1
 
   parse-latin@7.0.0:
     dependencies:
@@ -5151,14 +5155,14 @@ snapshots:
     dependencies:
       find-up-simple: 1.0.1
       read-pkg: 9.0.1
-      type-fest: 4.40.0
+      type-fest: 4.40.1
 
   read-pkg@9.0.1:
     dependencies:
       '@types/normalize-package-data': 2.4.4
       normalize-package-data: 6.0.2
       parse-json: 8.3.0
-      type-fest: 4.40.0
+      type-fest: 4.40.1
       unicorn-magic: 0.1.0
 
   readdirp@3.6.0:
@@ -5595,6 +5599,8 @@ snapshots:
       prelude-ls: 1.2.1
 
   type-fest@4.40.0: {}
+
+  type-fest@4.40.1: {}
 
   typescript-eslint@8.31.0(eslint@9.25.1(jiti@1.21.7))(typescript@5.8.3):
     dependencies:
