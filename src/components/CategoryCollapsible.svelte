@@ -22,7 +22,7 @@
 
 <div>
   <button
-    class="text-ctp-pink mx-auto my-5 w-max"
+    class="text-ctp-pink mx-auto my-5 w-max cursor-pointer"
     onclick={() => toggle()}
     type="button"
   >

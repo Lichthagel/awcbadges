@@ -1,21 +1,39 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-@layer utilities {
-  .bg-in-progress {
-    @apply bg-gradient-to-br from-ctp-lavender to-ctp-mauve;
-  }
+@import "@catppuccin/tailwindcss/mocha.css";
 
-  .bg-submitted {
-    @apply bg-gradient-to-br from-ctp-green to-ctp-sapphire;
-  }
+@config '../tailwind.config.ts';
 
-  .bg-on-hold {
-    @apply bg-gradient-to-br from-ctp-red to-ctp-maroon;
-  }
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
 
-  .bg-completed {
-    @apply bg-gradient-to-br from-ctp-teal to-ctp-green;
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
   }
+}
+
+@utility bg-in-progress {
+  @apply bg-linear-to-br from-ctp-lavender to-ctp-mauve;
+}
+
+@utility bg-submitted {
+  @apply bg-linear-to-br from-ctp-green to-ctp-sapphire;
+}
+
+@utility bg-on-hold {
+  @apply bg-linear-to-br from-ctp-red to-ctp-maroon;
+}
+
+@utility bg-completed {
+  @apply bg-linear-to-br from-ctp-teal to-ctp-green;
 }
