@@ -19,7 +19,7 @@ importers:
         version: 1.9.0(tailwindcss@4.1.13)
       '@fontsource-variable/gabarito':
         specifier: ^5.0.2
-        version: 5.2.7
+        version: 5.2.8
       '@iconify-json/lucide':
         specifier: ^1.1.165
         version: 1.2.68
@@ -337,8 +337,8 @@ packages:
     resolution: {integrity: sha512-Z5kJ+wU3oA7MMIqVR9tyZRtjYPr4OC004Q4Rw7pgOKUOKkJfZ3O24nz3WYfGRpMDNmcOi3TwQOmgm7B7Tpii0w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@fontsource-variable/gabarito@5.2.7':
-    resolution: {integrity: sha512-wnxSF5jTq+rEgFvaoOYQ+//F7xzzqANK75j1++xmNJZWNeievMSF1rJyMdvpkGMHKph00kWo6QCzlh7pSJT9Lg==}
+  '@fontsource-variable/gabarito@5.2.8':
+    resolution: {integrity: sha512-wIAwvNwzfoYMm4iisswaUYgCxDWFe6JdKDL1gjgUjYe7LU1u/zjGekEigJgkabvMgZbWyJjkRNCb2gJlcMxvpg==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -2904,7 +2904,7 @@ snapshots:
       '@eslint/core': 0.15.2
       levn: 0.4.1
 
-  '@fontsource-variable/gabarito@5.2.7': {}
+  '@fontsource-variable/gabarito@5.2.8': {}
 
   '@humanfs/core@0.19.1': {}
 
