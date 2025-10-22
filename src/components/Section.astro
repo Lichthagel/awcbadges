@@ -13,7 +13,7 @@ const allCategories = await getCollection("category");
 
 const categories = allCategories
   .filter((category) => category.data.type === type)
-  .sort((a, b) => a.data.sortKey - b.data.sortKey);
+  .toSorted((a, b) => a.data.sortKey - b.data.sortKey);
 ---
 
 <h1 class="text-ctp-pink mx-auto my-10 w-max text-6xl font-bold uppercase">
