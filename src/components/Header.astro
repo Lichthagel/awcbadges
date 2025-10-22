@@ -54,7 +54,7 @@ const recentlyCompleted = badges
   .filter(
     (badge): badge is BadgeExt<BadgeFinished> => badge.status === "completed",
   )
-  .sort((a, b) => b.completed.valueOf() - a.completed.valueOf())
+  .toSorted((a, b) => b.completed.valueOf() - a.completed.valueOf())
   .slice(0, 5)
   .map((badge) => ({
     ...badge,
@@ -68,7 +68,7 @@ const recentlyStarted = badges
       || badge.status === "submitted"
       || badge.status === "completed",
   )
-  .sort((a, b) => b.started.valueOf() - a.started.valueOf())
+  .toSorted((a, b) => b.started.valueOf() - a.started.valueOf())
   .slice(0, 5)
   .map((badge) => ({
     ...badge,
