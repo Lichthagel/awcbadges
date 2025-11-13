@@ -22,7 +22,7 @@
     "@lichthagel/eslint-config": "^1.0.0",
     "@tailwindcss/vite": "^4.1.11",
     "@typescript-eslint/parser": "^8.0.0",
-    "astro": "^5.0.0",
+    "astro": "^5.15.6",
     "date-fns": "^4.0.0",
     "eslint": "^9.0.0",
     "eslint-plugin-astro": "^1.0.0",
