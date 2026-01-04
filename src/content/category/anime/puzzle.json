@@ -12,7 +12,6 @@
     "puzzle/tetris",
     "puzzle/chain",
     "puzzle/sudoku",
-    "puzzle/board-game",
     "puzzle/chess",
     "puzzle/shiritori"
   ]
