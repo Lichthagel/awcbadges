@@ -14,6 +14,7 @@
     "puzzle/chain",
     "puzzle/sudoku",
     "puzzle/chess",
-    "puzzle/shiritori"
+    "puzzle/shiritori",
+    "puzzle/minesweeper"
   ]
 }
