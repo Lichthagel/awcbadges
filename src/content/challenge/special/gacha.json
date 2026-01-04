@@ -5,10 +5,24 @@
   "visibility": "all",
   "badge": [
     {
-      "name": "1st roll",
+      "name": "Standard - 1st roll",
       "url": "https://anilist.co/forum/thread/67067/comment/2354468",
       "image": "https://i.postimg.cc/YSxmnq03/Gacha-CHU2-Placeholder-N.png",
       "started": "2023-07-28",
+      "status": "in-progress"
+    },
+    {
+      "name": "Quarter: Video Games - 1st roll",
+      "url": "https://anilist.co/forum/thread/67067/comment/3075682",
+      "image": "https://i.postimg.cc/YSxmnq03/Gacha-CHU2-Placeholder-N.png",
+      "started": "2026-01-04",
+      "status": "in-progress"
+    },
+    {
+      "name": "Event: Mecha Girls - 1st roll",
+      "url": "https://anilist.co/forum/thread/67067/comment/3075684",
+      "image": "https://i.postimg.cc/YSxmnq03/Gacha-CHU2-Placeholder-N.png",
+      "started": "2026-01-04",
       "status": "in-progress"
     }
   ]
