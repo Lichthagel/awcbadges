@@ -10,6 +10,7 @@
     "puzzle/gomoku",
     "puzzle/plus-minus",
     "puzzle/tetris",
+    "puzzle/crossword",
     "puzzle/chain",
     "puzzle/sudoku",
     "puzzle/chess",
