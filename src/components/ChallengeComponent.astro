@@ -29,27 +29,29 @@ const show = (() => Array.isArray(challenge.data.badge)
     && challenge.data.visibility !== "only-focus"
     ? (
         <div class="m-1 mt-6 inline-block rounded bg-ctp-mantle p-1 shadow">
-          {challenge.data.badge
-            .filter(
-              (badge) => badge.status !== "incomplete" && badge.status !== "hidden",
-            )
-            .map((badge) => (
-              <a
-                href={badge.url?.full ?? challenge.data.url.full}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <BadgeComponent
-                  badge={badge}
-                  name={badge.name}
-                  size={
-                    badge.focus || challenge.data.visibility === "all"
-                      ? "large"
-                      : "small"
-                  }
-                />
-              </a>
-            ))}
+          <div class="flex flex-nowrap lg:flex-wrap">
+            {challenge.data.badge
+              .filter(
+                (badge) => badge.status !== "incomplete" && badge.status !== "hidden",
+              )
+              .map((badge) => (
+                <a
+                  href={badge.url?.full ?? challenge.data.url.full}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <BadgeComponent
+                    badge={badge}
+                    name={badge.name}
+                    size={
+                      badge.focus || challenge.data.visibility === "all"
+                        ? "large"
+                        : "small"
+                    }
+                  />
+                </a>
+              ))}
+          </div>
 
           <h4 class="ml-auto mr-1 w-max font-bold">{challenge.data.name}</h4>
         </div>
