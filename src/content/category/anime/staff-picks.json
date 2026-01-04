@@ -1,5 +1,10 @@
 {
   "name": "Staff Picks",
   "type": "anime",
-  "challenges": ["staff-picks/2020", "staff-picks/2021", "staff-picks/2023"]
+  "challenges": [
+    "staff-picks/2020",
+    "staff-picks/2021",
+    "staff-picks/2023",
+    "staff-picks/2024"
+  ]
 }
