@@ -1,0 +1,19 @@
+{
+  "name": "2026 January",
+  "url": "https://anilist.co/forum/thread/78480/comment/2786144",
+  "visibility": "only-focus",
+  "badge": [
+    {
+      "name": "Easy Mode",
+      "image": "https://i.postimg.cc/g2wLk0nh/Monthly-2026-January-Easy-Static.png",
+      "started": "2026-01-04",
+      "status": "in-progress"
+    },
+    {
+      "name": "Hard Mode",
+      "image": "https://i.postimg.cc/2SPbqfWN/Monthly-2026-January-Hard-Static.png",
+      "started": "2026-01-04",
+      "status": "incomplete"
+    }
+  ]
+}
