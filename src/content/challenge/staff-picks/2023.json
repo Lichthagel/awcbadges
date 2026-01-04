@@ -6,13 +6,13 @@
       "name": "Timed",
       "image": "https://i.postimg.cc/1t71qd0X/2023-Staff-Picks-Timed.png",
       "started": "2023-12-25",
-      "status": "in-progress"
+      "status": "incomplete"
     },
     {
       "name": "Hanamaru",
       "image": "https://i.postimg.cc/MKGP8C5n/2023-Staff-Picks-Hanamaru.png",
       "started": "2023-12-25",
-      "status": "not-started"
+      "status": "in-progress"
     }
   ]
 }
