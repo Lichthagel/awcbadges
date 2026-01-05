@@ -4,32 +4,20 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": {
-        "url": "https://i.postimg.cc/0241bvRX/Genre-Hentai-Easy.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/3JVHsMCj/Genre-Hentai-Easy.png",
       "started": "2021-03-09",
       "completed": "2021-07-24",
       "status": "completed"
     },
     {
       "name": "Normal Mode",
-      "image": {
-        "url": "https://i.postimg.cc/Pr90dMYB/Genre-Hentai-Normal.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/5tqdQXcp/Genre-Hentai-Normal.png",
       "started": "2021-03-09",
       "status": "in-progress"
     },
     {
       "name": "Hard Mode",
-      "image": {
-        "url": "https://i.postimg.cc/52zTyFmj/Genre-Hentai-Hard.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/rssvHgDY/Genre-Hentai-Hard.png",
       "started": "2021-03-09",
       "status": "not-started"
     },
