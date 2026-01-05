@@ -4,31 +4,19 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": {
-        "url": "https://i.postimg.cc/0jrHs6Qk/Genre-Mahou-Shoujo-Easy.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/zGDpJ3zT/Genre-Mahou-Shoujo-Easy.png",
       "started": "2021-02-20",
       "status": "in-progress"
     },
     {
       "name": "Normal Mode",
-      "image": {
-        "url": "https://i.postimg.cc/sx8HDVQp/Genre-Mahou-Shoujo-Normal.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/CxdDP8Mr/Genre-Mahou-Shoujo-Normal.png",
       "started": "2021-02-20",
       "status": "not-started"
     },
     {
       "name": "Hard Mode",
-      "image": {
-        "url": "https://i.postimg.cc/2jXKxxcV/Genre-Mahou-Shoujo-Hard.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/28t35KmT/Genre-Mahou-Shoujo-Hard.png",
       "started": "2021-02-20",
       "status": "not-started"
     },
