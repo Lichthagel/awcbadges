@@ -4,32 +4,20 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": {
-        "url": "https://i.postimg.cc/d0KXytW6/Genre-Horror-Easy.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/pdTjSF21/Genre-Horror-Easy.png",
       "started": "2021-02-20",
       "completed": "2022-05-11",
       "status": "completed"
     },
     {
       "name": "Normal Mode",
-      "image": {
-        "url": "https://i.postimg.cc/9MmnLgHq/Genre-Horror-Normal.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/qvmh2v8c/Genre-Horror-Normal.png",
       "started": "2021-02-20",
       "status": "in-progress"
     },
     {
       "name": "Hard Mode",
-      "image": {
-        "url": "https://i.postimg.cc/j5Mkm6R3/Genre-Horror-Hard.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/3NHd34Th/Genre-Horror-Hard.png",
       "started": "2021-02-20",
       "status": "not-started"
     },
