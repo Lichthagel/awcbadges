@@ -4,32 +4,20 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": {
-        "url": "https://i.postimg.cc/HW3MyZL7/Genre-Ecchi-Easy.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/k5bq2R2V/Genre-Ecchi-Easy.png",
       "started": "2021-02-20",
       "completed": "2021-05-05",
       "status": "completed"
     },
     {
       "name": "Normal Mode",
-      "image": {
-        "url": "https://i.postimg.cc/yYdZXmJp/Genre-Ecchi-Normal.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/8CJMs4dh/Genre-Ecchi-Normal.png",
       "started": "2021-02-20",
       "status": "in-progress"
     },
     {
       "name": "Hard Mode",
-      "image": {
-        "url": "https://i.postimg.cc/QxyW6F18/Genre-Ecchi-Hard.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/J0f463HW/Genre-Ecchi-Hard.png",
       "started": "2021-02-20",
       "status": "not-started"
     },
