@@ -4,31 +4,19 @@
   "badge": [
     {
       "name": "Easy Mode",
-      "image": {
-        "url": "https://i.postimg.cc/vHJ2JZdy/Genre-Mecha-Easy.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/JnRjQ2sZ/Genre-Mecha-Easy.png",
       "started": "2021-02-20",
       "status": "in-progress"
     },
     {
       "name": "Normal Mode",
-      "image": {
-        "url": "https://i.postimg.cc/RZwp4xMH/Genre-Mecha-Normal.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/0NzN1GhF/Genre-Mecha-Normal.png",
       "started": "2021-02-20",
       "status": "not-started"
     },
     {
       "name": "Hard Mode",
-      "image": {
-        "url": "https://i.postimg.cc/q70b7DRZ/Genre-Mecha-Hard.png",
-        "height": 720,
-        "width": 520
-      },
+      "image": "https://i.postimg.cc/NFMJdMK6/Genre-Mecha-Hard.png",
       "started": "2021-02-20",
       "status": "not-started"
     },
