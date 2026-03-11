@@ -1,15 +1,16 @@
+import { glob } from "astro/loaders";
 import { defineCollection } from "astro:content";
 
-import { zCategory, zChallenge } from "../models";
+import { zCategory, zChallenge } from "./models";
 
 const challengeCollection = defineCollection({
   schema: zChallenge,
-  type: "data",
+  loader: glob({ pattern: "**/[^_]*.json", base: "./src/content/challenge" }),
 });
 
 const categoryCollection = defineCollection({
   schema: zCategory,
-  type: "data",
+  loader: glob({ pattern: "**/[^_]*.json", base: "./src/content/category" }),
 });
 
 export const collections = {
