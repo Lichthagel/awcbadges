@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { reference, z } from "astro:content";
+import { z } from "astro/zod";
+import { reference } from "astro:content";
 
 const zThreadCommentUrl = z
   .string()
@@ -30,8 +31,7 @@ const zImage = z.object({
 export type Image = z.infer<typeof zImage>;
 
 const zBadgeBase = z.object({
-  image: z.union([z.string().url(), zImage])
-    .optional(),
+  image: z.union([z.string().url(), zImage]).optional(),
 });
 
 const zBadgeMultiBase = zBadgeBase.extend({
