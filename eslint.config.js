@@ -11,7 +11,7 @@ export default [
   ...await lichthagel({
     node: true,
   }),
-  ...(/** @type {import("eslint").Linter.FlatConfig[]} */ (sveltePlugin.configs["flat/recommended"])),
+  ...(sveltePlugin.configs["flat/recommended"]),
   ...astroPlugin.configs["flat/recommended"],
   {
     languageOptions: {

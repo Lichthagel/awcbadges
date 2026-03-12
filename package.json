@@ -14,7 +14,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@astrojs/svelte": "^7.0.0",
+    "@astrojs/svelte": "^8.0.0",
     "@catppuccin/tailwindcss": "^1.0.0",
     "@egoist/tailwindcss-icons": "^1.8.1",
     "@fontsource-variable/gabarito": "^5.0.2",
@@ -23,7 +23,7 @@
     "@tailwindcss/vite": "^4.1.11",
     "@types/node": "^25.0.6",
     "@typescript-eslint/parser": "^8.0.0",
-    "astro": "^5.0.0",
+    "astro": "^6.0.0",
     "date-fns": "^4.0.0",
     "eslint": "^10.0.0",
     "eslint-plugin-astro": "^1.0.0",
