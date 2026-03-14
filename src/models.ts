@@ -82,6 +82,7 @@ export type BadgeMulti = z.infer<typeof zBadgeMulti>;
 
 const zChallengeBase = z.object({
   name: z.string(),
+  release: z.string().optional(),
   url: zThreadCommentUrl,
 });
 
