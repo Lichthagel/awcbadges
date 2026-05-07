@@ -3,7 +3,6 @@ import { z } from "astro/zod";
 import { reference } from "astro:content";
 
 const zThreadCommentUrl = z
-  .string()
   .url()
   .regex(/https:\/\/anilist\.co\/forum\/thread\/(\d+)\/comment\/(\d+)/)
   .transform((url) => {
@@ -23,7 +22,7 @@ const zThreadCommentUrl = z
   });
 
 const zImage = z.object({
-  url: z.string().url(),
+  url: z.url(),
   height: z.number().optional(),
   width: z.number().optional(),
 });
@@ -31,7 +30,7 @@ const zImage = z.object({
 export type Image = z.infer<typeof zImage>;
 
 const zBadgeBase = z.object({
-  image: z.union([z.string().url(), zImage]).optional(),
+  image: z.union([z.url(), zImage]).optional(),
 });
 
 const zBadgeMultiBase = zBadgeBase.extend({
@@ -43,22 +42,22 @@ const zBadgePreparedImpl = z.object({
   status: z.enum(["not-started", "hidden"]),
 });
 
-const zBadgePrepared = zBadgeBase.merge(zBadgePreparedImpl);
+const zBadgePrepared = zBadgeBase.extend(zBadgePreparedImpl.shape);
 
 export type BadgePrepared = z.infer<typeof zBadgePrepared>;
 
-const zBadgeMultiPrepared = zBadgeMultiBase.merge(zBadgePreparedImpl);
+const zBadgeMultiPrepared = zBadgeMultiBase.extend(zBadgePreparedImpl.shape);
 
 const zBadgeOngoingImpl = z.object({
   started: z.coerce.date(),
   status: z.enum(["in-progress", "incomplete", "on-hold"]),
 });
 
-const zBadgeOngoing = zBadgeBase.merge(zBadgeOngoingImpl);
+const zBadgeOngoing = zBadgeBase.extend(zBadgeOngoingImpl.shape);
 
 export type BadgeOngoing = z.infer<typeof zBadgeOngoing>;
 
-const zBadgeMultiOngoing = zBadgeMultiBase.merge(zBadgeOngoingImpl);
+const zBadgeMultiOngoing = zBadgeMultiBase.extend(zBadgeOngoingImpl.shape);
 
 const zBadgeFinishedImpl = z.object({
   completed: z.coerce.date(),
@@ -66,11 +65,11 @@ const zBadgeFinishedImpl = z.object({
   status: z.enum(["submitted", "completed"]),
 });
 
-const zBadgeFinished = zBadgeBase.merge(zBadgeFinishedImpl);
+const zBadgeFinished = zBadgeBase.extend(zBadgeFinishedImpl.shape);
 
 export type BadgeFinished = z.infer<typeof zBadgeFinished>;
 
-const zBadgeMultiFinished = zBadgeMultiBase.merge(zBadgeFinishedImpl);
+const zBadgeMultiFinished = zBadgeMultiBase.extend(zBadgeFinishedImpl.shape);
 
 const zBadge = z.discriminatedUnion("status", [zBadgePrepared, zBadgeOngoing, zBadgeFinished]);
 
