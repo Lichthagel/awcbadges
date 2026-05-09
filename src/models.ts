@@ -90,7 +90,7 @@ const zChallengeSingle = zChallengeBase.extend({
     ...badge,
     focus: true,
   })),
-  visibility: z.undefined(),
+  visibility: z.undefined().optional(),
 });
 
 const zChallengeMulti = zChallengeBase.extend({
