@@ -24,5 +24,6 @@
       ],
       "groupName": "linters"
     }
-  ]
+  ],
+  "minimumReleaseAge": "1 day"
 }
