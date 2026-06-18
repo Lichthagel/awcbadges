@@ -2,7 +2,7 @@
   "image": "mcr.microsoft.com/devcontainers/base:jammy",
   "features": {
     "ghcr.io/devcontainers/features/node:2": {
-      "version": "24.16"
+      "version": "24.17"
     }
   },
   "mounts": [
