@@ -8,7 +8,7 @@
   const onInput = () => {
     let text = input;
 
-    text = text.replace(/^[^<]*<hr>/, header);
+    text = text.replace(/^[^<]*<hr>/, () => header);
     text = text.replaceAll("[O]", "[❌️]");
     text = text.replaceAll(/\[.*_Title]\(.*\)/g, "");
     text = text.replaceAll(
@@ -16,8 +16,9 @@
       "https://anilist.co/$1/$2",
     );
 
-    text = text.replace("%START%", new Date().toISOString()
-      .split("T")[0]);
+    // eslint-disable-next-line unicorn/no-unreadable-new-expression
+    text = text.replace("%START%", () => new Date().toISOString()
+      .split("T", 2)[0]);
 
     output = text;
   };

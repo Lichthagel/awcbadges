@@ -39,14 +39,13 @@ const badges = allChallenges
         challengeName: challenge.data.name,
         url: badge.url?.full ?? challenge.data.url.full,
       }));
-    } else {
-      return {
-        ...challenge.data.badge,
-        id: challenge.id,
-        challengeName: challenge.data.name,
-        url: challenge.data.url.full,
-      };
     }
+    return {
+      ...challenge.data.badge,
+      id: challenge.id,
+      challengeName: challenge.data.name,
+      url: challenge.data.url.full,
+    };
   })
   .filter((badge) => badge.status !== "hidden");
 
@@ -63,10 +62,14 @@ const recentlyCompleted = badges
 
 const recentlyStarted = badges
   .filter(
-    (badge: BadgeExt<Badge>): badge is BadgeExt<BadgeOngoing> => badge.status === "in-progress"
-      || badge.status === "on-hold"
-      || badge.status === "submitted"
-      || badge.status === "completed",
+    (badge: BadgeExt<Badge>): badge is BadgeExt<BadgeOngoing> =>
+      ([
+        "completed",
+        "in-progress",
+        "on-hold",
+        "submitted",
+      ] satisfies BadgeExt<Badge>["status"][] as string[])
+        .includes(badge.status),
   )
   .toSorted((a, b) => b.started.valueOf() - a.started.valueOf())
   .slice(0, 5)
@@ -102,7 +105,7 @@ const recentlyStarted = badges
                 </div>
                 <h4 class="font-bold">{badge.challengeName}</h4>
                 <div class="text-xs font-extralight">
-                  {badge.badgeName ?? "\u00A0"}
+                  {badge.badgeName ?? "\u{A0}"}
                 </div>
                 <div class="text-xs font-extralight text-ctp-surface0">
                   <span class="inline-block h-4 w-4 i-lucide-check" />
@@ -139,7 +142,7 @@ const recentlyStarted = badges
                 </div>
                 <h4 class="font-bold">{badge.challengeName}</h4>
                 <div class="text-xs font-extralight">
-                  {badge.badgeName ?? "\u00A0"}
+                  {badge.badgeName ?? "\u{A0}"}
                 </div>
                 <div class="text-xs font-extralight text-ctp-surface0">
                   <span class="inline-block h-4 w-4 i-lucide-play" />
