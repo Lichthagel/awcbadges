@@ -22,7 +22,7 @@ jobs:
       COREPACK_ENABLE_STRICT: "0"
     steps:
       - name: Checkout your repository using git
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Setup PNPM
         uses: pnpm/action-setup@v6
       - name: Setup Node
