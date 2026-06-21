@@ -16,10 +16,10 @@
       "https://anilist.co/$1/$2",
     );
 
-    // eslint-disable-next-line unicorn/no-unreadable-new-expression
     text = text.replace("%START%", () => new Date().toISOString()
       .split("T", 2)[0]);
 
+    // eslint-disable-next-line unicorn/no-top-level-assignment-in-function
     output = text;
   };
 </script>

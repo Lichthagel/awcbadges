@@ -16,6 +16,7 @@
   let isOpen = $state(false);
 
   const toggle = () => {
+    // eslint-disable-next-line unicorn/no-top-level-assignment-in-function
     isOpen = !isOpen;
   };
 </script>
