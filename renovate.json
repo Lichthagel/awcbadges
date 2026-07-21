@@ -1,27 +1,16 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended",
-    ":disableDigestUpdates"
-  ],
-  "baseBranchPatterns": [
-    "main"
-  ],
-  "labels": [
-    "dependencies"
-  ],
+  "extends": ["config:recommended", ":disableDigestUpdates"],
+  "baseBranchPatterns": ["main"],
+  "labels": ["dependencies"],
   "lockFileMaintenance": {
     "enabled": true
   },
   "packageRules": [
     {
       "description": "Group linter upgrades together",
-      "extends": [
-        "packages:linters"
-      ],
-      "matchPackageNames": [
-        "@eslint-react/**"
-      ],
+      "extends": ["packages:linters"],
+      "matchPackageNames": ["@eslint-react/**"],
       "groupName": "linters"
     }
   ],

@@ -1,17 +1,16 @@
 {
   "name": "awcbadges",
-  "type": "module",
   "version": "0.0.1",
-  "engines": {
-    "node": ">=20.0.0"
-  },
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "eslint ."
+    "lint": "oxlint",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check"
   },
   "dependencies": {
     "@astrojs/svelte": "^9.0.0",
@@ -29,15 +28,16 @@
     "eslint-plugin-astro": "^3.0.0",
     "eslint-plugin-n": "^18.0.0",
     "eslint-plugin-svelte": "^3.0.0",
-    "prettier": "^3.2.5",
-    "prettier-plugin-astro": "^0.14.0",
-    "prettier-plugin-svelte": "^4.0.0",
-    "prettier-plugin-tailwindcss": "^0.8.0",
+    "oxfmt": "^0.59.0",
+    "oxlint": "^1.74.0",
     "sharp": "^0.35.0",
     "svelte": "^5.0.0",
     "svelte-eslint-parser": "^1.0.0",
     "tailwindcss": "^4.1.11",
     "typescript-eslint": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   },
   "packageManager": "pnpm@11.15.1"
 }

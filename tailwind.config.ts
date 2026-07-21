@@ -1,7 +1,6 @@
+import { getIconCollections, iconsPlugin } from "@egoist/tailwindcss-icons";
 // const defaultTheme = require("tailwindcss/defaultTheme");
 import type { Config } from "tailwindcss";
-
-import { getIconCollections, iconsPlugin } from "@egoist/tailwindcss-icons";
 import defaultTheme from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
@@ -11,7 +10,7 @@ export default {
     iconsPlugin({
       collections: getIconCollections(["lucide"]),
       extraProperties: {
-        "display": "inline-block",
+        display: "inline-block",
         "vertical-align": "middle",
       },
     }),

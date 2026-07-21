@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @import "@catppuccin/tailwindcss/mocha.css";
 
@@ -23,17 +23,17 @@
 }
 
 @utility bg-in-progress {
-  @apply bg-linear-to-br from-ctp-lavender to-ctp-mauve;
+  @apply from-ctp-lavender to-ctp-mauve bg-linear-to-br;
 }
 
 @utility bg-submitted {
-  @apply bg-linear-to-br from-ctp-green to-ctp-sapphire;
+  @apply from-ctp-green to-ctp-sapphire bg-linear-to-br;
 }
 
 @utility bg-on-hold {
-  @apply bg-linear-to-br from-ctp-red to-ctp-maroon;
+  @apply from-ctp-red to-ctp-maroon bg-linear-to-br;
 }
 
 @utility bg-completed {
-  @apply bg-linear-to-br from-ctp-teal to-ctp-green;
+  @apply from-ctp-teal to-ctp-green bg-linear-to-br;
 }

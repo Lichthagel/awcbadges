@@ -1,6 +1,5 @@
 <script lang="ts">
   import type { Snippet } from "svelte";
-
   import { slide } from "svelte/transition";
 
   type Props = {
@@ -8,15 +7,12 @@
     title: string;
   };
 
-  const {
-    title,
-    children,
-  }: Props = $props();
+  const { title, children }: Props = $props();
 
   let isOpen = $state(false);
 
   const toggle = () => {
-    // eslint-disable-next-line unicorn/no-top-level-assignment-in-function
+    // oxlint-disable-next-line unicorn/no-top-level-assignment-in-function
     isOpen = !isOpen;
   };
 </script>
@@ -28,10 +24,10 @@
     type="button"
   >
     <span
-      class="inline-block transition-transform w-8 h-8 i-lucide-chevron-right"
+      class="i-lucide-chevron-right inline-block h-8 w-8 transition-transform"
       class:rotate-90={isOpen}
     ></span>
-    <span class="text-3xl lowercase align-middle">{title}</span>
+    <span class="align-middle text-3xl lowercase">{title}</span>
   </button>
   {#if isOpen}
     <div

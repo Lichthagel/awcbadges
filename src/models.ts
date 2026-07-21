@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { z } from "astro/zod";
 import { reference } from "astro:content";
 
@@ -71,9 +70,17 @@ export type BadgeFinished = z.infer<typeof zBadgeFinished>;
 
 const zBadgeMultiFinished = zBadgeMultiBase.extend(zBadgeFinishedImpl.shape);
 
-const zBadge = z.discriminatedUnion("status", [zBadgePrepared, zBadgeOngoing, zBadgeFinished]);
+const zBadge = z.discriminatedUnion("status", [
+  zBadgePrepared,
+  zBadgeOngoing,
+  zBadgeFinished,
+]);
 
-const zBadgeMulti = z.discriminatedUnion("status", [zBadgeMultiPrepared, zBadgeMultiOngoing, zBadgeMultiFinished]);
+const zBadgeMulti = z.discriminatedUnion("status", [
+  zBadgeMultiPrepared,
+  zBadgeMultiOngoing,
+  zBadgeMultiFinished,
+]);
 
 export type Badge = z.infer<typeof zBadge>;
 
