@@ -168,7 +168,7 @@ importers:
     dependencies:
       '@astrojs/svelte':
         specifier: ^9.0.0
-        version: 9.1.0(@types/node@25.9.9)(astro@7.4.0(@types/node@25.9.9)(jiti@2.7.0)(yaml@2.9.1))(jiti@2.7.0)(svelte@5.57.2(@typescript-eslint/types@8.71.2))(typescript@6.0.3)(yaml@2.9.1)
+        version: 9.1.0(@types/node@25.9.9)(astro@7.4.1(@types/node@25.9.9)(jiti@2.7.0)(yaml@2.9.1))(jiti@2.7.0)(svelte@5.57.2(@typescript-eslint/types@8.71.2))(typescript@6.0.3)(yaml@2.9.1)
       '@catppuccin/tailwindcss':
         specifier: ^1.0.0
         version: 1.0.0
@@ -195,7 +195,7 @@ importers:
         version: 8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3)
       astro:
         specifier: ^7.0.0
-        version: 7.4.0(@types/node@25.9.9)(jiti@2.7.0)(yaml@2.9.1)
+        version: 7.4.1(@types/node@25.9.9)(jiti@2.7.0)(yaml@2.9.1)
       date-fns:
         specifier: ^4.0.0
         version: 4.4.0
@@ -1360,8 +1360,8 @@ packages:
     resolution: {integrity: sha512-WavQUarfgwSbpCq4xsdcIBdX5KArfI2d6DD8EIloJIMthnB1508iNpx4C77EhUyMd03LpEt8HAPzwF/cG0V39g==}
     engines: {node: ^22.22.3 || ^24.16.0 || >=26.3.0}
 
-  astro@7.4.0:
-    resolution: {integrity: sha512-6ThZU2bp7asGSceVcnh3r23dE88HpYN5vxtnCWYYrjr8lpQjx4eDW6/W8WgNlcc+T/b8zHmQ/EcS4DpQG4ZoOg==}
+  astro@7.4.1:
+    resolution: {integrity: sha512-mzWNEWSef1VQDgFku6Gp0v8Qx53NOkNlOIDQcX9ovxAZ1QXic6cks/FFo+gxPM9anXuat4X1FhB61KTk3XFvgg==}
     engines: {node: '>=22.22.0', npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
     peerDependencies:
@@ -2872,10 +2872,10 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/svelte@9.1.0(@types/node@25.9.9)(astro@7.4.0(@types/node@25.9.9)(jiti@2.7.0)(yaml@2.9.1))(jiti@2.7.0)(svelte@5.57.2(@typescript-eslint/types@8.71.2))(typescript@6.0.3)(yaml@2.9.1)':
+  '@astrojs/svelte@9.1.0(@types/node@25.9.9)(astro@7.4.1(@types/node@25.9.9)(jiti@2.7.0)(yaml@2.9.1))(jiti@2.7.0)(svelte@5.57.2(@typescript-eslint/types@8.71.2))(typescript@6.0.3)(yaml@2.9.1)':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 7.3.1(svelte@5.57.2(@typescript-eslint/types@8.71.2))(vite@8.3.4(@types/node@25.9.9)(jiti@2.7.0)(yaml@2.9.1))
-      astro: 7.4.0(@types/node@25.9.9)(jiti@2.7.0)(yaml@2.9.1)
+      astro: 7.4.1(@types/node@25.9.9)(jiti@2.7.0)(yaml@2.9.1)
       svelte: 5.57.2(@typescript-eslint/types@8.71.2)
       svelte2tsx: 0.7.62(svelte@5.57.2(@typescript-eslint/types@8.71.2))(typescript@6.0.3)
       typescript: 6.0.3
@@ -3717,7 +3717,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@7.4.0(@types/node@25.9.9)(jiti@2.7.0)(yaml@2.9.1):
+  astro@7.4.1(@types/node@25.9.9)(jiti@2.7.0)(yaml@2.9.1):
     dependencies:
       '@astrojs/compiler-rs': 0.5.2
       '@astrojs/internal-helpers': 0.13.0
