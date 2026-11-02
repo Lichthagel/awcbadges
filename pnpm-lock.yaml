@@ -183,7 +183,7 @@ importers:
         version: 1.2.150
       '@lichthagel/eslint-config':
         specifier: ^1.0.0
-        version: 1.1.0(eslint-plugin-n@18.5.0(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3))(eslint-plugin-svelte@3.23.1(eslint@10.14.0(jiti@2.7.0))(svelte@5.57.3(@typescript-eslint/types@8.72.1)))(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3)
+        version: 1.1.1(eslint-plugin-n@18.5.0(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3))(eslint-plugin-svelte@3.23.1(eslint@10.14.0(jiti@2.7.0))(svelte@5.57.3(@typescript-eslint/types@8.72.1)))(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3)
       '@tailwindcss/vite':
         specifier: ^4.1.11
         version: 4.3.3(vite@8.3.5(@types/node@26.6.6)(jiti@2.7.0)(yaml@2.9.1))
@@ -704,8 +704,8 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@lichthagel/eslint-config@1.1.0':
-    resolution: {integrity: sha512-ziMJfbXtdC/GhBAXquOnnV2ukobMuqoaT0KocHj7JpNIlQnU8oa+88tz+dQC0+GlIgNniWqif9GV6CK61+7MBA==}
+  '@lichthagel/eslint-config@1.1.1':
+    resolution: {integrity: sha512-UWBgh+qxXdHzR2RPQybBgBGNcO56oe5WDVse/MxmuWBJ8FRSgaS1UvHnjFyPMRDz/jP80BzSWfVyaEVou0GE+w==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       eslint: '>=8.40.0'
@@ -1651,8 +1651,8 @@ packages:
       svelte:
         optional: true
 
-  eslint-plugin-unicorn@78.0.0:
-    resolution: {integrity: sha512-XTDqxcJeAmh2lhgU75TpuMDdFtPDnAU+DCW56nR5UzXTG+uOyvOGjV80O11my7kNb2bYSCPlWa8c4K8/rwlYog==}
+  eslint-plugin-unicorn@79.0.0:
+    resolution: {integrity: sha512-k7MWrjoVTVCnjKpgaxBuScPNSPomLvDpsd9uADpWrIFzrnwiec27eWhGrmmyuTj1bC3xVNYP4QfG3MEzEw6ifg==}
     engines: {node: '>=22'}
     peerDependencies:
       eslint: '>=10.4'
@@ -3215,13 +3215,13 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@lichthagel/eslint-config@1.1.0(eslint-plugin-n@18.5.0(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3))(eslint-plugin-svelte@3.23.1(eslint@10.14.0(jiti@2.7.0))(svelte@5.57.3(@typescript-eslint/types@8.72.1)))(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3)':
+  '@lichthagel/eslint-config@1.1.1(eslint-plugin-n@18.5.0(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3))(eslint-plugin-svelte@3.23.1(eslint@10.14.0(jiti@2.7.0))(svelte@5.57.3(@typescript-eslint/types@8.72.1)))(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3)':
     dependencies:
       '@eslint/js': 10.0.1(eslint@10.14.0(jiti@2.7.0))
       '@stylistic/eslint-plugin': 5.10.0(eslint@10.14.0(jiti@2.7.0))
       eslint: 10.14.0(jiti@2.7.0)
       eslint-plugin-perfectionist: 5.13.0(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3)
-      eslint-plugin-unicorn: 78.0.0(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3)
+      eslint-plugin-unicorn: 79.0.0(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3)
       globals: 17.13.0
       typescript-eslint: 8.72.1(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3)
     optionalDependencies:
@@ -4055,7 +4055,7 @@ snapshots:
     transitivePeerDependencies:
       - ts-node
 
-  eslint-plugin-unicorn@78.0.0(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3):
+  eslint-plugin-unicorn@79.0.0(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3):
     dependencies:
       '@eslint-community/eslint-utils': 4.10.1(eslint@10.14.0(jiti@2.7.0))
       '@eslint/css-tree': 4.1.2
