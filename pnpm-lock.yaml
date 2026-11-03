@@ -183,7 +183,7 @@ importers:
         version: 1.2.150
       '@lichthagel/eslint-config':
         specifier: ^1.0.0
-        version: 1.1.1(eslint-plugin-n@18.5.0(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3))(eslint-plugin-svelte@3.23.1(eslint@10.14.0(jiti@2.7.0))(svelte@5.57.3(@typescript-eslint/types@8.72.1)))(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3)
+        version: 1.1.2(eslint-plugin-n@18.5.0(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3))(eslint-plugin-svelte@3.23.1(eslint@10.14.0(jiti@2.7.0))(svelte@5.57.3(@typescript-eslint/types@8.72.1)))(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3)
       '@tailwindcss/vite':
         specifier: ^4.1.11
         version: 4.3.3(vite@8.3.5(@types/node@26.6.6)(jiti@2.7.0)(yaml@2.9.1))
@@ -704,8 +704,8 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@lichthagel/eslint-config@1.1.1':
-    resolution: {integrity: sha512-UWBgh+qxXdHzR2RPQybBgBGNcO56oe5WDVse/MxmuWBJ8FRSgaS1UvHnjFyPMRDz/jP80BzSWfVyaEVou0GE+w==}
+  '@lichthagel/eslint-config@1.1.2':
+    resolution: {integrity: sha512-gmy7gqfjvLZah1jK/AIs7DAPyAjcG8MY5GAIw3vZlIz7c/2XGLjJJqE7rWZt80UxrV2OAWARgeInhx7FAgerNA==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       eslint: '>=8.40.0'
@@ -3215,7 +3215,7 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@lichthagel/eslint-config@1.1.1(eslint-plugin-n@18.5.0(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3))(eslint-plugin-svelte@3.23.1(eslint@10.14.0(jiti@2.7.0))(svelte@5.57.3(@typescript-eslint/types@8.72.1)))(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3)':
+  '@lichthagel/eslint-config@1.1.2(eslint-plugin-n@18.5.0(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3))(eslint-plugin-svelte@3.23.1(eslint@10.14.0(jiti@2.7.0))(svelte@5.57.3(@typescript-eslint/types@8.72.1)))(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3)':
     dependencies:
       '@eslint/js': 10.0.1(eslint@10.14.0(jiti@2.7.0))
       '@stylistic/eslint-plugin': 5.10.0(eslint@10.14.0(jiti@2.7.0))
